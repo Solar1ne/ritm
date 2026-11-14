@@ -1,0 +1,9 @@
+{
+  "name": "rhythm-poc",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test frontend/tests/*.test.js",
+    "check": "node --check frontend/static/account.js && node --check frontend/static/app.js && node --check frontend/static/views.js && node --check frontend/static/features.js && node --check frontend/static/api.js && node --check frontend/static/progress.js && node --check frontend/static/telegram.js && node --check frontend/static/coach.js && node --check frontend/static/variants.js && node --check frontend/static/activity-metrics.js && node --check frontend/static/wellness.js && node --check frontend/static/measurements.js && node --check frontend/static/nutrition.js && node --check frontend/static/nutrition-data.js && node --check frontend/static/format.js && node --check frontend/static/icons.js && node --check frontend/static/consistency.js && node --check frontend/static/consistency-ui.js && node --check frontend/static/data-usage.js && node --check frontend/static/product-help.js && node --check frontend/static/install.js && node --check frontend/static/service-worker.js && node --check frontend/static/exercises-data.js && node --check frontend/static/exercise-demo.js && node --check frontend/static/exercises.js"
+  }
+}

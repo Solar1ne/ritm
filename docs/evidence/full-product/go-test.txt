@@ -1,0 +1,11 @@
+ok  	rhythm/cmd/loadtest	3.638s	coverage: 82.1% of statements
+	rhythm/cmd/rat		coverage: 0.0% of statements
+	rhythm/cmd/server		coverage: 0.0% of statements
+ok  	rhythm/internal/assistant	1.740s	coverage: 95.4% of statements
+ok  	rhythm/internal/calendar	1.431s	coverage: 99.0% of statements
+ok  	rhythm/internal/filestore	1.954s	coverage: 71.2% of statements
+ok  	rhythm/internal/httpapi	3.196s	coverage: 83.7% of statements
+	rhythm/internal/rat		coverage: 0.0% of statements
+ok  	rhythm/internal/rhythm	1.881s	coverage: 87.8% of statements
+ok  	rhythm/internal/workoutimport	2.298s	coverage: 93.8% of statements
+?   	rhythm/web	[no test files]

@@ -1,0 +1,1 @@
+PASS synthetic read-only browser: server-date diary defaults, allowed today session, history action; no runtime errors

@@ -1,0 +1,17 @@
+?   	rhythm/cmd/db	[no test files]
+ok  	rhythm/cmd/loadtest	3.877s
+?   	rhythm/cmd/rat	[no test files]
+?   	rhythm/cmd/server	[no test files]
+ok  	rhythm/internal/accounts	9.902s
+ok  	rhythm/internal/aicoach	2.821s
+ok  	rhythm/internal/assistant	4.559s
+ok  	rhythm/internal/calendar	3.204s
+ok  	rhythm/internal/filestore	2.638s
+ok  	rhythm/internal/httpapi	59.076s
+ok  	rhythm/internal/nutrition	4.111s
+ok  	rhythm/internal/openai	7.988s
+ok  	rhythm/internal/postgresstore	23.166s
+?   	rhythm/internal/rat	[no test files]
+ok  	rhythm/internal/rhythm	5.576s
+ok  	rhythm/internal/workoutimport	6.054s
+?   	rhythm/web	[no test files]

@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-10-17T05:03:42.180Z",
+  "scope": "Synthetic local Chromium browser acceptance; no live Telegram/device integration",
+  "checks": [
+    {
+      "name": "Native profile submit saves without query-string navigation; dialog focuses its heading",
+      "passed": true
+    },
+    {
+      "name": "Explicit next-week acceptance persists across reload",
+      "passed": true
+    },
+    {
+      "name": "Profile changes preserve current and accepted snapshots; explicit cancel exposes the new proposal",
+      "passed": true
+    },
+    {
+      "name": "Stale plan confirmation is rejected and requires reviewing the current proposal",
+      "passed": true
+    },
+    {
+      "name": "Journal supports editing and confirmed deletion of individual facts",
+      "passed": true
+    },
+    {
+      "name": "CSV preview, explicit plan linking and repeated-file idempotency work through the UI",
+      "passed": true
+    },
+    {
+      "name": "Conflicting import is atomic; TCX import and independent activity deletion work",
+      "passed": true
+    },
+    {
+      "name": "Reminder preferences persist and produce a real ICS with local-time conversion and alarm",
+      "passed": true
+    },
+    {
+      "name": "Assistant explains personal data, all four presets work, and unsupported questions are scoped",
+      "passed": true
+    },
+    {
+      "name": "Backup restores into a different identity; historical snapshots can be viewed and backfilled",
+      "passed": true
+    },
+    {
+      "name": "All new screens fit 320, 390, 768 and 1440px with real content",
+      "passed": true
+    },
+    {
+      "name": "Visibility/focus refresh preserves an open diary form",
+      "passed": true
+    },
+    {
+      "name": "No uncaught JavaScript errors in the full-product flow",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-10-22T17:38:36.141Z",
+  "scope": "Real local Go/PostgreSQL and Chrome, synthetic archives and CSV only; no live AI/Telegram",
+  "checks": [
+    {
+      "name": "Closed-week recap counts done/missed/unlogged independently and uses saved adjusted minutes",
+      "passed": true
+    },
+    {
+      "name": "Day detail preserves zero sleep and separates imported duration from completed plan minutes",
+      "passed": true
+    },
+    {
+      "name": "Rest, unmarked scheduled days and imported activity keep distinct accessible states",
+      "passed": true
+    },
+    {
+      "name": "90-day selection keeps focus and opens a day older than the existing 30-day wellbeing window",
+      "passed": true
+    },
+    {
+      "name": "Activity and wellbeing periods are independent",
+      "passed": true
+    },
+    {
+      "name": "Calendar fits 320/390/768/1440px with 44px targets, internal scrolling and dark-theme CSS",
+      "passed": true
+    },
+    {
+      "name": "Browsing, periods and details are read-only and cause no runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "writes": []
+}

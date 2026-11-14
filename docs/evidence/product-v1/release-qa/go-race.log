@@ -1,0 +1,20 @@
+?   	rhythm/cmd/bot	[no test files]
+?   	rhythm/cmd/db	[no test files]
+ok  	rhythm/cmd/loadtest	3.761s
+?   	rhythm/cmd/rat	[no test files]
+ok  	rhythm/cmd/server	1.508s
+ok  	rhythm/internal/accounts	15.736s
+ok  	rhythm/internal/aicoach	2.333s
+ok  	rhythm/internal/assistant	3.228s
+ok  	rhythm/internal/calendar	2.704s
+ok  	rhythm/internal/deepseek	4.316s
+ok  	rhythm/internal/filestore	3.914s
+ok  	rhythm/internal/httpapi	167.763s
+ok  	rhythm/internal/nutrition	4.406s
+ok  	rhythm/internal/openai	4.627s
+ok  	rhythm/internal/postgresstore	56.929s
+?   	rhythm/internal/rat	[no test files]
+ok  	rhythm/internal/rhythm	3.009s
+ok  	rhythm/internal/telegrambot	3.797s
+ok  	rhythm/internal/workoutimport	4.535s
+?   	rhythm/web	[no test files]

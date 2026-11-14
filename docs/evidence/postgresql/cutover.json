@@ -1,0 +1,24 @@
+{
+  "storage": "postgresql",
+  "fileSnapshotFiles": 90,
+  "importedDiaries": 89,
+  "preexistingAccounts": 0,
+  "sameGuestCookieAndSessionBinding": true,
+  "sameProfilePlanRevisionAndEntries": true,
+  "sourceFilesUnchanged": true,
+  "sqlBackupRestored": true,
+  "restoredTablesCompared": [
+    "rhythm_schema_migrations",
+    "rhythm_identities",
+    "rhythm_diaries",
+    "rhythm_accounts",
+    "rhythm_sessions",
+    "rhythm_legacy_revocations",
+    "rhythm_metadata",
+    "rhythm_imports"
+  ],
+  "scope": "Local native PostgreSQL 16; private snapshots excluded from repository. No external AI or Telegram login.",
+  "appRestartPreservedState": true,
+  "syntheticFixtureCleaned": true,
+  "finalBuildHealthVerified": true
+}

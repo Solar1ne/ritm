@@ -1,0 +1,48 @@
+{
+  "executedAt": "2026-10-17T05:52:30.482Z",
+  "scope": "Synthetic local accounts. AI browser responses are labeled fixtures, NOT live model evidence. Real Go/API mutation and session-variant flows.",
+  "checks": [
+    {
+      "name": "Constraints preview, explicit apply, reload and immutable original schedule",
+      "passed": true
+    },
+    {
+      "name": "Explicit revert restores the original session",
+      "passed": true
+    },
+    {
+      "name": "Real imported running metrics use only known distances and fit a 320px screen",
+      "passed": true
+    },
+    {
+      "name": "Unconfigured provider is honest and deterministic helper remains functional",
+      "passed": true
+    },
+    {
+      "name": "AI fixture is requested only after consent and a generated draft never autosaves",
+      "passed": true
+    },
+    {
+      "name": "User correction and separate confirmation save through real diary API",
+      "passed": true
+    },
+    {
+      "name": "Review fixture exposes the exact facts behind its observation",
+      "passed": true
+    },
+    {
+      "name": "Provider failure preserves diary and the working rule-based path",
+      "passed": true
+    },
+    {
+      "name": "Delayed AI context cannot overwrite a newly opened settings dialog",
+      "passed": true
+    },
+    {
+      "name": "AI UI fits 320–1440px without uncaught browser errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "aiCalls": 3
+}

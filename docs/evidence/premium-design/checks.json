@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-10-17T08:35:25.433585+00:00",
+  "scope": "Visual redesign and local browser regression using isolated synthetic accounts. No live Telegram or AI provider calls. Go business logic unchanged.",
+  "commands": [
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "evidence": "Tool output; no syntax errors"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "tests": 51,
+      "failed": 0,
+      "evidence": "Tool output, final views.js"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go test ./...",
+      "exitCode": 0,
+      "output": "go-test.txt"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go vet ./...",
+      "exitCode": 0,
+      "output": "go-vet.txt"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache STATICCHECK_CACHE=/tmp/rhythm-staticcheck-cache staticcheck ./...",
+      "exitCode": 0,
+      "output": "staticcheck.txt"
+    },
+    {
+      "command": "gofmt -l cmd internal web",
+      "exitCode": 0,
+      "output": "gofmt.txt"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go build -o /tmp/rhythm-premium ./cmd/server",
+      "exitCode": 0
+    },
+    {
+      "command": "RHYTHM_EVIDENCE_DIR=docs/evidence/premium-design/regression PLAYWRIGHT_MODULE=/Users/alexlepekhov/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright node scripts/browser-check.mjs",
+      "exitCode": 0,
+      "output": "regression/browser.json"
+    },
+    {
+      "command": "RHYTHM_EVIDENCE_DIR=docs/evidence/premium-design/regression PLAYWRIGHT_MODULE=/Users/alexlepekhov/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright node scripts/full-product-check.mjs",
+      "exitCode": 0,
+      "output": "regression/full-product-browser.json"
+    },
+    {
+      "command": "RHYTHM_EVIDENCE_DIR=docs/evidence/premium-design/ai PLAYWRIGHT_MODULE=/Users/alexlepekhov/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright node scripts/ai-product-check.mjs",
+      "exitCode": 0,
+      "output": "ai/browser.json"
+    },
+    {
+      "command": "RHYTHM_EVIDENCE_DIR=docs/evidence/premium-design/wellness PLAYWRIGHT_MODULE=/Users/alexlepekhov/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright node scripts/wellness-nutrition-check.mjs",
+      "exitCode": 0,
+      "output": "wellness/browser.json"
+    },
+    {
+      "command": "node --check scripts/ai-product-check.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node --check scripts/wellness-nutrition-check.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node docs/evidence/premium-design/visual-capture.mjs",
+      "exitCode": 0,
+      "output": "visual-audit.json",
+      "note": "Executed from /tmp/rhythm-visual-after.mjs; identical source copied here for reproducibility. Screenshot output path is this checkout."
+    }
+  ],
+  "browserChecks": {
+    "regression/browser.json": 20,
+    "regression/full-product-browser.json": 13,
+    "ai/browser.json": 10,
+    "wellness/browser.json": 10
+  },
+  "browserTotal": 53,
+  "javascriptTests": 51,
+  "finalVersion": "Final scenario runs include final markup, styles, local fonts and input-field fixes. The only later production edit was changing --muted from #69746b to #637064 for better contrast; font/focus/motion/contrast audit, final screenshots and binary build include that final color.",
+  "priorAttempt": "regression/browser-failure.png records an earlier long-name wrapping failure; fixed before all final scenario runs.",
+  "fonts": {
+    "source": "https://github.com/google/fonts",
+    "license": "SIL Open Font License 1.1, included next to each font",
+    "runtimeExternalFontRequests": false
+  },
+  "limits": [
+    "No new load/RAT/race measurement claimed for CSS changes",
+    "Visual contrast sampling is not a full WCAG certification",
+    "AI/Telegram fixture limitations from the preceding release still apply"
+  ]
+}

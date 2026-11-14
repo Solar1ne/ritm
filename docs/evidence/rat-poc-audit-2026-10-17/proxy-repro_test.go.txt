@@ -1,0 +1,30 @@
+package httpapi
+
+import (
+	"fmt"
+	"net/http/httptest"
+	"strings"
+	"testing"
+)
+
+// This audit observes current behavior; it does not assert that it is desired.
+func TestAuditProxyClientsShareQuota(t *testing.T) {
+	s, _ := setupAccounts(t)
+	for i := 0; i < 51; i++ {
+		r := httptest.NewRequest("POST", testOrigin+"/api/auth/login", strings.NewReader(fmt.Sprintf(`{"login":"bad!%d","password":""}`, i)))
+		r.Header.Set("Content-Type", "application/json")
+		r.Header.Set("Origin", testOrigin)
+		r.Header.Set("X-Forwarded-For", fmt.Sprintf("192.0.2.%d", i+1))
+		r.RemoteAddr = "198.51.100.254:12345"
+		w := httptest.NewRecorder()
+		s.ServeHTTP(w, r)
+		want := 401
+		if i == 50 {
+			want = 429
+		}
+		if w.Code != want {
+			t.Fatalf("request %d: got %d, want %d", i+1, w.Code, want)
+		}
+	}
+	t.Log("Observed: 50 distinct forwarded clients reach validation; client 51 receives 429 from the shared proxy-peer quota.")
+}

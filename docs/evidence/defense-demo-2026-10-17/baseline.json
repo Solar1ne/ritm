@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-17",
+  "url": "https://176.119.147.97",
+  "account": "ritm.demo",
+  "baselineRestored": true,
+  "revisionBefore": 3,
+  "revisionAfter": 5,
+  "originalRecordsPreserved": true,
+  "acceptedNextPlan": null,
+  "counts": {
+    "weeks": 4,
+    "entries": 36,
+    "workouts": 12,
+    "hrvEntries": 23,
+    "bodyEntries": 7,
+    "mealSelections": 21
+  },
+  "currentMinutes": 135,
+  "nextMinutes": 135,
+  "decision": "maintain"
+}

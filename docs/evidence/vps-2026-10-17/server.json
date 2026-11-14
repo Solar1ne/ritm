@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-17T12:27:06.145963+00:00",
+  "release": "/opt/rhythm/releases/20261017T121911Z",
+  "active": [
+    "active",
+    "active",
+    "active"
+  ],
+  "enabled": [
+    "enabled",
+    "enabled",
+    "enabled",
+    "enabled",
+    "enabled"
+  ],
+  "certificate": "issuer=C = US, O = Let's Encrypt, CN = YE2\nnotBefore=Oct 17 11:20:56 2026 GMT\nnotAfter=Oct 24 03:20:55 2026 GMT\nX509v3 Subject Alternative Name: critical\n    IP Address:176.119.147.97",
+  "resources": "NRestarts=0\nMemoryCurrent=2084864",
+  "publicHealth": {
+    "status": "ok",
+    "storage": "postgresql",
+    "telegramConfigured": false
+  },
+  "anonymousRows": "0",
+  "firewall": "Status: active\n\nTo                         Action      From\n--                         ------      ----\n22/tcp                     ALLOW       Anywhere                  \n80/tcp                     ALLOW       Anywhere                  \n443/tcp                    ALLOW       Anywhere                  \n22/tcp (v6)                ALLOW       Anywhere (v6)             \n80/tcp (v6)                ALLOW       Anywhere (v6)             \n443/tcp (v6)               ALLOW       Anywhere (v6)",
+  "releaseChecksums": "deploy/backup.sh: OK\ndeploy/nginx-bootstrap.conf.template: OK\ndeploy/nginx.conf.template: OK\ndeploy/rhythm-backup.service: OK\ndeploy/rhythm-backup.timer: OK\ndeploy/rhythm-certbot.service: OK\ndeploy/rhythm-certbot.timer: OK\ndeploy/rhythm-migrate.service: OK\ndeploy/rhythm.service: OK\nrhythm: OK\nrhythm-db: OK",
+  "configurationPermissions": "600 root /etc/rhythm/app.env",
+  "backupRestore": {
+    "success": true,
+    "restoredDiaries": 1,
+    "restoredAccounts": 1,
+    "schemaVersion": 1,
+    "temporaryDatabaseRemoved": true
+  },
+  "certificateRenewalDryRun": "passed with nginx reload hook",
+  "syntheticAccountCleanup": "completed"
+}

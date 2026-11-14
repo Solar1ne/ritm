@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-17T09:42:41.756316+00:00",
+  "origin": "http://127.0.0.1:8080",
+  "health": {
+    "status": "ok",
+    "storage": "file",
+    "telegramConfigured": false
+  },
+  "guestBootstrap": {
+    "identity": "guest",
+    "accountsEnabled": true,
+    "aiConfigured": false
+  },
+  "servedAssetsMatchSource": {
+    "app.js": true,
+    "account.js": true,
+    "premium.css": true
+  },
+  "previousFiles": 89,
+  "previousFilesUnchanged": 89,
+  "privateBackupCreated": true,
+  "serverSecretUnchanged": true
+}

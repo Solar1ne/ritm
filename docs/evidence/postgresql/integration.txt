@@ -1,0 +1,50 @@
+=== RUN   TestMigrationsConcurrentAndDrift
+--- PASS: TestMigrationsConcurrentAndDrift (0.09s)
+=== RUN   TestMigrationDDLFailureRollsBack
+--- PASS: TestMigrationDDLFailureRollsBack (0.05s)
+=== RUN   TestPersistenceIsolationConcurrentRevisionAndRollback
+--- PASS: TestPersistenceIsolationConcurrentRevisionAndRollback (0.13s)
+=== RUN   TestCancellationFreesTransaction
+--- PASS: TestCancellationFreesTransaction (0.15s)
+=== RUN   TestAccountClaimRecoveryAndScopedReads
+--- PASS: TestAccountClaimRecoveryAndScopedReads (6.90s)
+=== RUN   TestAccountFailureRollsBackClaim
+--- PASS: TestAccountFailureRollsBackClaim (1.76s)
+=== RUN   TestClaimAndDiaryWriteOrder
+--- PASS: TestClaimAndDiaryWriteOrder (1.79s)
+=== RUN   TestSessionKeyInitializationAndMissingKey
+--- PASS: TestSessionKeyInitializationAndMissingKey (0.08s)
+=== RUN   TestOfflineImportPreservesAccountAndKey
+--- PASS: TestOfflineImportPreservesAccountAndKey (3.56s)
+=== RUN   TestDatabaseErrorsRedactSecrets
+--- PASS: TestDatabaseErrorsRedactSecrets (0.00s)
+=== RUN   TestImportPendingFailureAndCommittedRetry
+--- PASS: TestImportPendingFailureAndCommittedRetry (0.12s)
+=== RUN   TestImportPreflightRejectsInvalidHistoryAndOversizeBeforeMarker
+--- PASS: TestImportPreflightRejectsInvalidHistoryAndOversizeBeforeMarker (0.49s)
+=== RUN   TestUnexpectedPanicReleasesTransaction
+--- PASS: TestUnexpectedPanicReleasesTransaction (0.06s)
+PASS
+ok  	rhythm/internal/postgresstore	18.023s
+=== RUN   TestSnapshotLockCancellationAndCutover
+--- PASS: TestSnapshotLockCancellationAndCutover (0.08s)
+=== RUN   TestSnapshotRequiresOriginalKey
+--- PASS: TestSnapshotRequiresOriginalKey (0.00s)
+=== RUN   TestPersistRestartAndIsolation
+--- PASS: TestPersistRestartAndIsolation (0.01s)
+=== RUN   TestConcurrentRevisionOneWinner
+--- PASS: TestConcurrentRevisionOneWinner (0.02s)
+=== RUN   TestCancellationWhileWaitingDoesNotReleaseOwner
+--- PASS: TestCancellationWhileWaitingDoesNotReleaseOwner (0.01s)
+=== RUN   TestFailedCommitDoesNotAcknowledgeOrCache
+--- PASS: TestFailedCommitDoesNotAcknowledgeOrCache (0.01s)
+=== RUN   TestCorruptionUnavailableAndTraversal
+--- PASS: TestCorruptionUnavailableAndTraversal (0.00s)
+=== RUN   TestSecretSurvivesRestart
+--- PASS: TestSecretSurvivesRestart (0.01s)
+=== RUN   TestOversizedWriteCannotPoisonReadableRecord
+--- PASS: TestOversizedWriteCannotPoisonReadableRecord (0.06s)
+=== RUN   TestLegacyMigrationAndRolloverPersistOnce
+--- PASS: TestLegacyMigrationAndRolloverPersistOnce (0.03s)
+PASS
+ok  	rhythm/internal/filestore	(cached)

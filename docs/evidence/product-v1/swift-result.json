@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "tests": 13,
+  "compiler": "Apple Swift 6.1.2 strict Swift6",
+  "scope": "macOS Foundation core with URLProtocol fixtures, SwiftUI syntax parse and plist checks; not iOS SDK build",
+  "iosSDKBuildVerified": false,
+  "sourceFiles": {
+    "docs/ios-release.md": "d3e9eba7fe737140630f297e42151c4ef31b4bb69f7efcf1d62789b9e85e466f",
+    "ios/Rhythm.xcodeproj/project.pbxproj": "9a8f388b5577d34c3791c5e30872cbc907beed4529065c50dc132296f5d2786b",
+    "ios/Rhythm.xcodeproj/xcshareddata/xcschemes/Rhythm.xcscheme": "cea042d9debd5e2a1097bf5edd40f853b092fd994124da4d71e195107f641d08",
+    "ios/Rhythm/Assets.xcassets/AppIcon.appiconset/AppIcon.png": "639cface0b3e7f31f524c73b92c35cc245852561ff9ef070cc50bf868bc35d3b",
+    "ios/Rhythm/Assets.xcassets/AppIcon.appiconset/Contents.json": "1b2cc6b6e1ad340faeaae5f07d292eb20c7a22c9995ac8795ea6aa604efa491d",
+    "ios/Rhythm/Assets.xcassets/Contents.json": "e8e8ef4b27126d62305af321d12a6e64b866ca0b160f0f83efae90111f0ee576",
+    "ios/Rhythm/Info.plist": "d393e19beabe43fd758c2a9cfdb079772ddf63b7c234d2b1fad1955a3bc7b431",
+    "ios/Rhythm/PrivacyInfo.xcprivacy": "9ae2a3de18a973b6675a575288cef16f505cdc5b745a3a9ff14ee634de1d9437",
+    "ios/Rhythm/RhythmApp.swift": "3a4822e0fcbb33ead8cae611f3617c6dacbd7e8662149d0e1b06eaad5a8eec5b",
+    "ios/Rhythm/RootView.swift": "5a7805835005b578def920d7bd8910ece425eda7b9ca8ddde8616c407838f727",
+    "ios/Rhythm/WebScreen.swift": "78b78e154772102b3223053e81ff3950ebf2fa4ff249068273dab576a731d8bf",
+    "ios/RhythmCore/Package.swift": "ece86c1d8ec83e74ce61b8b564229b2be5296d76dd30f029272df20681e68af7",
+    "ios/RhythmCore/Sources/RhythmCore/APIClient.swift": "b7f2c63185947e46268548f7688ce4c12d9c366f70580d70cca635585f597c6b",
+    "ios/RhythmCore/Sources/RhythmCore/AppModel.swift": "87e82e2a1921e52e985f1a1cf08776080d523be5bc7548ed0559876b0b180b07",
+    "ios/RhythmCore/Sources/RhythmCore/Models.swift": "aab9b1b2799ab8cb217b97f911d2471ba7df8156c4cafdb3d406bda674a86a07",
+    "ios/RhythmCore/Tests/RhythmCoreTests/APIClientTests.swift": "0e29b092f237e2306d301743956661766cf3205ea92d9ed2afb4221253248ec6"
+  }
+}

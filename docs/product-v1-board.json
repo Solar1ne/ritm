@@ -1,0 +1,143 @@
+{
+  "updatedAt": "2026-10-22",
+  "execution": "root + up to 3 concurrent agents; waves; disjoint files; no commits",
+  "cards": [
+    {
+      "id": "A1",
+      "owner": "v1_architect_astra",
+      "model": "gpt-6-astra",
+      "state": "accepted",
+      "acceptance": "read-only readiness and bounded release definition",
+      "handoff": "docs/product-v1-plan.md"
+    },
+    {
+      "id": "A2",
+      "owner": "v1_release_sol",
+      "model": "gpt-6.1-sol",
+      "state": "accepted",
+      "acceptance": "concrete release and operations gaps",
+      "handoff": "docs/release-operations.md"
+    },
+    {
+      "id": "A3",
+      "owner": "v1_ux_sol",
+      "model": "gpt-6.1-sol",
+      "state": "accepted",
+      "acceptance": "reproduced UX gaps and bounded fixes",
+      "handoff": "docs/product-v1-plan.md"
+    },
+    {
+      "id": "W1",
+      "owner": "web_release_ux_sol",
+      "model": "gpt-6.1-sol",
+      "state": "accepted",
+      "acceptance": "connection/AI/install/help/clear flows pass browser gate",
+      "handoff": "web/static/install.js"
+    },
+    {
+      "id": "W2",
+      "owner": "capacity_implementation_astra",
+      "model": "gpt-6-astra",
+      "state": "accepted",
+      "acceptance": "authoritative caps and compatible restore",
+      "handoff": "internal/httpapi/capacity.go"
+    },
+    {
+      "id": "W3",
+      "owner": "release_implementation_sol",
+      "model": "gpt-6.1-sol",
+      "state": "accepted",
+      "acceptance": "isolated full QA and allowlist bundle validated",
+      "handoff": "docs/release-operations.md"
+    },
+    {
+      "id": "T1",
+      "owner": "telegram_runtime_sol",
+      "model": "gpt-6.1-sol",
+      "state": "accepted",
+      "acceptance": "safe command bot and verified live configuration",
+      "handoff": "docs/telegram-product.md"
+    },
+    {
+      "id": "I1",
+      "owner": "ios_native_astra",
+      "model": "gpt-6-astra",
+      "state": "accepted",
+      "acceptance": "native project and portable core contract tests; signing separate",
+      "handoff": "docs/ios-release.md"
+    },
+    {
+      "id": "R1",
+      "owner": "root",
+      "state": "accepted",
+      "acceptance": "integrated regression and production-safe configuration",
+      "handoff": "docs/product-v1-release.md"
+    },
+    {
+      "id": "R2",
+      "owner": "v1_independent_review_astra + release_gate_review_sol",
+      "state": "accepted",
+      "acceptance": "review findings resolved and final gate recorded",
+      "handoff": "docs/product-v1-release.md"
+    },
+    {
+      "id": "W4",
+      "owner": "capacity_recovery_sol",
+      "model": "gpt-6.1-sol",
+      "state": "accepted",
+      "acceptance": "Read/export and password/Telegram reauthentication stay available at capacity; history/revision unchanged; new writes remain bounded",
+      "handoff": "internal/httpapi/capacity_recovery_test.go"
+    },
+    {
+      "id": "D1",
+      "owner": "account_deletion_sol",
+      "model": "gpt-6.1-sol",
+      "state": "accepted",
+      "acceptance": "atomic PostgreSQL account deletion, rollback, old-token and paused-guest anti-resurrection",
+      "handoff": "internal/postgresstore/deletion_test.go"
+    },
+    {
+      "id": "D2",
+      "owner": "account_delete_ui_sol",
+      "model": "gpt-6.1-sol",
+      "state": "accepted",
+      "acceptance": "explicit password/consent and snapshot-pinned revision; private state reset",
+      "handoff": "scripts/accounts-check.mjs"
+    }
+  ],
+  "externalGates": [
+    {
+      "owner": "Apple account holder",
+      "state": "not_started",
+      "action": "Install full Xcode, register Apple Developer, choose Team and sign; user requested publication preparation only"
+    },
+    {
+      "owner": "bot owner",
+      "state": "metadata_configured_runtime_pending",
+      "action": "Live Bot API confirms menu+commands for gymbro_ai; install bot/web token on VPS and smoke real Telegram clients after owner restores SSH access"
+    },
+    {
+      "owner": "operator",
+      "state": "configuration_required",
+      "action": "Provide off-host backup destination and incident notification destination"
+    },
+    {
+      "owner": "VPS owner",
+      "state": "deferred_by_user",
+      "action": "User selected package and instructions; SSH access will be supplied later; current public server not updated"
+    },
+    {
+      "owner": "product owner",
+      "state": "deferred_by_user",
+      "action": "Supply public support email/operator details before App Store submission and finalize privacy/support pages"
+    }
+  ],
+  "verification": {
+    "portableSourceSHA256": "6d66c318bd6598e40a12a42ae51b7fa980f64d5104f77500cab7c5d037019421",
+    "evidence": "docs/evidence/product-v1/release-qa/result.json",
+    "passed": true,
+    "iosCoreTests": 13,
+    "iosSDKBuildVerified": false,
+    "publicRuntimeDeployed": false
+  }
+}

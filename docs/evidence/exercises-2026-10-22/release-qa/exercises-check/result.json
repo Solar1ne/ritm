@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Week links to the complete 12-exercise catalog",
+      "passed": true
+    },
+    {
+      "name": "Search preserves focus/caret, normalizes aliases and ё, combines filters and clears an empty result",
+      "passed": true
+    },
+    {
+      "name": "Catalog fits 320–1440px with 44px controls and a scrollable desktop sidebar",
+      "passed": true
+    },
+    {
+      "name": "Every exercise has technique, mistakes, easier variant, valid sources and working manual phases; plank is static",
+      "passed": true
+    },
+    {
+      "name": "Technique labels and controls retain readable text in light and dark themes",
+      "passed": true
+    },
+    {
+      "name": "Mobile More and settings both open the catalog and close their dialogs",
+      "passed": true
+    },
+    {
+      "name": "Explicit play/pause works; Escape, modal replacement and reduced-motion changes cancel animation frames",
+      "passed": true
+    },
+    {
+      "name": "Browsing never mutates the diary, requests external media or raises browser errors",
+      "passed": true
+    }
+  ],
+  "browserErrors": [],
+  "diaryWrites": [],
+  "externalMedia": []
+}

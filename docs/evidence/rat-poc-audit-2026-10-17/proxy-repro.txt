@@ -1,0 +1,5 @@
+=== RUN   TestAuditProxyClientsShareQuota
+    audit_proxy_test.go:29: Observed: 50 distinct forwarded clients reach validation; client 51 receives 429 from the shared proxy-peer quota.
+--- PASS: TestAuditProxyClientsShareQuota (0.00s)
+PASS
+ok  	rhythm/internal/httpapi	0.973s

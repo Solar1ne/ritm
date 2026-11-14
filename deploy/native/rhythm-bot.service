@@ -1,0 +1,35 @@
+[Unit]
+Description=Rhythm Telegram private command bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=rhythm
+Group=rhythm
+WorkingDirectory=/var/lib/rhythm
+EnvironmentFile=/etc/rhythm/app.env
+Environment=GOMEMLIMIT=64MiB
+Environment=GOMAXPROCS=1
+ExecStart=/opt/rhythm/current/rhythm-bot
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=45
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+LockPersonality=yes
+MemoryMax=128M
+TasksMax=32
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-10-17T08:33:48.108Z",
+  "fonts": [
+    {
+      "family": "Golos Text",
+      "status": "loaded"
+    },
+    {
+      "family": "Prata",
+      "status": "loaded"
+    }
+  ],
+  "fontResources": [
+    "http://127.0.0.1:8080/fonts/GolosText-variable.ttf",
+    "http://127.0.0.1:8080/fonts/Prata-Regular.ttf"
+  ],
+  "headingFont": "Prata, Georgia, \"Times New Roman\", serif",
+  "colors": {
+    "--bg": "#f5f3ed",
+    "--surface": "#fffefa",
+    "--ink": "#253832",
+    "--muted": "#637064",
+    "--accent": "#a14932",
+    "--forest": "#193c32"
+  },
+  "reducedMotion": true,
+  "buttonTransition": "0s",
+  "overflow": false,
+  "keyboardFocus": {
+    "focused": true,
+    "outline": "solid",
+    "width": "3px"
+  },
+  "textContrast": {
+    "bodyOnBackground": 11.196,
+    "secondaryOnBackground": 4.694,
+    "secondaryOnSurface": 5.161,
+    "primaryButton": 5.975,
+    "heroDescription": 7.796,
+    "darkSecondaryOnBackground": 8.388
+  }
+}

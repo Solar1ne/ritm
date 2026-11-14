@@ -1,0 +1,15 @@
+{
+  "health": {
+    "status": "ok",
+    "storage": "postgresql",
+    "telegramConfigured": false
+  },
+  "state": {
+    "ai": {
+      "configured": true,
+      "provider": "DeepSeek",
+      "model": "deepseek-flash"
+    },
+    "accountsEnabled": true
+  }
+}

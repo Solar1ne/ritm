@@ -1,0 +1,17 @@
+?   	rhythm/cmd/db	[no test files]
+ok  	rhythm/cmd/loadtest	(cached)
+?   	rhythm/cmd/rat	[no test files]
+?   	rhythm/cmd/server	[no test files]
+ok  	rhythm/internal/accounts	(cached)
+ok  	rhythm/internal/aicoach	(cached)
+ok  	rhythm/internal/assistant	(cached)
+ok  	rhythm/internal/calendar	(cached)
+ok  	rhythm/internal/filestore	0.893s
+ok  	rhythm/internal/httpapi	9.183s
+ok  	rhythm/internal/nutrition	(cached)
+ok  	rhythm/internal/openai	(cached)
+ok  	rhythm/internal/postgresstore	2.796s
+?   	rhythm/internal/rat	[no test files]
+ok  	rhythm/internal/rhythm	(cached)
+ok  	rhythm/internal/workoutimport	(cached)
+?   	rhythm/web	[no test files]

@@ -1,0 +1,71 @@
+// Audit reproduction only. Copy to .local/rat-audit-repro.go and run from the repository root.
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"os"
+	"time"
+
+	"rhythm/internal/rhythm"
+)
+
+type result struct {
+	Case    string   `json:"case"`
+	Before  int      `json:"currentWeekMinutes"`
+	After   int      `json:"proposedWeekMinutes"`
+	Mode    string   `json:"mode"`
+	Reasons []string `json:"reasons"`
+}
+
+func main() {
+	if err := run(); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
+}
+
+func run() error {
+	at := time.Date(2026, 10, 12, 12, 0, 0, 0, time.FixedZone("Moscow", 3*3600))
+	fatigue := 9
+	entry := rhythm.Entry{ID: "audit-fatigue", Date: "2026-10-12", Status: "wellbeing", Fatigue: &fatigue}
+	var rows []result
+	appendResult := func(name string, r rhythm.Record) {
+		p := rhythm.Project(r, at)
+		rows = append(rows, result{name, p.Plan.TotalMinutes, p.NextPlan.TotalMinutes, p.Decision.Mode, p.Decision.Reasons})
+	}
+	base := rhythm.Profile{Goal: "tone", Experience: "beginner", Days: []int{0}, Minutes: 15}
+	r, err := rhythm.SetProfileAt(rhythm.Blank(), 0, base, at)
+	if err != nil {
+		return err
+	}
+	base.Days, base.Minutes = []int{0, 1, 2, 3, 4}, 90
+	r, err = rhythm.SetProfileAt(r, r.Revision, base, at)
+	if err != nil {
+		return err
+	}
+	r, err = rhythm.AddEntry(r, r.Revision, entry, at)
+	if err != nil {
+		return err
+	}
+	appendResult("Increased profile after current week snapshot, fatigue 9/10", r)
+	base.Days, base.Minutes = []int{0, 2, 4}, 45
+	r, err = rhythm.SetProfileAt(rhythm.Blank(), 0, base, at)
+	if err != nil {
+		return err
+	}
+	for _, date := range []string{"2026-10-12", "2026-10-14", "2026-10-16"} {
+		r, err = rhythm.ApplySessionVariant(r, r.Revision, date, "home-mobility-v1", rhythm.SessionConstraints{AvailableMinutes: 15, Environment: "home", LowImpact: true}, at)
+		if err != nil {
+			return err
+		}
+	}
+	r, err = rhythm.AddEntry(r, r.Revision, entry, at)
+	if err != nil {
+		return err
+	}
+	appendResult("All current sessions shortened to 15 minutes, fatigue 9/10", r)
+	encoder := json.NewEncoder(os.Stdout)
+	encoder.SetIndent("", "  ")
+	return encoder.Encode(rows)
+}

@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-17",
+  "url": "https://176.119.147.97",
+  "account": "ritm.demo",
+  "data": "synthetic; not evidence of a real-user pilot",
+  "method": "Manual browser rehearsal through CUA, public HTTPS API verification, Go fixture invariant checks",
+  "freshAccountLogin": "passed",
+  "aiCheckin": {
+    "provider": "DeepSeek",
+    "liveRequest": true,
+    "prompt": "Сегодня спал 5,5 часа. Усталость 9 из 10. Запиши только самочувствие.",
+    "consentContextShown": true,
+    "draftNotAutosaved": true,
+    "draft": {"date": "2026-10-17", "status": "wellbeing", "sleep": 5.5, "fatigue": 9},
+    "confirmedAndSavedThroughUI": true,
+    "result": "passed"
+  },
+  "plan": {
+    "currentWeek": "2026-10-12",
+    "currentMinutes": 135,
+    "proposalWeek": "2026-10-19",
+    "proposalMinutes": 72,
+    "proposalSessions": 2,
+    "minutesPerSession": 36,
+    "acceptedThroughUI": true,
+    "acceptedPlanVisibleAfterReload": true,
+    "currentWeekUnchanged": true
+  },
+  "lab": {
+    "passed": 5,
+    "total": 5,
+    "scope": "Built-in deterministic scenarios only; not full combinatorial coverage or real-user evidence",
+    "scenarios": [
+      {"name": "Нужна передышка", "passed": true},
+      {"name": "Неделя пошла не по плану", "passed": true},
+      {"name": "Есть силы двигаться дальше", "passed": true},
+      {"name": "Всё сделал, но очень устал", "passed": true},
+      {"name": "Пока нет истории", "passed": true}
+    ]
+  },
+  "additionalAIExplanation": {
+    "provider": "DeepSeek",
+    "liveRequest": true,
+    "prompt": "Коротко объясни, какие последние отметки привели к предложению 72 минуты вместо 135. Назови даты и значения из дневника. Без медицинских выводов.",
+    "result": "partial_failure",
+    "factsAndCalculationCorrect": true,
+    "acceptedStatusCorrect": false,
+    "observedIncorrectText": "план ещё не принят",
+    "actualState": "Next week was already accepted and persisted across page reload",
+    "codeObservation": "buildAIContext emits both 'Предложение, ещё не принятое' and 'Отдельно принятый следующий план'",
+    "status": "open; no production code change made during demo account preparation"
+  },
+  "browserConsoleErrorsAtCheckedPoints": 0,
+  "fixtureChecks": ["ValidateArchive", "JSON round trip and Restore", "Restore refuses to overwrite an existing profile", "Maintain baseline 135 to 135", "Fatigue check-in changes proposal 135 to 72"],
+  "baselineRestoreEvidence": "baseline.json",
+  "notClaimed": ["full AI reliability", "all adaptive-plan combinations correct", "real-user pilot results", "Telegram bot integration", "load test or p95 latency"]
+}

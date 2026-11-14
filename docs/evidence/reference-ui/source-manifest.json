@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-10-17T04:35:30.277502+00:00",
+  "scope": "Reference-inspired frontend update. Application and tests. Original server Go source unchanged; historical load/RAT reports remain separate. No secrets or user data.",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "a2a14e24d118bdc116978c5a3d9a7cc79e85a41a7fd9c8cc4932979a79bf0d03"
+    },
+    {
+      "path": ".env.example",
+      "sha256": "c4ecb2aec6ae74b424956f25b9e98a1ee98b2092ef4b9f22ab835df3246b33a7"
+    },
+    {
+      "path": "Caddyfile",
+      "sha256": "4b3357ef4fd9f7df5eca0a9dd5d3cd63531476024ee8ee19edaaa9931cf93bc7"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "ed9f2a1ae4a0297c338a0394bd072593d106edf9297fbf0319b8526b38680ccc"
+    },
+    {
+      "path": "Makefile",
+      "sha256": "6e99c3ba01027bc0bc76f7cd170041a28b86eb1fc1efbe492061ef43b1a25c65"
+    },
+    {
+      "path": "cmd/loadtest/main.go",
+      "sha256": "b480a1b475f9fb5c693c2528608f477fcd15552ba36dec753303f85146616cbd"
+    },
+    {
+      "path": "cmd/loadtest/main_test.go",
+      "sha256": "cbbf95de1e91b9c5f909677d504bb37fba492cdda58aeca9c24ca5afcfe40e41"
+    },
+    {
+      "path": "cmd/rat/main.go",
+      "sha256": "fff9532f4b6595a07df4cd96be731d81584a8a63c10208eaf59295895cce6f4c"
+    },
+    {
+      "path": "cmd/server/main.go",
+      "sha256": "de6565b03b101208d19e359ddb314963e06a98247777f03fd87e010f908a1bb4"
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "fa26358f8a25b8632aed4b8fb99bf7bbe9a44e80d31b6e7e266f3ca3e4880b19"
+    },
+    {
+      "path": "go.mod",
+      "sha256": "d27cf4ba6b0e9cad16fe3c1e60c09b771131040f3fc8005120ee89acb7f957e1"
+    },
+    {
+      "path": "internal/filestore/store.go",
+      "sha256": "299dcb74436cb6d8f8e89f06b1987b898ba9cbba4ce36cb530ddb12f2fd68c8e"
+    },
+    {
+      "path": "internal/filestore/store_test.go",
+      "sha256": "5295174e9c2c7c818e45aad15be0414404ccddff48dc4a66e99b18e3b1ffb1de"
+    },
+    {
+      "path": "internal/httpapi/auth.go",
+      "sha256": "4ad90ffb7e39b579354256d053f105fb6e6721a1e13488f4e59d2f38c316a766"
+    },
+    {
+      "path": "internal/httpapi/server.go",
+      "sha256": "568c2e42fbce97f57dfdde5e482865714c01ef451c7f5d4db5e89e0e0bb0fac4"
+    },
+    {
+      "path": "internal/httpapi/server_test.go",
+      "sha256": "e19be01de03128d2088a79d0ddc85776563005e06181438014b3ef9d98d05b45"
+    },
+    {
+      "path": "internal/rat/cases.go",
+      "sha256": "c51f0474ae60b9d75f217ef6b5df0065b06de5393b6baad9a8da987a74bd8508"
+    },
+    {
+      "path": "internal/rhythm/rhythm.go",
+      "sha256": "50c4c06343729f15a29fd59fa66116fcd19fc7972437629c732db17ebb88bf2d"
+    },
+    {
+      "path": "internal/rhythm/rhythm_test.go",
+      "sha256": "1d932c6ee554458e52518df4ede3a34b6da4168dc91f09e537e1211fcca2ab5e"
+    },
+    {
+      "path": "package.json",
+      "sha256": "66e396aee17400b67ff9eef1012ffca104323c41c0e4021eeece3bb8d686fbea"
+    },
+    {
+      "path": "scripts/browser-check.mjs",
+      "sha256": "02219ccf7564ed5d0f299ea41c844cd67544fbf7dbc3de8c465b06401171c8f3"
+    },
+    {
+      "path": "web/embed.go",
+      "sha256": "553eff5f022f23488d4d716802027b521aba278ca11a323d87858d5ed99cbfdb"
+    },
+    {
+      "path": "web/static/api.js",
+      "sha256": "026c581d9db101ed1ce1735b9a8be813cca8b96968b85677240f08a4b14b4cba"
+    },
+    {
+      "path": "web/static/app.js",
+      "sha256": "a7e937c4b2a94bb29ba1f3afa29743ced2909bcc34c93550125a07c38516e309"
+    },
+    {
+      "path": "web/static/favicon.svg",
+      "sha256": "5ff61ffe9ab08833ac81e731b7dffd6c14c6a4b0dfb7636a6486c04d9b2dbe9f"
+    },
+    {
+      "path": "web/static/format.js",
+      "sha256": "9ab4bc2cca381ef44bc619ef69e568e9c77648dc61376d2ab25eea48129a1001"
+    },
+    {
+      "path": "web/static/icons.js",
+      "sha256": "4cdfb8144286e0ecdbcda81110c82396469c3627acd45df81fea7fba4c41ef48"
+    },
+    {
+      "path": "web/static/index.html",
+      "sha256": "790a40db86224e96943dcb4e6dd37a00403ab8f03b61f35e7ca8aafcca34cfc2"
+    },
+    {
+      "path": "web/static/progress.js",
+      "sha256": "ce4a597c7681031dea227316155dbd14440366279237b47c0873050d792656fa"
+    },
+    {
+      "path": "web/static/styles.css",
+      "sha256": "5b7870753ca5cf666b24a475ff14f5a87ddbe2db28b1a3e9870263ad936e9425"
+    },
+    {
+      "path": "web/static/telegram.js",
+      "sha256": "62f7a22908df8ab593fb9aba08820ebb6a7649123e6d77d0c9ae03aeaed3765c"
+    },
+    {
+      "path": "web/static/views.js",
+      "sha256": "3c9aed9bd742be18b87bfef6d6140534de4a3fcbc61c3661ed8051c7ad174ef4"
+    },
+    {
+      "path": "web/tests/format.test.js",
+      "sha256": "85798c3988bed00adbe20a750267ee6607aebfd95e3750ccfedaada9cbc68d06"
+    },
+    {
+      "path": "web/tests/progress.test.js",
+      "sha256": "f68b115c364833cd657ae0a782ec14e550fa3a9db85c91d02332b4db580a0fca"
+    }
+  ]
+}

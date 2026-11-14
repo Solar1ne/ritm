@@ -1,0 +1,24 @@
+
+> test
+> node --test web/tests/*.test.js
+
+✔ names cannot insert HTML through text or attribute contexts (1.217875ms)
+✔ calendar stays in Moscow across UTC midnight (20.607167ms)
+✔ Russian plural includes teens and compound numbers (0.187584ms)
+✔ backfilled observations do not replace the latest wellbeing (0.179875ms)
+✔ missing observations stay unknown rather than lowering the average (2.134708ms)
+✔ multiple observations on one day count once with independent latest signals (1.405625ms)
+✔ zero hours is a recorded value and never treated as missing (0.115792ms)
+✔ period boundaries exclude future and old records across month/year changes (0.178042ms)
+✔ corrected or repeated sessions do not inflate completed count (0.136583ms)
+✔ empty account does not display invented history or progress (28.127875ms)
+✔ today focus distinguishes rest, planned, completed and missed sessions (3.190334ms)
+✔ month history never invents historical duration using the current profile (3.359875ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 172.758875

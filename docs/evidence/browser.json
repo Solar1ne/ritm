@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-10-17T04:19:06.943Z",
+  "scope": "Isolated Chromium UI fixtures on local server; Telegram SDK mocked, not a live Telegram launch",
+  "date": "2026-10-17",
+  "checks": [
+    {
+      "name": "Desktop 1440px: explicit example, no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Profile form creates real persisted baseline: 3 × 45 minutes",
+      "passed": true
+    },
+    {
+      "name": "Check-in sleep5/fatigue9 persists after reload, proposes72 and preserves135 baseline",
+      "passed": true
+    },
+    {
+      "name": "Current/next tabs and actual session completion work",
+      "passed": true
+    },
+    {
+      "name": "Five live API laboratory scenarios pass without changing diary",
+      "passed": true
+    },
+    {
+      "name": "Journal, progress and explanation routes render without overflow",
+      "passed": true
+    },
+    {
+      "name": "503 leaves server unchanged; scoped draft survives reload and retries",
+      "passed": true
+    },
+    {
+      "name": "Lost response reconciles idempotency conflict before explicit corrected write",
+      "passed": true
+    },
+    {
+      "name": "Pending mutation prevents Escape, edits and concurrent submissions",
+      "passed": true
+    },
+    {
+      "name": "JSON export downloads current own data",
+      "passed": true
+    },
+    {
+      "name": "Mobile390px: all routes fit, bottom navigation and dialog work",
+      "passed": true
+    },
+    {
+      "name": "Telegram auth failure/retry never falls back to another cookie identity (SDK fixture only)",
+      "passed": true
+    },
+    {
+      "name": "Shared cookie identity switch is blocked before cross-account write",
+      "passed": true
+    },
+    {
+      "name": "Explicit delete clears own profile and diary",
+      "passed": true
+    },
+    {
+      "name": "No uncaught browser JavaScript errors",
+      "passed": true
+    }
+  ],
+  "pageErrors": []
+}

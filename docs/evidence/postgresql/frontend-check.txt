@@ -1,0 +1,4 @@
+
+> check
+> node --check web/static/account.js && node --check web/static/app.js && node --check web/static/views.js && node --check web/static/features.js && node --check web/static/api.js && node --check web/static/progress.js && node --check web/static/telegram.js && node --check web/static/coach.js && node --check web/static/variants.js && node --check web/static/activity-metrics.js && node --check web/static/wellness.js && node --check web/static/measurements.js && node --check web/static/nutrition.js && node --check web/static/nutrition-data.js
+

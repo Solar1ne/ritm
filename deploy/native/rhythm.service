@@ -1,0 +1,39 @@
+[Unit]
+Description=Rhythm web application
+After=network-online.target postgresql@16-main.service
+Wants=network-online.target
+Requires=postgresql@16-main.service
+
+[Service]
+Type=simple
+User=rhythm
+Group=rhythm
+WorkingDirectory=/var/lib/rhythm
+EnvironmentFile=/etc/rhythm/app.env
+Environment=GOMEMLIMIT=128MiB
+Environment=GOMAXPROCS=1
+ExecStart=/opt/rhythm/current/rhythm
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+StateDirectory=rhythm
+StateDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+LockPersonality=yes
+MemoryHigh=192M
+MemoryMax=256M
+TasksMax=128
+
+[Install]
+WantedBy=multi-user.target

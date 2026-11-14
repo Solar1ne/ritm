@@ -1,0 +1,31 @@
+
+> test
+> node --test web/tests/*.test.js
+
+✔ a delayed response from a previous account cannot replace the current binding (2.104542ms)
+✔ a session reset during JSON decoding also discards the stale binding (0.277917ms)
+✔ a failed calendar download preserves the structured authorization error (0.207542ms)
+✔ calendar content from a previous account is discarded while its body is loading (0.438167ms)
+✔ notifications require separate consent and include a next-week alarm on Sunday (21.296333ms)
+✔ permission result arriving after account reset cannot enable reminders for the new account (0.386416ms)
+✔ reading week history does not leave an in-flight assistant question permanently busy (1.181833ms)
+✔ names cannot insert HTML through text or attribute contexts (1.542042ms)
+✔ calendar stays in Moscow across UTC midnight (18.903458ms)
+✔ Russian plural includes teens and compound numbers (0.205875ms)
+✔ backfilled observations do not replace the latest wellbeing (0.37075ms)
+✔ missing observations stay unknown rather than lowering the average (2.576125ms)
+✔ multiple observations on one day count once with independent latest signals (1.453125ms)
+✔ zero hours is a recorded value and never treated as missing (0.126708ms)
+✔ period boundaries exclude future and old records across month/year changes (0.1885ms)
+✔ corrected or repeated sessions do not inflate completed count (0.148208ms)
+✔ empty account does not display invented history or progress (26.218458ms)
+✔ today focus distinguishes rest, planned, completed and missed sessions (3.919458ms)
+✔ month history never invents historical duration using the current profile (4.031542ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 180.557583

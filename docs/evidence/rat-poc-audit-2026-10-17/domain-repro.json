@@ -1,0 +1,22 @@
+[
+  {
+    "case": "Increased profile after current week snapshot, fatigue 9/10",
+    "currentWeekMinutes": 15,
+    "proposedWeekMinutes": 288,
+    "mode": "recover",
+    "reasons": [
+      "Последняя отметка усталости (2026-10-12) — 9 из 10 (порог: 8).",
+      "Восстановление имеет приоритет: на одно занятие меньше (минимум одно), длительность на 20% меньше (минимум 15 минут)."
+    ]
+  },
+  {
+    "case": "All current sessions shortened to 15 minutes, fatigue 9/10",
+    "currentWeekMinutes": 45,
+    "proposedWeekMinutes": 72,
+    "mode": "recover",
+    "reasons": [
+      "Последняя отметка усталости (2026-10-12) — 9 из 10 (порог: 8).",
+      "Восстановление имеет приоритет: на одно занятие меньше (минимум одно), длительность на 20% меньше (минимум 15 минут)."
+    ]
+  }
+]

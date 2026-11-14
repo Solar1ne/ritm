@@ -1,0 +1,186 @@
+{
+  "backupAgesSimulated": true,
+  "gooseV1": [
+    {
+      "id": 1,
+      "is_applied": true,
+      "tstamp": "2026-11-14T10:43:38.065146",
+      "version_id": 0
+    },
+    {
+      "id": 2,
+      "is_applied": true,
+      "tstamp": "2026-11-14T10:43:38.06882",
+      "version_id": 1
+    }
+  ],
+  "gooseV2": [
+    {
+      "id": 1,
+      "is_applied": true,
+      "tstamp": "2026-11-14T10:43:38.065146",
+      "version_id": 0
+    },
+    {
+      "id": 2,
+      "is_applied": true,
+      "tstamp": "2026-11-14T10:43:38.06882",
+      "version_id": 1
+    },
+    {
+      "id": 3,
+      "is_applied": true,
+      "tstamp": "2026-11-14T10:43:38.492602",
+      "version_id": 2
+    }
+  ],
+  "index": "CREATE INDEX rhythm_diaries_updated_at ON public.rhythm_diaries USING btree (updated_at)",
+  "legacyLedger": [
+    {
+      "applied_at": "2026-11-14T13:43:38.06882+03:00",
+      "checksum": "bf56b448909735999163e4596e7fb4e1bb082ce48ff2fd237a3c474226256059",
+      "version": 1
+    }
+  ],
+  "passed": true,
+  "postgresMajor": 16,
+  "pruneApplied": {
+    "applied": true,
+    "delete": [
+      "rhythm-20261104T104339Z.dump"
+    ],
+    "freshVerifiedCopy": true,
+    "ignored": [],
+    "keep": [
+      "rhythm-20261114T104339Z.dump",
+      "rhythm-20261106T104339Z.dump"
+    ],
+    "keepLast": 2,
+    "operation": "prune",
+    "retentionDays": 7
+  },
+  "prunePreview": {
+    "applied": false,
+    "delete": [
+      "rhythm-20261104T104339Z.dump"
+    ],
+    "freshVerifiedCopy": true,
+    "ignored": [],
+    "keep": [
+      "rhythm-20261114T104339Z.dump",
+      "rhythm-20261106T104339Z.dump"
+    ],
+    "keepLast": 2,
+    "operation": "prune",
+    "retentionDays": 7
+  },
+  "recordsAfter": [
+    {
+      "entry": "quest-sleep-a",
+      "fatigue": 4,
+      "login": "quest7.a",
+      "revision": 3,
+      "sleep": 6.5
+    },
+    {
+      "entry": "quest-sleep-b",
+      "fatigue": 9,
+      "login": "quest7.b",
+      "revision": 7,
+      "sleep": 5.5
+    }
+  ],
+  "recordsBefore": [
+    {
+      "entry": "quest-sleep-a",
+      "fatigue": 4,
+      "login": "quest7.a",
+      "revision": 3,
+      "sleep": 6.5
+    },
+    {
+      "entry": "quest-sleep-b",
+      "fatigue": 9,
+      "login": "quest7.b",
+      "revision": 7,
+      "sleep": 5.5
+    }
+  ],
+  "repeatUnchanged": true,
+  "restore": {
+    "assertionsPassed": true,
+    "cleaned": true,
+    "created": true,
+    "database": "rhythm_restore_test_quest7",
+    "elapsedSeconds": 0.688,
+    "operation": "restore-drill",
+    "restored": true
+  },
+  "restoredRecords": [
+    {
+      "entry": "quest-sleep-a",
+      "fatigue": 4,
+      "login": "quest7.a",
+      "revision": 3,
+      "sleep": 6.5
+    },
+    {
+      "entry": "quest-sleep-b",
+      "fatigue": 9,
+      "login": "quest7.b",
+      "revision": 7,
+      "sleep": 5.5
+    }
+  ],
+  "statusEmpty": {
+    "currentVersion": 0,
+    "legacy": false,
+    "targetVersion": 2,
+    "versions": [
+      {
+        "name": "001_initial.sql",
+        "state": "pending",
+        "version": 1
+      },
+      {
+        "name": "002_diaries_updated_at_index.sql",
+        "state": "pending",
+        "version": 2
+      }
+    ]
+  },
+  "statusV2": {
+    "currentVersion": 2,
+    "legacy": false,
+    "targetVersion": 2,
+    "versions": [
+      {
+        "appliedAt": "2026-11-14T10:43:38.06882Z",
+        "name": "001_initial.sql",
+        "state": "applied",
+        "version": 1
+      },
+      {
+        "appliedAt": "2026-11-14T10:43:38.492602Z",
+        "name": "002_diaries_updated_at_index.sql",
+        "state": "applied",
+        "version": 2
+      }
+    ]
+  },
+  "tables": [
+    "goose_db_version",
+    "rhythm_accounts",
+    "rhythm_diaries",
+    "rhythm_identities",
+    "rhythm_imports",
+    "rhythm_legacy_revocations",
+    "rhythm_metadata",
+    "rhythm_schema_migrations",
+    "rhythm_sessions"
+  ],
+  "verifiedKept": [
+    "rhythm-20261106T104339Z.dump",
+    "rhythm-20261114T104339Z.dump"
+  ]
+}

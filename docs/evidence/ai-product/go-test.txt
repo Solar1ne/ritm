@@ -1,0 +1,14 @@
+ok  	rhythm/cmd/loadtest	(cached)	coverage: 82.1% of statements
+	rhythm/cmd/rat		coverage: 0.0% of statements
+	rhythm/cmd/server		coverage: 0.0% of statements
+ok  	rhythm/internal/aicoach	(cached)	coverage: 95.4% of statements
+ok  	rhythm/internal/assistant	(cached)	coverage: 95.4% of statements
+ok  	rhythm/internal/calendar	(cached)	coverage: 99.0% of statements
+ok  	rhythm/internal/filestore	(cached)	coverage: 71.2% of statements
+ok  	rhythm/internal/httpapi	13.153s	coverage: 87.9% of statements
+ok  	rhythm/internal/nutrition	(cached)	coverage: 98.1% of statements
+ok  	rhythm/internal/openai	(cached)	coverage: 89.6% of statements
+	rhythm/internal/rat		coverage: 0.0% of statements
+ok  	rhythm/internal/rhythm	(cached)	coverage: 91.0% of statements
+ok  	rhythm/internal/workoutimport	(cached)	coverage: 93.8% of statements
+?   	rhythm/web	[no test files]

@@ -1,0 +1,47 @@
+Building for debugging...
+[0/7] /tmp/rhythm-ios-v1-build/arm64-apple-macosx/debug/RhythmCorePackageTests.derived/runner.swift
+[1/7] Write sources
+[4/7] Write swift-version--1AB21518FC5DEDBE.txt
+[6/11] Compiling RhythmCore Models.swift
+[7/11] Emitting module RhythmCore
+[8/11] Compiling RhythmCore AppModel.swift
+[9/11] Compiling RhythmCore APIClient.swift
+[10/13] Compiling RhythmCoreTests APIClientTests.swift
+[11/13] Emitting module RhythmCoreTests
+[12/15] Emitting module RhythmCorePackageTests
+[13/15] Compiling RhythmCorePackageTests runner.swift
+[13/15] Write Objects.LinkFileList
+[14/15] Linking RhythmCorePackageTests
+Build complete! (72.46s)
+◇ Test run started.
+↳ Testing Library Version: 124.4
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite APIClientTests started.
+◇ Test testHTTPSOnly() started.
+✔ Test testHTTPSOnly() passed after 0.002 seconds.
+◇ Test testNullableNewAccountAndBindingRevisionContract() started.
+✔ Test testNullableNewAccountAndBindingRevisionContract() passed after 0.017 seconds.
+◇ Test testLoginDoesNotSendOldBinding() started.
+✔ Test testLoginDoesNotSendOldBinding() passed after 0.001 seconds.
+◇ Test testSessionErrorAndConflictDecodedWithoutRetry() started.
+✔ Test testSessionErrorAndConflictDecodedWithoutRetry() passed after 0.001 seconds.
+◇ Test testInvalidJSONRejected() started.
+✔ Test testInvalidJSONRejected() passed after 0.001 seconds.
+◇ Test testAcceptSendsReviewedTokenAndRevision() started.
+✔ Test testAcceptSendsReviewedTokenAndRevision() passed after 0.001 seconds.
+◇ Test testTransportFailureCannotSaveOptimistically() started.
+✔ Test testTransportFailureCannotSaveOptimistically() passed after 0.003 seconds.
+◇ Test testCookieAndBindingTravelTogether() started.
+✔ Test testCookieAndBindingTravelTogether() passed after 0.001 seconds.
+◇ Test testAccountDeletionClearsStateOnlyAfterConfirmation() started.
+✔ Test testAccountDeletionClearsStateOnlyAfterConfirmation() passed after 0.001 seconds.
+◇ Test testFailedAccountDeletionRetainsState() started.
+✔ Test testFailedAccountDeletionRetainsState() passed after 0.001 seconds.
+◇ Test testAccountDeletionKeepsReviewedRevisionAfterRefresh() started.
+✔ Test testAccountDeletionKeepsReviewedRevisionAfterRefresh() passed after 0.001 seconds.
+◇ Test testAccountDeletionReviewCannotCrossAnIdentityChange() started.
+✔ Test testAccountDeletionReviewCannotCrossAnIdentityChange() passed after 0.001 seconds.
+◇ Test testFailedMutationRequiresRefreshAndDoesNotChangeState() started.
+✔ Test testFailedMutationRequiresRefreshAndDoesNotChangeState() passed after 0.001 seconds.
+✔ Suite APIClientTests passed after 0.031 seconds.
+✔ Test run with 13 tests passed after 0.031 seconds.

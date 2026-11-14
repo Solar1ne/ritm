@@ -1,0 +1,19 @@
+{
+  "base": "https://176.119.147.97",
+  "phase": "restart",
+  "checks": [
+    {
+      "name": "Existing session and saved diary survive application and database restart",
+      "passed": true
+    },
+    {
+      "name": "Fresh login retrieves the persistent account",
+      "passed": true
+    },
+    {
+      "name": "Logout isolates the previous account from the new guest",
+      "passed": true
+    }
+  ],
+  "aiSeconds": 3.7
+}

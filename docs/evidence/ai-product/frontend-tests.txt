@@ -1,0 +1,63 @@
+
+> test
+> node --test web/tests/*.test.js
+
+✔ running summary includes every recorded minute but weights pace only by positive measured distance (21.268292ms)
+✔ missing, null and recorded zero distances remain distinct from measured pace (0.31675ms)
+✔ 30 calendar days are inclusive and use the supplied server day across year and leap boundaries (0.223ms)
+✔ an unavailable server date never falls back to the device clock (0.135916ms)
+✔ invalid observations and other activity types cannot introduce NaN, Infinity or fake running totals (0.341583ms)
+✔ per-run pace and display use recorded minutes and round seconds without a 60-second component (0.141208ms)
+✔ activities render a labelled 30-day summary and per-run pace without inventing missing distance (40.695166ms)
+✔ empty and zero-distance activity summaries show honest missing pace (1.155334ms)
+✔ a delayed response from a previous account cannot replace the current binding (2.695791ms)
+✔ a session reset during JSON decoding also discards the stale binding (0.274375ms)
+✔ a failed calendar download preserves the structured authorization error (0.218708ms)
+✔ calendar content from a previous account is discarded while its body is loading (3.797167ms)
+✔ AI context preview does not call provider until separate checked consent (86.909083ms)
+✔ late AI response is discarded after account reset; all model strings are escaped (1.178292ms)
+✔ AI draft is never saved automatically and confirmation retains reviewed revision (2.802875ms)
+✔ a stale AI draft cannot write over a changed diary (0.686542ms)
+✔ late context preview cannot replace another dialog or a different page (0.703833ms)
+✔ a new date invalidates yesterday’s AI answer even without a revision change (0.503917ms)
+✔ after a conflicted draft, retained edits can be reviewed with the reconciled diary without another AI call (0.619667ms)
+✔ notifications require separate consent and include a next-week alarm on Sunday (36.154041ms)
+✔ permission result arriving after account reset cannot enable reminders for the new account (0.294166ms)
+✔ reading week history does not leave an in-flight assistant question permanently busy (3.290541ms)
+✔ names cannot insert HTML through text or attribute contexts (1.7025ms)
+✔ calendar stays in Moscow across UTC midnight (41.205875ms)
+✔ Russian plural includes teens and compound numbers (0.25025ms)
+✔ backfilled observations do not replace the latest wellbeing (0.236458ms)
+✔ HRV comparisons never merge different metrics, windows or sources (24.8035ms)
+✔ body series keeps measurement methods separate and owns its returned data (0.263459ms)
+✔ a 30-day period includes its first day, excludes future and malformed dates (4.6505ms)
+✔ unknown and nonfinite values do not enter trends or become zero (0.33375ms)
+✔ body composition is derived only from one complete measurement, never stitched across dates (0.256916ms)
+✔ out-of-range records and missing series context cannot create misleading comparisons (0.16725ms)
+✔ nutrition filters combine diet, cooking time, meal and every excluded allergen (3.16925ms)
+✔ shopping list counts repeated servings without adding unlike quantities (23.184625ms)
+✔ unknown recipes fail explicitly rather than silently omitting shopping items (0.47925ms)
+✔ weekly preview uses visible unsaved filters and never persists without confirmation (97.110542ms)
+✔ stale weekly consent and changed identity cannot save the prepared menu (1.880916ms)
+✔ late preview cannot overwrite a different dialog or an account reset (0.610208ms)
+✔ missing observations stay unknown rather than lowering the average (7.389166ms)
+✔ multiple observations on one day count once with independent latest signals (2.304292ms)
+✔ zero hours is a recorded value and never treated as missing (0.18875ms)
+✔ period boundaries exclude future and old records across month/year changes (0.256959ms)
+✔ corrected or repeated sessions do not inflate completed count (0.184042ms)
+✔ empty account does not display invented history or progress (40.774125ms)
+✔ today focus distinguishes rest, planned, completed and missed sessions (6.246291ms)
+✔ month history never invents historical duration using the current profile (6.30175ms)
+✔ new measurements require explicit metric/window/method and do not invent defaults (44.801916ms)
+✔ adding an existing body measurement cannot silently erase its missing component (17.689083ms)
+✔ replacement consent is bound to exactly the reviewed fields (0.494333ms)
+✔ account reset and stale revision cannot submit a retained measurement command (0.218583ms)
+✔ device labels are escaped and incompatible series never appear together (7.008209ms)
+ℹ tests 51
+ℹ suites 0
+ℹ pass 51
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 627.400667

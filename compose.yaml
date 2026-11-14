@@ -1,0 +1,71 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: rhythm
+      POSTGRES_USER: rhythm_owner
+      POSTGRES_PASSWORD: "${POSTGRES_ADMIN_PASSWORD:?Set a unique POSTGRES_ADMIN_PASSWORD in .env}"
+      RHYTHM_APP_PASSWORD: "${POSTGRES_PASSWORD:?Set a unique POSTGRES_PASSWORD in .env}"
+    volumes:
+      - rhythm-postgres:/var/lib/postgresql/data
+      - ./deploy/postgres-init.sh:/docker-entrypoint-initdb.d/10-rhythm.sh:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U rhythm_owner -d rhythm"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  migrate:
+    build: .
+    entrypoint: [/rhythm-db]
+    command: [migrate]
+    environment:
+      DATABASE_URL: "postgres://rhythm_app@db:5432/rhythm?sslmode=disable"
+      PGPASSWORD: "${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}"
+    depends_on:
+      db:
+        condition: service_healthy
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      ADDR: ":8080"
+      DATA_DIR: /data
+      DATABASE_URL: "postgres://rhythm_app@db:5432/rhythm?sslmode=disable"
+      PGPASSWORD: "${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}"
+      PUBLIC_URL: "https://${RHYTHM_DOMAIN:?Set RHYTHM_DOMAIN in .env}"
+      TELEGRAM_BOT_TOKEN: "${TELEGRAM_BOT_TOKEN:-}"
+      AI_PROVIDER: "${AI_PROVIDER:-}"
+      DEEPSEEK_API_KEY: "${DEEPSEEK_API_KEY:-}"
+      DEEPSEEK_MODEL: "${DEEPSEEK_MODEL:-deepseek-flash}"
+      OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
+      OPENAI_MODEL: "${OPENAI_MODEL:-gpt-4.1-mini}"
+      AI_TIMEOUT_SECONDS: "${AI_TIMEOUT_SECONDS:-}"
+      AI_HOURLY_LIMIT: "${AI_HOURLY_LIMIT:-60}"
+    volumes:
+      - rhythm-data:/data
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  proxy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    environment:
+      RHYTHM_DOMAIN: "${RHYTHM_DOMAIN:?Set RHYTHM_DOMAIN in .env}"
+    ports: ["80:80", "443:443", "443:443/udp"]
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on: [app]
+volumes:
+  rhythm-data:
+  rhythm-postgres:
+  caddy-data:
+  caddy-config:

@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-10-17T11:53:57.337022+00:00",
+  "url": "http://127.0.0.1:8080/api/health",
+  "status": 200,
+  "health": {
+    "status": "ok",
+    "storage": "postgresql",
+    "telegramConfigured": false
+  }
+}

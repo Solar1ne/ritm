@@ -1,0 +1,71 @@
+{
+  "scope": "Local Go and JavaScript regression; no live AI in unit tests; SQL integration requires a separate DSN and is exercised separately in the live browser smoke.",
+  "checks": [
+    {
+      "command": [
+        "go",
+        "test",
+        "-race",
+        "./..."
+      ],
+      "exitCode": 0,
+      "durationSeconds": 58.722,
+      "evidence": "go-test-race.txt"
+    },
+    {
+      "command": [
+        "go",
+        "vet",
+        "./..."
+      ],
+      "exitCode": 0,
+      "durationSeconds": 0.626,
+      "evidence": "go-vet.txt"
+    },
+    {
+      "command": [
+        "/Users/alexlepekhov/go/bin/staticcheck",
+        "./..."
+      ],
+      "exitCode": 0,
+      "durationSeconds": 0.486,
+      "evidence": "staticcheck.txt"
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "durationSeconds": 0.734,
+      "evidence": "frontend-tests.txt"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exitCode": 0,
+      "durationSeconds": 1.387,
+      "evidence": "frontend-check.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/test_dev.py"
+      ],
+      "exitCode": 0,
+      "durationSeconds": 0.18,
+      "evidence": "native-config-tests.txt"
+    }
+  ],
+  "additionalChecks": {
+    "composeConfig": "PASS with synthetic passwords; no containers started",
+    "gofmt": "PASS: no files reported",
+    "secretScan": "PASS: provided key absent from 446 non-private project files; .local is excluded",
+    "privateConfigurationMode": "0600",
+    "mainSite": "8080: PostgreSQL and DeepSeek configured, accounts enabled; see runtime.json",
+    "qaServer": "18081 stopped after verification; synthetic profiles cleared"
+  }
+}

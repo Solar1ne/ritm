@@ -1,0 +1,48 @@
+=== RUN   TestAIDisabledDoesNotBlockDiaryOrRules
+--- PASS: TestAIDisabledDoesNotBlockDiaryOrRules (0.03s)
+=== RUN   TestAIHTTPBreakerUsesOnlyAuthorizedRecoveryProbes
+--- PASS: TestAIHTTPBreakerUsesOnlyAuthorizedRecoveryProbes (0.02s)
+=== RUN   TestAbsentAndTamperedSessions
+--- PASS: TestAbsentAndTamperedSessions (0.00s)
+=== RUN   TestTelegramAuthStableIsolatedAndNoGuestMerge
+--- PASS: TestTelegramAuthStableIsolatedAndNoGuestMerge (0.02s)
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates/tampered
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates/expired
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates/future
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates/duplicate
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates/zero_id
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates/negative_id
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates/huge_id
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates/bot
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates/missing_hash
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates/invalid_encoding
+=== RUN   TestTelegramRejectsInvalidSignaturesAndDates/oversized
+--- PASS: TestTelegramRejectsInvalidSignaturesAndDates (0.00s)
+    --- PASS: TestTelegramRejectsInvalidSignaturesAndDates/tampered (0.00s)
+    --- PASS: TestTelegramRejectsInvalidSignaturesAndDates/expired (0.00s)
+    --- PASS: TestTelegramRejectsInvalidSignaturesAndDates/future (0.00s)
+    --- PASS: TestTelegramRejectsInvalidSignaturesAndDates/duplicate (0.00s)
+    --- PASS: TestTelegramRejectsInvalidSignaturesAndDates/zero_id (0.00s)
+    --- PASS: TestTelegramRejectsInvalidSignaturesAndDates/negative_id (0.00s)
+    --- PASS: TestTelegramRejectsInvalidSignaturesAndDates/huge_id (0.00s)
+    --- PASS: TestTelegramRejectsInvalidSignaturesAndDates/bot (0.00s)
+    --- PASS: TestTelegramRejectsInvalidSignaturesAndDates/missing_hash (0.00s)
+    --- PASS: TestTelegramRejectsInvalidSignaturesAndDates/invalid_encoding (0.00s)
+    --- PASS: TestTelegramRejectsInvalidSignaturesAndDates/oversized (0.00s)
+=== RUN   TestSessionBindingBlocksCrossTabIdentityChanges
+=== RUN   TestSessionBindingBlocksCrossTabIdentityChanges/profile
+=== RUN   TestSessionBindingBlocksCrossTabIdentityChanges/entry
+=== RUN   TestSessionBindingBlocksCrossTabIdentityChanges/reset
+=== RUN   TestSessionBindingBlocksCrossTabIdentityChanges/export
+=== RUN   TestSessionBindingBlocksCrossTabIdentityChanges/state_refresh
+--- PASS: TestSessionBindingBlocksCrossTabIdentityChanges (0.02s)
+    --- PASS: TestSessionBindingBlocksCrossTabIdentityChanges/profile (0.00s)
+    --- PASS: TestSessionBindingBlocksCrossTabIdentityChanges/entry (0.00s)
+    --- PASS: TestSessionBindingBlocksCrossTabIdentityChanges/reset (0.00s)
+    --- PASS: TestSessionBindingBlocksCrossTabIdentityChanges/export (0.00s)
+    --- PASS: TestSessionBindingBlocksCrossTabIdentityChanges/state_refresh (0.00s)
+=== RUN   TestAmbiguousSessionCookiesAreRejected
+--- PASS: TestAmbiguousSessionCookiesAreRejected (0.00s)
+PASS
+ok  	rhythm/internal/httpapi	2.762s

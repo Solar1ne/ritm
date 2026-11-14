@@ -1,0 +1,23 @@
+{
+  "base": "https://176.119.147.97",
+  "phase": "create",
+  "checks": [
+    {
+      "name": "HTTPS session is Secure/HttpOnly; PostgreSQL accounts and DeepSeek configured",
+      "passed": true
+    },
+    {
+      "name": "Registration atomically retains a synthetic profile and diary entry",
+      "passed": true
+    },
+    {
+      "name": "Cross-origin mutation is rejected",
+      "passed": true
+    },
+    {
+      "name": "One real DeepSeek response from VPS; synthetic data only; no diary mutation",
+      "passed": true
+    }
+  ],
+  "aiSeconds": 3.7
+}

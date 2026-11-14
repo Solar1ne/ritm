@@ -1,0 +1,12 @@
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name __RHYTHM_HOST__;
+    server_tokens off;
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/lib/rhythm-acme;
+        default_type text/plain;
+        try_files $uri =404;
+    }
+    location / { return 503; }
+}

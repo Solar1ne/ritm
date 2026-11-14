@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-10-17T06:00:15.048319+00:00",
+  "commands": [
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go test -race -coverprofile=docs/evidence/ai-product/coverage.out ./...",
+      "exitCode": 0,
+      "output": "go-test.txt"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go vet ./...",
+      "exitCode": 0,
+      "output": "go-vet.txt"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache STATICCHECK_CACHE=/tmp/rhythm-staticcheck-cache staticcheck ./...",
+      "exitCode": 0,
+      "output": "staticcheck.txt"
+    },
+    {
+      "command": "gofmt -l cmd internal web",
+      "exitCode": 0,
+      "output": "gofmt.txt"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go build -o /tmp/rhythm-ai-server ./cmd/server",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": "frontend-check.txt"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "output": "frontend-tests.txt"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go run ./cmd/rat -json",
+      "exitCode": 0,
+      "output": "rat.json"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go run ./cmd/loadtest -url http://127.0.0.1:8080 -rps 10 -duration 30s -output docs/evidence/ai-product/http-load.json",
+      "exitCode": 0,
+      "output": "http-load.json"
+    },
+    {
+      "command": "PLAYWRIGHT_MODULE=/Users/alexlepekhov/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright node scripts/ai-product-check.mjs",
+      "exitCode": 0,
+      "output": "browser.json"
+    },
+    {
+      "command": "RHYTHM_EVIDENCE_DIR=docs/evidence/ai-product/regression PLAYWRIGHT_MODULE=/Users/alexlepekhov/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright node scripts/browser-check.mjs",
+      "exitCode": 0,
+      "output": "regression/browser.json"
+    },
+    {
+      "command": "RHYTHM_EVIDENCE_DIR=docs/evidence/ai-product/regression PLAYWRIGHT_MODULE=/Users/alexlepekhov/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright node scripts/full-product-check.mjs",
+      "exitCode": 0,
+      "output": "regression/full-product-browser.json"
+    },
+    {
+      "command": "PLAYWRIGHT_MODULE=/Users/alexlepekhov/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright RHYTHM_URL=http://127.0.0.1:8080 node scripts/wellness-nutrition-check.mjs",
+      "exitCode": 0,
+      "output": "wellness/browser.json"
+    },
+    {
+      "command": "node --check scripts/wellness-nutrition-check.mjs",
+      "exitCode": 0
+    }
+  ],
+  "summary": {
+    "javascriptTests": 51,
+    "browserChecksByReport": {
+      "browser.json": 10,
+      "regression/browser.json": 20,
+      "regression/full-product-browser.json": 13,
+      "wellness/browser.json": 10
+    },
+    "browserChecks": 53,
+    "ratCases": 16,
+    "criticalRATCases": 5,
+    "httpSuccessfulRequests": 300,
+    "httpErrors": 0
+  },
+  "scope": "Local synthetic accounts and measurements. AI response bodies and Telegram SDK are fixtures; the OpenAI HTTP adapter is tested against local test servers, not a live provider. No third-party personal data transmission or public deployment was performed.",
+  "finalVersion": "Full race run covers final Go sources and the small-positive-value regression. After all suite results, a CSS-only correction made the measurement add button a nonshrinking 44px mobile touch target. The wellness/nutrition browser suite was rerun with an explicit 44px assertion at 320px and 390px, and the binary was rebuilt. Other production sources are unchanged from their final recorded checks; subsequent changes are documentation.",
+  "priorAttempts": {
+    "failure.png": "Earlier AI browser attempt before correcting the test import flow; not current acceptance evidence.",
+    "wellness/browser-attempt-1.json": "Initial wellness run detected 320px header overflow, fixed and rechecked.",
+    "wellness/failure.png": "Image from the earlier layout failure.",
+    "wellness/overflow-wellness-320-before.png": "Pre-fix layout evidence."
+  },
+  "externalChecksPending": [
+    "Live OpenAI response with owner-configured server key and synthetic data",
+    "Public HTTPS and actual Telegram bot launch",
+    "Comparative user study and expert validation; scores and health outcomes are not established"
+  ]
+}

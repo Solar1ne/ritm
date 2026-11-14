@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-10-17T05:04:41.153817+00:00",
+  "commands": [
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go test -race -coverprofile=docs/evidence/full-product/coverage.out ./...",
+      "exitCode": 0,
+      "output": "go-test.txt"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go vet ./...",
+      "exitCode": 0,
+      "output": "go-vet.txt"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache STATICCHECK_CACHE=/tmp/rhythm-staticcheck-cache staticcheck ./...",
+      "exitCode": 0,
+      "output": "staticcheck.txt"
+    },
+    {
+      "command": "gofmt -l cmd internal web",
+      "exitCode": 0,
+      "output": "gofmt.txt",
+      "unformattedFiles": []
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go build -o /tmp/rhythm-final ./cmd/server",
+      "exitCode": 0
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "output": "frontend-tests.txt"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": "frontend-check.txt"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go run ./cmd/rat -json",
+      "exitCode": 0,
+      "output": "rat.json"
+    },
+    {
+      "command": "GOCACHE=/tmp/rhythm-go-cache go run ./cmd/loadtest -url http://127.0.0.1:8080 -rps 10 -duration 30s -output docs/evidence/full-product/http-load.json",
+      "exitCode": 0,
+      "output": "http-load.json"
+    },
+    {
+      "command": "PLAYWRIGHT_MODULE=<bundled-playwright> RHYTHM_EVIDENCE_DIR=docs/evidence/full-product node scripts/browser-check.mjs",
+      "exitCode": 0,
+      "output": "browser.json"
+    },
+    {
+      "command": "PLAYWRIGHT_MODULE=<bundled-playwright> node scripts/full-product-check.mjs",
+      "exitCode": 0,
+      "output": "full-product-browser.json"
+    }
+  ],
+  "scope": "Isolated local synthetic fixtures. Telegram SDK fixture is not a real Telegram launch. Previous evidence directories are retained."
+}

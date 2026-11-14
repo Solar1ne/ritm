@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "suites": [
+    "browser-check.mjs",
+    "full-product-check.mjs",
+    "ai-product-check.mjs",
+    "wellness-nutrition-check.mjs",
+    "accounts-check.mjs",
+    "first-run-check.mjs",
+    "server-day-check.mjs",
+    "consistency-check.mjs",
+    "v1-product-check.mjs",
+    "exercises-check.mjs"
+  ],
+  "sourceSHA256": "3deba8062ff181043971a16f258da133010cc1dd519838ab14d4f2cfa9132b00",
+  "sourceUnchanged": true,
+  "checks": [
+    "Go tests with race detector and PostgreSQL 16",
+    "go vet",
+    "staticcheck",
+    "JavaScript tests and syntax",
+    "Python tests",
+    "RAT",
+    "Go build",
+    "Goose migration and HTTP health",
+    "10 browser suites"
+  ]
+}

@@ -1,0 +1,13 @@
+......RUN child
+.RUN child
+RUN fail
+..RUN timeout
+.........Evidence: /private/var/folders/zk/57jj2_tj6xd_g5v7vkbf34zw0000gn/T/rhythm-qa-up1klm04/tmpdy24oct5/evidence
+FAIL release gate: RuntimeError; inspect /private/var/folders/zk/57jj2_tj6xd_g5v7vkbf34zw0000gn/T/rhythm-qa-up1klm04/tmpdy24oct5/evidence
+...Evidence: /private/var/folders/zk/57jj2_tj6xd_g5v7vkbf34zw0000gn/T/rhythm-qa-up1klm04/tmp0_txnsje/evidence
+PASS release gate; evidence: /private/var/folders/zk/57jj2_tj6xd_g5v7vkbf34zw0000gn/T/rhythm-qa-up1klm04/tmp0_txnsje/evidence
+.....
+----------------------------------------------------------------------
+Ran 26 tests in 0.186s
+
+OK

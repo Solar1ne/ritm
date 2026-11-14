@@ -1,0 +1,36 @@
+package postgresstore
+
+import (
+	"context"
+	"net/http/httptest"
+	"strings"
+	"testing"
+	"time"
+
+	"rhythm/internal/httpapi"
+)
+
+// Bounded observation in a disposable test schema, never the main database.
+func TestAuditAnonymousBootstrapPersistsEmptyRows(t *testing.T) {
+	s, _ := testDatabase(t, true)
+	h, err := httpapi.New(httpapi.Config{Repository: s, Accounts: service(t, s), Storage: "postgresql", Secret: []byte(strings.Repeat("x", 32)), Location: time.UTC})
+	if err != nil {
+		t.Fatal(err)
+	}
+	for i := 0; i < 3; i++ {
+		r := httptest.NewRequest("GET", "http://localhost/api/state", nil)
+		w := httptest.NewRecorder()
+		h.ServeHTTP(w, r)
+		if w.Code != 200 {
+			t.Fatalf("bootstrap %d: status %d", i, w.Code)
+		}
+	}
+	var diaries, identities int
+	if err := s.pool.QueryRow(context.Background(), "SELECT (SELECT count(*) FROM rhythm_diaries), (SELECT count(*) FROM rhythm_identities)").Scan(&diaries, &identities); err != nil {
+		t.Fatal(err)
+	}
+	if diaries != 3 || identities != 3 {
+		t.Fatalf("rows: diaries=%d identities=%d", diaries, identities)
+	}
+	t.Logf("Observed: 3 anonymous GETs without cookies persist %d diaries and %d identities before any user data entry.", diaries, identities)
+}

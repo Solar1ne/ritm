@@ -1,0 +1,11 @@
+{
+  "scope": "Synthetic account and actual Go process graceful stop/restart, PostgreSQL, same browser cookie",
+  "passed": true,
+  "checks": [
+    "account persists",
+    "same session resolves after restart",
+    "diary and weekly snapshots unchanged",
+    "graceful process shutdown"
+  ],
+  "revision": 2
+}

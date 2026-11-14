@@ -1,0 +1,4 @@
+
+> check
+> node --check web/static/app.js && node --check web/static/views.js && node --check web/static/progress.js && node --check web/static/telegram.js
+

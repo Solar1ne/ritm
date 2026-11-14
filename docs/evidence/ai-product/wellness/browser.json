@@ -1,0 +1,162 @@
+{
+  "startedAt": "2026-10-17T05:59:48.869Z",
+  "completedAt": "2026-10-17T05:59:57.382Z",
+  "elapsedMs": 8513,
+  "scope": "Fresh synthetic local Chromium accounts; real application, HTTP persistence and file downloads. No live device, Telegram or LLM integration. All created records are cleared during teardown.",
+  "base": "http://127.0.0.1:8080",
+  "browserVersion": "155.0.8059.80",
+  "serverToday": "2026-10-17",
+  "passed": true,
+  "checks": [
+    {
+      "name": "HRV requires explicit metric/window; same-series history and separate metrics survive reload",
+      "passed": true
+    },
+    {
+      "name": "Body edit, explicit whole-record replacement, unknown fields and separate methods preserve observed facts",
+      "passed": true
+    },
+    {
+      "name": "Diet/time/allergen filters are strict; an empty menu fails explicitly without persistence",
+      "passed": true
+    },
+    {
+      "name": "Weekly preview writes nothing; one explicit save commits 21 choices atomically and survives retry/reload",
+      "passed": true
+    },
+    {
+      "name": "A saved meal can be explicitly replaced or removed without changing other dates",
+      "passed": true
+    },
+    {
+      "name": "Concurrent changes reject a stale weekly confirmation and preserve the saved menu",
+      "passed": true
+    },
+    {
+      "name": "Shopping download reflects the saved replacement and retains quantity multiplicity and allergen notice",
+      "passed": true
+    },
+    {
+      "name": "Real browser export/restore preserves all new collections under a separate identity",
+      "passed": true
+    },
+    {
+      "name": "Wellness and nutrition fit 320, 390, 768 and 1440px with real saved content",
+      "passed": true
+    },
+    {
+      "name": "No uncaught JavaScript errors or unexpected API failures",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "apiFailures": [
+    {
+      "method": "POST",
+      "path": "/api/nutrition/preview",
+      "status": 422
+    },
+    {
+      "method": "POST",
+      "path": "/api/meals/batch",
+      "status": 409
+    }
+  ],
+  "layout": [
+    {
+      "route": "wellness",
+      "width": 320,
+      "pageWidth": 320,
+      "viewport": 320,
+      "overflowingElements": [],
+      "overflowingCards": [],
+      "addTouchTarget": {
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "route": "nutrition",
+      "width": 320,
+      "pageWidth": 320,
+      "viewport": 320,
+      "overflowingElements": [],
+      "overflowingCards": []
+    },
+    {
+      "route": "wellness",
+      "width": 390,
+      "pageWidth": 390,
+      "viewport": 390,
+      "overflowingElements": [],
+      "overflowingCards": [],
+      "addTouchTarget": {
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "route": "nutrition",
+      "width": 390,
+      "pageWidth": 390,
+      "viewport": 390,
+      "overflowingElements": [],
+      "overflowingCards": []
+    },
+    {
+      "route": "wellness",
+      "width": 768,
+      "pageWidth": 768,
+      "viewport": 768,
+      "overflowingElements": [],
+      "overflowingCards": []
+    },
+    {
+      "route": "nutrition",
+      "width": 768,
+      "pageWidth": 768,
+      "viewport": 768,
+      "overflowingElements": [],
+      "overflowingCards": []
+    },
+    {
+      "route": "wellness",
+      "width": 1440,
+      "pageWidth": 1440,
+      "viewport": 1440,
+      "overflowingElements": [],
+      "overflowingCards": []
+    },
+    {
+      "route": "nutrition",
+      "width": 1440,
+      "pageWidth": 1440,
+      "viewport": 1440,
+      "overflowingElements": [],
+      "overflowingCards": []
+    }
+  ],
+  "screenshots": [
+    "hrv-desktop.png",
+    "body-mobile.png",
+    "nutrition-preview-desktop.png",
+    "nutrition-menu-desktop.png",
+    "nutrition-menu-mobile.png"
+  ],
+  "finalCounts": {
+    "hrv": 4,
+    "body": 3,
+    "meals": 20
+  },
+  "teardown": [
+    {
+      "account": 1,
+      "passed": true
+    },
+    {
+      "account": 2,
+      "passed": true
+    }
+  ],
+  "failure": null
+}

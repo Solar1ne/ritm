@@ -1,0 +1,948 @@
+{"Time":"2026-10-22T20:03:56.472905+03:00","Action":"start","Package":"rhythm/internal/rhythm"}
+{"Time":"2026-10-22T20:03:56.473634+03:00","Action":"start","Package":"rhythm/internal/accounts"}
+{"Time":"2026-10-22T20:03:56.473719+03:00","Action":"start","Package":"rhythm/internal/filestore"}
+{"Time":"2026-10-22T20:03:57.018175+03:00","Action":"start","Package":"rhythm/internal/postgresstore"}
+{"Time":"2026-10-22T20:03:59.757127+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportWorkoutsAtomicRetryAndExplicitCompletion"}
+{"Time":"2026-10-22T20:03:59.757533+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportWorkoutsAtomicRetryAndExplicitCompletion","Output":"=== RUN   TestImportWorkoutsAtomicRetryAndExplicitCompletion\n"}
+{"Time":"2026-10-22T20:03:59.760114+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportWorkoutsAtomicRetryAndExplicitCompletion","Output":"--- PASS: TestImportWorkoutsAtomicRetryAndExplicitCompletion (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.760136+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportWorkoutsAtomicRetryAndExplicitCompletion","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.760186+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRespectsMissedAndDeletedFacts"}
+{"Time":"2026-10-22T20:03:59.760203+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRespectsMissedAndDeletedFacts","Output":"=== RUN   TestImportRespectsMissedAndDeletedFacts\n"}
+{"Time":"2026-10-22T20:03:59.760227+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRespectsMissedAndDeletedFacts","Output":"--- PASS: TestImportRespectsMissedAndDeletedFacts (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.760239+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRespectsMissedAndDeletedFacts","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.760248+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation"}
+{"Time":"2026-10-22T20:03:59.760255+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation\n"}
+{"Time":"2026-10-22T20:03:59.760261+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/id"}
+{"Time":"2026-10-22T20:03:59.760268+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/id","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/id\n"}
+{"Time":"2026-10-22T20:03:59.763032+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/id","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/id (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.763068+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/id","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.763081+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/invalid_date"}
+{"Time":"2026-10-22T20:03:59.763105+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/invalid_date","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/invalid_date\n"}
+{"Time":"2026-10-22T20:03:59.763127+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/invalid_date","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/invalid_date (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.763137+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/invalid_date","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.763146+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/future_date"}
+{"Time":"2026-10-22T20:03:59.763153+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/future_date","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/future_date\n"}
+{"Time":"2026-10-22T20:03:59.763187+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/future_date","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/future_date (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.763195+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/future_date","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.76327+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/before_epoch"}
+{"Time":"2026-10-22T20:03:59.763318+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/before_epoch","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/before_epoch\n"}
+{"Time":"2026-10-22T20:03:59.764371+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/before_epoch","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/before_epoch (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.764393+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/before_epoch","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.764404+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/different_local_date"}
+{"Time":"2026-10-22T20:03:59.764411+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/different_local_date","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/different_local_date\n"}
+{"Time":"2026-10-22T20:03:59.764476+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/different_local_date","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/different_local_date (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.764486+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/different_local_date","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.764515+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/unknown_kind"}
+{"Time":"2026-10-22T20:03:59.764522+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/unknown_kind","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/unknown_kind\n"}
+{"Time":"2026-10-22T20:03:59.764548+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/unknown_kind","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/unknown_kind (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.764557+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/unknown_kind","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.764563+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/unknown_source"}
+{"Time":"2026-10-22T20:03:59.764569+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/unknown_source","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/unknown_source\n"}
+{"Time":"2026-10-22T20:03:59.766414+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/unknown_source","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/unknown_source (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.766498+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/unknown_source","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.76652+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/zero_duration"}
+{"Time":"2026-10-22T20:03:59.76658+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/zero_duration","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/zero_duration\n"}
+{"Time":"2026-10-22T20:03:59.766596+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/zero_duration","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/zero_duration (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.766607+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/zero_duration","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.766618+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/too_long"}
+{"Time":"2026-10-22T20:03:59.766627+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/too_long","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/too_long\n"}
+{"Time":"2026-10-22T20:03:59.766639+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/too_long","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/too_long (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.766649+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/too_long","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.766658+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/nan_duration"}
+{"Time":"2026-10-22T20:03:59.766667+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/nan_duration","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/nan_duration\n"}
+{"Time":"2026-10-22T20:03:59.766689+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/nan_duration","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/nan_duration (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.766701+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/nan_duration","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.76671+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/infinite_duration"}
+{"Time":"2026-10-22T20:03:59.766718+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/infinite_duration","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/infinite_duration\n"}
+{"Time":"2026-10-22T20:03:59.766869+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/infinite_duration","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/infinite_duration (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.76693+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/infinite_duration","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.76695+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/negative_distance"}
+{"Time":"2026-10-22T20:03:59.76696+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/negative_distance","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/negative_distance\n"}
+{"Time":"2026-10-22T20:03:59.767282+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/negative_distance","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/negative_distance (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.767303+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/negative_distance","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.767437+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/too_far"}
+{"Time":"2026-10-22T20:03:59.767449+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/too_far","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/too_far\n"}
+{"Time":"2026-10-22T20:03:59.767464+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/too_far","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/too_far (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.767474+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/too_far","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.767485+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/nan_distance"}
+{"Time":"2026-10-22T20:03:59.767493+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/nan_distance","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/nan_distance\n"}
+{"Time":"2026-10-22T20:03:59.767753+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/nan_distance","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/nan_distance (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.76779+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/nan_distance","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.767805+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/caller_supplied_link"}
+{"Time":"2026-10-22T20:03:59.767836+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/caller_supplied_link","Output":"=== RUN   TestImportRejectsInvalidBatchWithoutMutation/caller_supplied_link\n"}
+{"Time":"2026-10-22T20:03:59.768297+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/caller_supplied_link","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation/caller_supplied_link (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.768316+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation/caller_supplied_link","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.768351+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation","Output":"--- PASS: TestImportRejectsInvalidBatchWithoutMutation (0.01s)\n"}
+{"Time":"2026-10-22T20:03:59.768364+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportRejectsInvalidBatchWithoutMutation","Elapsed":0.01}
+{"Time":"2026-10-22T20:03:59.768385+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestImportExactCapacityAndBatchLimits"}
+{"Time":"2026-10-22T20:03:59.768447+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportExactCapacityAndBatchLimits","Output":"=== RUN   TestImportExactCapacityAndBatchLimits\n"}
+{"Time":"2026-10-22T20:03:59.781218+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestImportExactCapacityAndBatchLimits","Output":"--- PASS: TestImportExactCapacityAndBatchLimits (0.01s)\n"}
+{"Time":"2026-10-22T20:03:59.781264+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestImportExactCapacityAndBatchLimits","Elapsed":0.01}
+{"Time":"2026-10-22T20:03:59.78131+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestReminderValidationRevisionAndRetry"}
+{"Time":"2026-10-22T20:03:59.781324+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestReminderValidationRevisionAndRetry","Output":"=== RUN   TestReminderValidationRevisionAndRetry\n"}
+{"Time":"2026-10-22T20:03:59.78135+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestReminderValidationRevisionAndRetry","Output":"--- PASS: TestReminderValidationRevisionAndRetry (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.781397+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestReminderValidationRevisionAndRetry","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.781407+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation"}
+{"Time":"2026-10-22T20:03:59.781415+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation","Output":"=== RUN   TestWeeklyRolloverAndProfileIsolation\n"}
+{"Time":"2026-10-22T20:03:59.781422+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation/accepted_false"}
+{"Time":"2026-10-22T20:03:59.781429+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation/accepted_false","Output":"=== RUN   TestWeeklyRolloverAndProfileIsolation/accepted_false\n"}
+{"Time":"2026-10-22T20:03:59.784866+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation/accepted_false","Output":"--- PASS: TestWeeklyRolloverAndProfileIsolation/accepted_false (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.784928+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation/accepted_false","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.78494+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation/accepted_true"}
+{"Time":"2026-10-22T20:03:59.784949+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation/accepted_true","Output":"=== RUN   TestWeeklyRolloverAndProfileIsolation/accepted_true\n"}
+{"Time":"2026-10-22T20:03:59.786104+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation/accepted_true","Output":"--- PASS: TestWeeklyRolloverAndProfileIsolation/accepted_true (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.786145+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation/accepted_true","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.786161+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation","Output":"--- PASS: TestWeeklyRolloverAndProfileIsolation (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.78618+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWeeklyRolloverAndProfileIsolation","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.78619+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation"}
+{"Time":"2026-10-22T20:03:59.786198+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation","Output":"=== RUN   TestAcceptProposalStalenessIdempotencyAndCancellation\n"}
+{"Time":"2026-10-22T20:03:59.78621+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/old_revision"}
+{"Time":"2026-10-22T20:03:59.786218+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/old_revision","Output":"=== RUN   TestAcceptProposalStalenessIdempotencyAndCancellation/old_revision\n"}
+{"Time":"2026-10-22T20:03:59.786229+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/old_revision","Output":"--- PASS: TestAcceptProposalStalenessIdempotencyAndCancellation/old_revision (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.786236+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/old_revision","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.786245+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_week"}
+{"Time":"2026-10-22T20:03:59.78627+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_week","Output":"=== RUN   TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_week\n"}
+{"Time":"2026-10-22T20:03:59.786332+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_week","Output":"--- PASS: TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_week (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.78634+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_week","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.786346+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_token"}
+{"Time":"2026-10-22T20:03:59.786352+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_token","Output":"=== RUN   TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_token\n"}
+{"Time":"2026-10-22T20:03:59.786358+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_token","Output":"--- PASS: TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_token (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.786364+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation/wrong_token","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.786938+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation","Output":"--- PASS: TestAcceptProposalStalenessIdempotencyAndCancellation (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.786957+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestAcceptProposalStalenessIdempotencyAndCancellation","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.786967+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestHistoricEntriesUseSavedSchedule"}
+{"Time":"2026-10-22T20:03:59.786976+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestHistoricEntriesUseSavedSchedule","Output":"=== RUN   TestHistoricEntriesUseSavedSchedule\n"}
+{"Time":"2026-10-22T20:03:59.786985+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestHistoricEntriesUseSavedSchedule","Output":"--- PASS: TestHistoricEntriesUseSavedSchedule (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.786993+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestHistoricEntriesUseSavedSchedule","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.787001+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestHistoryWindowAndNoSilentFactPruning"}
+{"Time":"2026-10-22T20:03:59.787009+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestHistoryWindowAndNoSilentFactPruning","Output":"=== RUN   TestHistoryWindowAndNoSilentFactPruning\n"}
+{"Time":"2026-10-22T20:03:59.800774+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestHistoryWindowAndNoSilentFactPruning","Output":"--- PASS: TestHistoryWindowAndNoSilentFactPruning (0.01s)\n"}
+{"Time":"2026-10-22T20:03:59.801001+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestHistoryWindowAndNoSilentFactPruning","Elapsed":0.01}
+{"Time":"2026-10-22T20:03:59.801034+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestLegacyMigrationPreservesUnknownHistory"}
+{"Time":"2026-10-22T20:03:59.801047+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestLegacyMigrationPreservesUnknownHistory","Output":"=== RUN   TestLegacyMigrationPreservesUnknownHistory\n"}
+{"Time":"2026-10-22T20:03:59.801319+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestLegacyMigrationPreservesUnknownHistory","Output":"--- PASS: TestLegacyMigrationPreservesUnknownHistory (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.801358+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestLegacyMigrationPreservesUnknownHistory","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.801381+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSnapshotOwnership"}
+{"Time":"2026-10-22T20:03:59.801442+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSnapshotOwnership","Output":"=== RUN   TestSnapshotOwnership\n"}
+{"Time":"2026-10-22T20:03:59.801533+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSnapshotOwnership","Output":"--- PASS: TestSnapshotOwnership (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.801561+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSnapshotOwnership","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.801576+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestLegacyMatchingDateDoesNotInventOldDurationOrKind"}
+{"Time":"2026-10-22T20:03:59.801586+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestLegacyMatchingDateDoesNotInventOldDurationOrKind","Output":"=== RUN   TestLegacyMatchingDateDoesNotInventOldDurationOrKind\n"}
+{"Time":"2026-10-22T20:03:59.802129+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestLegacyMatchingDateDoesNotInventOldDurationOrKind","Output":"--- PASS: TestLegacyMatchingDateDoesNotInventOldDurationOrKind (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.802278+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestLegacyMatchingDateDoesNotInventOldDurationOrKind","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.802358+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership"}
+{"Time":"2026-10-22T20:03:59.802439+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership","Output":"=== RUN   TestBackupRoundTripValidationAndDestinationOwnership\n"}
+{"Time":"2026-10-22T20:03:59.802482+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/wrong_version"}
+{"Time":"2026-10-22T20:03:59.802497+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/wrong_version","Output":"=== RUN   TestBackupRoundTripValidationAndDestinationOwnership/wrong_version\n"}
+{"Time":"2026-10-22T20:03:59.802581+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/wrong_version","Output":"--- PASS: TestBackupRoundTripValidationAndDestinationOwnership/wrong_version (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.802649+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/wrong_version","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.802666+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/bad_total"}
+{"Time":"2026-10-22T20:03:59.802676+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/bad_total","Output":"=== RUN   TestBackupRoundTripValidationAndDestinationOwnership/bad_total\n"}
+{"Time":"2026-10-22T20:03:59.802794+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/bad_total","Output":"--- PASS: TestBackupRoundTripValidationAndDestinationOwnership/bad_total (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.802859+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/bad_total","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.802871+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/html_title"}
+{"Time":"2026-10-22T20:03:59.802878+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/html_title","Output":"=== RUN   TestBackupRoundTripValidationAndDestinationOwnership/html_title\n"}
+{"Time":"2026-10-22T20:03:59.80306+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/html_title","Output":"--- PASS: TestBackupRoundTripValidationAndDestinationOwnership/html_title (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.803135+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/html_title","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.803149+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/unknown_kind"}
+{"Time":"2026-10-22T20:03:59.803158+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/unknown_kind","Output":"=== RUN   TestBackupRoundTripValidationAndDestinationOwnership/unknown_kind\n"}
+{"Time":"2026-10-22T20:03:59.803315+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/unknown_kind","Output":"--- PASS: TestBackupRoundTripValidationAndDestinationOwnership/unknown_kind (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.803336+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/unknown_kind","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.803456+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/fake_done"}
+{"Time":"2026-10-22T20:03:59.803473+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/fake_done","Output":"=== RUN   TestBackupRoundTripValidationAndDestinationOwnership/fake_done\n"}
+{"Time":"2026-10-22T20:03:59.803601+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/fake_done","Output":"--- PASS: TestBackupRoundTripValidationAndDestinationOwnership/fake_done (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.803614+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/fake_done","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.803752+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/duplicate_fact"}
+{"Time":"2026-10-22T20:03:59.803762+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/duplicate_fact","Output":"=== RUN   TestBackupRoundTripValidationAndDestinationOwnership/duplicate_fact\n"}
+{"Time":"2026-10-22T20:03:59.806142+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/duplicate_fact","Output":"--- PASS: TestBackupRoundTripValidationAndDestinationOwnership/duplicate_fact (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.806182+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/duplicate_fact","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.806193+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/unmatched_fact"}
+{"Time":"2026-10-22T20:03:59.806201+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/unmatched_fact","Output":"=== RUN   TestBackupRoundTripValidationAndDestinationOwnership/unmatched_fact\n"}
+{"Time":"2026-10-22T20:03:59.806209+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/unmatched_fact","Output":"--- PASS: TestBackupRoundTripValidationAndDestinationOwnership/unmatched_fact (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.806216+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/unmatched_fact","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.806223+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/accepted_in_future"}
+{"Time":"2026-10-22T20:03:59.80623+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/accepted_in_future","Output":"=== RUN   TestBackupRoundTripValidationAndDestinationOwnership/accepted_in_future\n"}
+{"Time":"2026-10-22T20:03:59.806279+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/accepted_in_future","Output":"--- PASS: TestBackupRoundTripValidationAndDestinationOwnership/accepted_in_future (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.806289+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/accepted_in_future","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.806296+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/legacy_known_without_profile"}
+{"Time":"2026-10-22T20:03:59.806303+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/legacy_known_without_profile","Output":"=== RUN   TestBackupRoundTripValidationAndDestinationOwnership/legacy_known_without_profile\n"}
+{"Time":"2026-10-22T20:03:59.806329+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/legacy_known_without_profile","Output":"--- PASS: TestBackupRoundTripValidationAndDestinationOwnership/legacy_known_without_profile (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.806338+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership/legacy_known_without_profile","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.806346+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership","Output":"--- PASS: TestBackupRoundTripValidationAndDestinationOwnership (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.806353+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestBackupRoundTripValidationAndDestinationOwnership","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.80636+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRestoreRejectsRolloverBeyondCapacityBeforeReturningRecord"}
+{"Time":"2026-10-22T20:03:59.806366+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRestoreRejectsRolloverBeyondCapacityBeforeReturningRecord","Output":"=== RUN   TestRestoreRejectsRolloverBeyondCapacityBeforeReturningRecord\n"}
+{"Time":"2026-10-22T20:03:59.862722+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRestoreRejectsRolloverBeyondCapacityBeforeReturningRecord","Output":"--- PASS: TestRestoreRejectsRolloverBeyondCapacityBeforeReturningRecord (0.05s)\n"}
+{"Time":"2026-10-22T20:03:59.862863+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRestoreRejectsRolloverBeyondCapacityBeforeReturningRecord","Elapsed":0.05}
+{"Time":"2026-10-22T20:03:59.862884+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealWeekAtomicSaveRetryAndCorrection"}
+{"Time":"2026-10-22T20:03:59.862893+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealWeekAtomicSaveRetryAndCorrection","Output":"=== RUN   TestMealWeekAtomicSaveRetryAndCorrection\n"}
+{"Time":"2026-10-22T20:03:59.862903+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealWeekAtomicSaveRetryAndCorrection","Output":"--- PASS: TestMealWeekAtomicSaveRetryAndCorrection (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.86291+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealWeekAtomicSaveRetryAndCorrection","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.862918+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive"}
+{"Time":"2026-10-22T20:03:59.862924+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive","Output":"=== RUN   TestMealValidationBoundsAndArchive\n"}
+{"Time":"2026-10-22T20:03:59.862931+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/empty"}
+{"Time":"2026-10-22T20:03:59.862985+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/empty","Output":"=== RUN   TestMealValidationBoundsAndArchive/empty\n"}
+{"Time":"2026-10-22T20:03:59.862994+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/empty","Output":"--- PASS: TestMealValidationBoundsAndArchive/empty (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.863001+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/empty","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.863007+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/too_many"}
+{"Time":"2026-10-22T20:03:59.863013+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/too_many","Output":"=== RUN   TestMealValidationBoundsAndArchive/too_many\n"}
+{"Time":"2026-10-22T20:03:59.863019+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/too_many","Output":"--- PASS: TestMealValidationBoundsAndArchive/too_many (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.863025+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/too_many","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.863031+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/duplicate"}
+{"Time":"2026-10-22T20:03:59.863037+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/duplicate","Output":"=== RUN   TestMealValidationBoundsAndArchive/duplicate\n"}
+{"Time":"2026-10-22T20:03:59.863044+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/duplicate","Output":"--- PASS: TestMealValidationBoundsAndArchive/duplicate (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.863049+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/duplicate","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.863056+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/invalid_date"}
+{"Time":"2026-10-22T20:03:59.863061+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/invalid_date","Output":"=== RUN   TestMealValidationBoundsAndArchive/invalid_date\n"}
+{"Time":"2026-10-22T20:03:59.863068+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/invalid_date","Output":"--- PASS: TestMealValidationBoundsAndArchive/invalid_date (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.863074+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/invalid_date","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.86308+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/old"}
+{"Time":"2026-10-22T20:03:59.863085+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/old","Output":"=== RUN   TestMealValidationBoundsAndArchive/old\n"}
+{"Time":"2026-10-22T20:03:59.863091+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/old","Output":"--- PASS: TestMealValidationBoundsAndArchive/old (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.863097+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/old","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.863102+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/future"}
+{"Time":"2026-10-22T20:03:59.863108+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/future","Output":"=== RUN   TestMealValidationBoundsAndArchive/future\n"}
+{"Time":"2026-10-22T20:03:59.863113+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/future","Output":"--- PASS: TestMealValidationBoundsAndArchive/future (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.863141+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/future","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.863147+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/slot"}
+{"Time":"2026-10-22T20:03:59.863152+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/slot","Output":"=== RUN   TestMealValidationBoundsAndArchive/slot\n"}
+{"Time":"2026-10-22T20:03:59.863158+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/slot","Output":"--- PASS: TestMealValidationBoundsAndArchive/slot (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.863172+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/slot","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.863178+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/recipe_wrong_slot"}
+{"Time":"2026-10-22T20:03:59.863213+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/recipe_wrong_slot","Output":"=== RUN   TestMealValidationBoundsAndArchive/recipe_wrong_slot\n"}
+{"Time":"2026-10-22T20:03:59.86322+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/recipe_wrong_slot","Output":"--- PASS: TestMealValidationBoundsAndArchive/recipe_wrong_slot (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.863236+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/recipe_wrong_slot","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.863243+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/recipe_missing"}
+{"Time":"2026-10-22T20:03:59.863248+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/recipe_missing","Output":"=== RUN   TestMealValidationBoundsAndArchive/recipe_missing\n"}
+{"Time":"2026-10-22T20:03:59.86335+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/recipe_missing","Output":"--- PASS: TestMealValidationBoundsAndArchive/recipe_missing (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.863359+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive/recipe_missing","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.863366+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive","Output":"--- PASS: TestMealValidationBoundsAndArchive (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.863372+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealValidationBoundsAndArchive","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.863378+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestMealCapacityRejectsWholeBatchWithoutDroppingHistory"}
+{"Time":"2026-10-22T20:03:59.863383+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealCapacityRejectsWholeBatchWithoutDroppingHistory","Output":"=== RUN   TestMealCapacityRejectsWholeBatchWithoutDroppingHistory\n"}
+{"Time":"2026-10-22T20:03:59.8636+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestMealCapacityRejectsWholeBatchWithoutDroppingHistory","Output":"--- PASS: TestMealCapacityRejectsWholeBatchWithoutDroppingHistory (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.863667+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestMealCapacityRejectsWholeBatchWithoutDroppingHistory","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.863687+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile"}
+{"Time":"2026-10-22T20:03:59.863699+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile","Output":"=== RUN   TestRecoveryRespectsCurrentScheduleAndFutureProfile\n"}
+{"Time":"2026-10-22T20:03:59.863768+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/unchanged"}
+{"Time":"2026-10-22T20:03:59.863791+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/unchanged","Output":"=== RUN   TestRecoveryRespectsCurrentScheduleAndFutureProfile/unchanged\n"}
+{"Time":"2026-10-22T20:03:59.865884+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/unchanged","Output":"--- PASS: TestRecoveryRespectsCurrentScheduleAndFutureProfile/unchanged (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.865936+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/unchanged","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.865949+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/shortened_variants"}
+{"Time":"2026-10-22T20:03:59.865958+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/shortened_variants","Output":"=== RUN   TestRecoveryRespectsCurrentScheduleAndFutureProfile/shortened_variants\n"}
+{"Time":"2026-10-22T20:03:59.865969+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/shortened_variants","Output":"--- PASS: TestRecoveryRespectsCurrentScheduleAndFutureProfile/shortened_variants (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.865976+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/shortened_variants","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.865987+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/different_variant_durations"}
+{"Time":"2026-10-22T20:03:59.865994+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/different_variant_durations","Output":"=== RUN   TestRecoveryRespectsCurrentScheduleAndFutureProfile/different_variant_durations\n"}
+{"Time":"2026-10-22T20:03:59.877606+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/different_variant_durations","Output":"--- PASS: TestRecoveryRespectsCurrentScheduleAndFutureProfile/different_variant_durations (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.877697+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/different_variant_durations","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.877715+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/average_rounds_once"}
+{"Time":"2026-10-22T20:03:59.877725+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/average_rounds_once","Output":"=== RUN   TestRecoveryRespectsCurrentScheduleAndFutureProfile/average_rounds_once\n"}
+{"Time":"2026-10-22T20:03:59.889297+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/average_rounds_once","Output":"--- PASS: TestRecoveryRespectsCurrentScheduleAndFutureProfile/average_rounds_once (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.889402+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/average_rounds_once","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.889466+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/larger_future_profile"}
+{"Time":"2026-10-22T20:03:59.889501+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/larger_future_profile","Output":"=== RUN   TestRecoveryRespectsCurrentScheduleAndFutureProfile/larger_future_profile\n"}
+{"Time":"2026-10-22T20:03:59.922087+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/larger_future_profile","Output":"--- PASS: TestRecoveryRespectsCurrentScheduleAndFutureProfile/larger_future_profile (0.03s)\n"}
+{"Time":"2026-10-22T20:03:59.922165+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/larger_future_profile","Elapsed":0.03}
+{"Time":"2026-10-22T20:03:59.922201+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/smaller_future_profile"}
+{"Time":"2026-10-22T20:03:59.922214+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/smaller_future_profile","Output":"=== RUN   TestRecoveryRespectsCurrentScheduleAndFutureProfile/smaller_future_profile\n"}
+{"Time":"2026-10-22T20:03:59.923973+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/smaller_future_profile","Output":"--- PASS: TestRecoveryRespectsCurrentScheduleAndFutureProfile/smaller_future_profile (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.924028+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile/smaller_future_profile","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.924349+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile","Output":"--- PASS: TestRecoveryRespectsCurrentScheduleAndFutureProfile (0.06s)\n"}
+{"Time":"2026-10-22T20:03:59.926823+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRecoveryRespectsCurrentScheduleAndFutureProfile","Elapsed":0.06}
+{"Time":"2026-10-22T20:03:59.9272+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad"}
+{"Time":"2026-10-22T20:03:59.927228+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad","Output":"=== RUN   TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad\n"}
+{"Time":"2026-10-22T20:03:59.927724+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/all_unknown"}
+{"Time":"2026-10-22T20:03:59.927802+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/all_unknown","Output":"=== RUN   TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/all_unknown\n"}
+{"Time":"2026-10-22T20:03:59.928086+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/all_unknown","Output":"--- PASS: TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/all_unknown (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.928131+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/all_unknown","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.928148+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/partly_unknown"}
+{"Time":"2026-10-22T20:03:59.928167+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/partly_unknown","Output":"=== RUN   TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/partly_unknown\n"}
+{"Time":"2026-10-22T20:03:59.928683+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/partly_unknown","Output":"--- PASS: TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/partly_unknown (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.928878+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad/partly_unknown","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.928934+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad","Output":"--- PASS: TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.929174+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRecoveryDoesNotTreatUnknownLegacyMinutesAsZeroLoad","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.929194+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery"}
+{"Time":"2026-10-22T20:03:59.929202+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery","Output":"=== RUN   TestFutureProfileRemainsBaselineOutsideRecovery\n"}
+{"Time":"2026-10-22T20:03:59.931424+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/start"}
+{"Time":"2026-10-22T20:03:59.931451+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/start","Output":"=== RUN   TestFutureProfileRemainsBaselineOutsideRecovery/start\n"}
+{"Time":"2026-10-22T20:03:59.939402+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/start","Output":"--- PASS: TestFutureProfileRemainsBaselineOutsideRecovery/start (0.01s)\n"}
+{"Time":"2026-10-22T20:03:59.939463+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/start","Elapsed":0.01}
+{"Time":"2026-10-22T20:03:59.93948+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/maintain"}
+{"Time":"2026-10-22T20:03:59.939492+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/maintain","Output":"=== RUN   TestFutureProfileRemainsBaselineOutsideRecovery/maintain\n"}
+{"Time":"2026-10-22T20:03:59.939504+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/maintain","Output":"--- PASS: TestFutureProfileRemainsBaselineOutsideRecovery/maintain (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.939514+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/maintain","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.939523+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/progress"}
+{"Time":"2026-10-22T20:03:59.939532+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/progress","Output":"=== RUN   TestFutureProfileRemainsBaselineOutsideRecovery/progress\n"}
+{"Time":"2026-10-22T20:03:59.939541+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/progress","Output":"--- PASS: TestFutureProfileRemainsBaselineOutsideRecovery/progress (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.939551+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery/progress","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.93956+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery","Output":"--- PASS: TestFutureProfileRemainsBaselineOutsideRecovery (0.01s)\n"}
+{"Time":"2026-10-22T20:03:59.939572+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestFutureProfileRemainsBaselineOutsideRecovery","Elapsed":0.01}
+{"Time":"2026-10-22T20:03:59.939668+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios"}
+{"Time":"2026-10-22T20:03:59.939698+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios","Output":"=== RUN   TestRATFixedScenarios\n"}
+{"Time":"2026-10-22T20:03:59.940453+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/01_no_history"}
+{"Time":"2026-10-22T20:03:59.940521+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/01_no_history","Output":"=== RUN   TestRATFixedScenarios/01_no_history\n"}
+{"Time":"2026-10-22T20:03:59.940593+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/01_no_history","Output":"--- PASS: TestRATFixedScenarios/01_no_history (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.940608+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/01_no_history","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.940621+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/02_one_completion"}
+{"Time":"2026-10-22T20:03:59.94063+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/02_one_completion","Output":"=== RUN   TestRATFixedScenarios/02_one_completion\n"}
+{"Time":"2026-10-22T20:03:59.94064+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/02_one_completion","Output":"--- PASS: TestRATFixedScenarios/02_one_completion (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.940649+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/02_one_completion","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.940659+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/03_fatigue_at_threshold"}
+{"Time":"2026-10-22T20:03:59.94067+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/03_fatigue_at_threshold","Output":"=== RUN   TestRATFixedScenarios/03_fatigue_at_threshold\n"}
+{"Time":"2026-10-22T20:03:59.940679+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/03_fatigue_at_threshold","Output":"--- PASS: TestRATFixedScenarios/03_fatigue_at_threshold (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.940688+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/03_fatigue_at_threshold","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.940701+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/04_sleep_below_threshold"}
+{"Time":"2026-10-22T20:03:59.94071+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/04_sleep_below_threshold","Output":"=== RUN   TestRATFixedScenarios/04_sleep_below_threshold\n"}
+{"Time":"2026-10-22T20:03:59.940734+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/04_sleep_below_threshold","Output":"--- PASS: TestRATFixedScenarios/04_sleep_below_threshold (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.940746+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/04_sleep_below_threshold","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.940756+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/05_sleep_at_threshold"}
+{"Time":"2026-10-22T20:03:59.940774+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/05_sleep_at_threshold","Output":"=== RUN   TestRATFixedScenarios/05_sleep_at_threshold\n"}
+{"Time":"2026-10-22T20:03:59.94158+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/05_sleep_at_threshold","Output":"--- PASS: TestRATFixedScenarios/05_sleep_at_threshold (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.941677+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/05_sleep_at_threshold","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.941698+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/06_two_missed"}
+{"Time":"2026-10-22T20:03:59.941708+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/06_two_missed","Output":"=== RUN   TestRATFixedScenarios/06_two_missed\n"}
+{"Time":"2026-10-22T20:03:59.941722+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/06_two_missed","Output":"--- PASS: TestRATFixedScenarios/06_two_missed (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.941732+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/06_two_missed","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.941781+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/07_one_missed"}
+{"Time":"2026-10-22T20:03:59.941791+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/07_one_missed","Output":"=== RUN   TestRATFixedScenarios/07_one_missed\n"}
+{"Time":"2026-10-22T20:03:59.941801+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/07_one_missed","Output":"--- PASS: TestRATFixedScenarios/07_one_missed (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.941811+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/07_one_missed","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.941923+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/08_complete_and_recovered"}
+{"Time":"2026-10-22T20:03:59.941933+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/08_complete_and_recovered","Output":"=== RUN   TestRATFixedScenarios/08_complete_and_recovered\n"}
+{"Time":"2026-10-22T20:03:59.941944+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/08_complete_and_recovered","Output":"--- PASS: TestRATFixedScenarios/08_complete_and_recovered (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.941955+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/08_complete_and_recovered","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.941964+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/09_complete_missing_wellbeing"}
+{"Time":"2026-10-22T20:03:59.941973+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/09_complete_missing_wellbeing","Output":"=== RUN   TestRATFixedScenarios/09_complete_missing_wellbeing\n"}
+{"Time":"2026-10-22T20:03:59.941986+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/09_complete_missing_wellbeing","Output":"--- PASS: TestRATFixedScenarios/09_complete_missing_wellbeing (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.941998+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/09_complete_missing_wellbeing","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.942006+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/10_complete_sleep_unknown"}
+{"Time":"2026-10-22T20:03:59.942014+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/10_complete_sleep_unknown","Output":"=== RUN   TestRATFixedScenarios/10_complete_sleep_unknown\n"}
+{"Time":"2026-10-22T20:03:59.942462+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/10_complete_sleep_unknown","Output":"--- PASS: TestRATFixedScenarios/10_complete_sleep_unknown (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.942495+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/10_complete_sleep_unknown","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.942506+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/11_complete_fatigue_unknown"}
+{"Time":"2026-10-22T20:03:59.942515+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/11_complete_fatigue_unknown","Output":"=== RUN   TestRATFixedScenarios/11_complete_fatigue_unknown\n"}
+{"Time":"2026-10-22T20:03:59.942524+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/11_complete_fatigue_unknown","Output":"--- PASS: TestRATFixedScenarios/11_complete_fatigue_unknown (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.942536+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/11_complete_fatigue_unknown","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.943016+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/12_recovery_over_completion"}
+{"Time":"2026-10-22T20:03:59.943089+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/12_recovery_over_completion","Output":"=== RUN   TestRATFixedScenarios/12_recovery_over_completion\n"}
+{"Time":"2026-10-22T20:03:59.943107+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/12_recovery_over_completion","Output":"--- PASS: TestRATFixedScenarios/12_recovery_over_completion (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.943237+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/12_recovery_over_completion","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.943256+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/13_sleep_over_completion"}
+{"Time":"2026-10-22T20:03:59.943266+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/13_sleep_over_completion","Output":"=== RUN   TestRATFixedScenarios/13_sleep_over_completion\n"}
+{"Time":"2026-10-22T20:03:59.94328+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/13_sleep_over_completion","Output":"--- PASS: TestRATFixedScenarios/13_sleep_over_completion (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.943303+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/13_sleep_over_completion","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.943388+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/14_recovery_over_missed"}
+{"Time":"2026-10-22T20:03:59.943422+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/14_recovery_over_missed","Output":"=== RUN   TestRATFixedScenarios/14_recovery_over_missed\n"}
+{"Time":"2026-10-22T20:03:59.943464+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/14_recovery_over_missed","Output":"--- PASS: TestRATFixedScenarios/14_recovery_over_missed (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.945155+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/14_recovery_over_missed","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.945175+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/15_sleep_over_missed"}
+{"Time":"2026-10-22T20:03:59.945183+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/15_sleep_over_missed","Output":"=== RUN   TestRATFixedScenarios/15_sleep_over_missed\n"}
+{"Time":"2026-10-22T20:03:59.945193+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/15_sleep_over_missed","Output":"--- PASS: TestRATFixedScenarios/15_sleep_over_missed (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.945201+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/15_sleep_over_missed","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.945209+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/16_both_risks_over_completion"}
+{"Time":"2026-10-22T20:03:59.945216+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/16_both_risks_over_completion","Output":"=== RUN   TestRATFixedScenarios/16_both_risks_over_completion\n"}
+{"Time":"2026-10-22T20:03:59.945224+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/16_both_risks_over_completion","Output":"--- PASS: TestRATFixedScenarios/16_both_risks_over_completion (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.945231+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios/16_both_risks_over_completion","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.945243+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios","Output":"--- PASS: TestRATFixedScenarios (0.01s)\n"}
+{"Time":"2026-10-22T20:03:59.945251+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestRATFixedScenarios","Elapsed":0.01}
+{"Time":"2026-10-22T20:03:59.945259+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation"}
+{"Time":"2026-10-22T20:03:59.945311+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation","Output":"=== RUN   TestProfileValidation\n"}
+{"Time":"2026-10-22T20:03:59.94532+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/duplicate_days"}
+{"Time":"2026-10-22T20:03:59.945327+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/duplicate_days","Output":"=== RUN   TestProfileValidation/duplicate_days\n"}
+{"Time":"2026-10-22T20:03:59.945336+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/duplicate_days","Output":"--- PASS: TestProfileValidation/duplicate_days (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.945347+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/duplicate_days","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.945355+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/negative_day"}
+{"Time":"2026-10-22T20:03:59.945361+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/negative_day","Output":"=== RUN   TestProfileValidation/negative_day\n"}
+{"Time":"2026-10-22T20:03:59.945368+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/negative_day","Output":"--- PASS: TestProfileValidation/negative_day (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.945374+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/negative_day","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.94538+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/invalid_day"}
+{"Time":"2026-10-22T20:03:59.945386+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/invalid_day","Output":"=== RUN   TestProfileValidation/invalid_day\n"}
+{"Time":"2026-10-22T20:03:59.945394+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/invalid_day","Output":"--- PASS: TestProfileValidation/invalid_day (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.945402+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/invalid_day","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.945408+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/no_days"}
+{"Time":"2026-10-22T20:03:59.945414+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/no_days","Output":"=== RUN   TestProfileValidation/no_days\n"}
+{"Time":"2026-10-22T20:03:59.94542+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/no_days","Output":"--- PASS: TestProfileValidation/no_days (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.945426+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/no_days","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.945432+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/too_many_days"}
+{"Time":"2026-10-22T20:03:59.945439+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/too_many_days","Output":"=== RUN   TestProfileValidation/too_many_days\n"}
+{"Time":"2026-10-22T20:03:59.945445+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/too_many_days","Output":"--- PASS: TestProfileValidation/too_many_days (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.945452+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/too_many_days","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.945458+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/short_duration"}
+{"Time":"2026-10-22T20:03:59.945466+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/short_duration","Output":"=== RUN   TestProfileValidation/short_duration\n"}
+{"Time":"2026-10-22T20:03:59.945474+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/short_duration","Output":"--- PASS: TestProfileValidation/short_duration (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.945501+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/short_duration","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.945508+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/long_duration"}
+{"Time":"2026-10-22T20:03:59.945514+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/long_duration","Output":"=== RUN   TestProfileValidation/long_duration\n"}
+{"Time":"2026-10-22T20:03:59.945773+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/long_duration","Output":"--- PASS: TestProfileValidation/long_duration (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.945802+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/long_duration","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.945827+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/unknown_goal"}
+{"Time":"2026-10-22T20:03:59.94584+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/unknown_goal","Output":"=== RUN   TestProfileValidation/unknown_goal\n"}
+{"Time":"2026-10-22T20:03:59.945852+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/unknown_goal","Output":"--- PASS: TestProfileValidation/unknown_goal (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.945861+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/unknown_goal","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.945983+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/unknown_experience"}
+{"Time":"2026-10-22T20:03:59.946022+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/unknown_experience","Output":"=== RUN   TestProfileValidation/unknown_experience\n"}
+{"Time":"2026-10-22T20:03:59.946062+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/unknown_experience","Output":"--- PASS: TestProfileValidation/unknown_experience (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.94609+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/unknown_experience","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.946098+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/long_unicode_name"}
+{"Time":"2026-10-22T20:03:59.946104+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/long_unicode_name","Output":"=== RUN   TestProfileValidation/long_unicode_name\n"}
+{"Time":"2026-10-22T20:03:59.946112+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/long_unicode_name","Output":"--- PASS: TestProfileValidation/long_unicode_name (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.946119+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/long_unicode_name","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.946414+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/control_in_name"}
+{"Time":"2026-10-22T20:03:59.946424+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/control_in_name","Output":"=== RUN   TestProfileValidation/control_in_name\n"}
+{"Time":"2026-10-22T20:03:59.946431+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/control_in_name","Output":"--- PASS: TestProfileValidation/control_in_name (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.946439+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation/control_in_name","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.94645+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation","Output":"--- PASS: TestProfileValidation (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.946459+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestProfileValidation","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.946494+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation"}
+{"Time":"2026-10-22T20:03:59.946509+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation","Output":"=== RUN   TestEntryValidation\n"}
+{"Time":"2026-10-22T20:03:59.946548+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/future"}
+{"Time":"2026-10-22T20:03:59.946571+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/future","Output":"=== RUN   TestEntryValidation/future\n"}
+{"Time":"2026-10-22T20:03:59.946586+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/future","Output":"--- PASS: TestEntryValidation/future (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.946597+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/future","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.946608+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/previous_week"}
+{"Time":"2026-10-22T20:03:59.946617+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/previous_week","Output":"=== RUN   TestEntryValidation/previous_week\n"}
+{"Time":"2026-10-22T20:03:59.946629+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/previous_week","Output":"--- PASS: TestEntryValidation/previous_week (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.946638+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/previous_week","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.946645+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/not_scheduled"}
+{"Time":"2026-10-22T20:03:59.946652+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/not_scheduled","Output":"=== RUN   TestEntryValidation/not_scheduled\n"}
+{"Time":"2026-10-22T20:03:59.946661+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/not_scheduled","Output":"--- PASS: TestEntryValidation/not_scheduled (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.946671+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/not_scheduled","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.946678+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/different_session"}
+{"Time":"2026-10-22T20:03:59.946685+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/different_session","Output":"=== RUN   TestEntryValidation/different_session\n"}
+{"Time":"2026-10-22T20:03:59.946704+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/different_session","Output":"--- PASS: TestEntryValidation/different_session (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.946713+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/different_session","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.946725+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/no_session"}
+{"Time":"2026-10-22T20:03:59.946735+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/no_session","Output":"=== RUN   TestEntryValidation/no_session\n"}
+{"Time":"2026-10-22T20:03:59.946836+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/no_session","Output":"--- PASS: TestEntryValidation/no_session (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.946871+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/no_session","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.946883+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/invalid_status"}
+{"Time":"2026-10-22T20:03:59.946895+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/invalid_status","Output":"=== RUN   TestEntryValidation/invalid_status\n"}
+{"Time":"2026-10-22T20:03:59.946941+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/invalid_status","Output":"--- PASS: TestEntryValidation/invalid_status (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.946953+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/invalid_status","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.946963+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/invalid_id"}
+{"Time":"2026-10-22T20:03:59.946972+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/invalid_id","Output":"=== RUN   TestEntryValidation/invalid_id\n"}
+{"Time":"2026-10-22T20:03:59.946994+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/invalid_id","Output":"--- PASS: TestEntryValidation/invalid_id (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.947006+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/invalid_id","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.947016+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/no_id"}
+{"Time":"2026-10-22T20:03:59.947025+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/no_id","Output":"=== RUN   TestEntryValidation/no_id\n"}
+{"Time":"2026-10-22T20:03:59.947035+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/no_id","Output":"--- PASS: TestEntryValidation/no_id (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.947045+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/no_id","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.947073+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/negative_sleep"}
+{"Time":"2026-10-22T20:03:59.947091+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/negative_sleep","Output":"=== RUN   TestEntryValidation/negative_sleep\n"}
+{"Time":"2026-10-22T20:03:59.94716+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/negative_sleep","Output":"--- PASS: TestEntryValidation/negative_sleep (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.947174+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/negative_sleep","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.947182+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/excess_sleep"}
+{"Time":"2026-10-22T20:03:59.94719+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/excess_sleep","Output":"=== RUN   TestEntryValidation/excess_sleep\n"}
+{"Time":"2026-10-22T20:03:59.947218+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/excess_sleep","Output":"--- PASS: TestEntryValidation/excess_sleep (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.947228+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/excess_sleep","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.94724+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/low_fatigue"}
+{"Time":"2026-10-22T20:03:59.947254+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/low_fatigue","Output":"=== RUN   TestEntryValidation/low_fatigue\n"}
+{"Time":"2026-10-22T20:03:59.947489+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/low_fatigue","Output":"--- PASS: TestEntryValidation/low_fatigue (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.947499+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/low_fatigue","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.947506+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/high_fatigue"}
+{"Time":"2026-10-22T20:03:59.947513+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/high_fatigue","Output":"=== RUN   TestEntryValidation/high_fatigue\n"}
+{"Time":"2026-10-22T20:03:59.947521+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/high_fatigue","Output":"--- PASS: TestEntryValidation/high_fatigue (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.947551+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/high_fatigue","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.947562+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/wellbeing_no_metric"}
+{"Time":"2026-10-22T20:03:59.94757+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/wellbeing_no_metric","Output":"=== RUN   TestEntryValidation/wellbeing_no_metric\n"}
+{"Time":"2026-10-22T20:03:59.947587+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/wellbeing_no_metric","Output":"--- PASS: TestEntryValidation/wellbeing_no_metric (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.947596+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/wellbeing_no_metric","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.947603+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/wellbeing_session"}
+{"Time":"2026-10-22T20:03:59.94761+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/wellbeing_session","Output":"=== RUN   TestEntryValidation/wellbeing_session\n"}
+{"Time":"2026-10-22T20:03:59.947619+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/wellbeing_session","Output":"--- PASS: TestEntryValidation/wellbeing_session (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.947627+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation/wellbeing_session","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.947639+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation","Output":"--- PASS: TestEntryValidation (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.947649+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestEntryValidation","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.947707+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestIdempotencyCorrectionAndRevision"}
+{"Time":"2026-10-22T20:03:59.947725+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIdempotencyCorrectionAndRevision","Output":"=== RUN   TestIdempotencyCorrectionAndRevision\n"}
+{"Time":"2026-10-22T20:03:59.947879+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIdempotencyCorrectionAndRevision","Output":"--- PASS: TestIdempotencyCorrectionAndRevision (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.947916+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestIdempotencyCorrectionAndRevision","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.947932+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestOwnershipAndScheduleChanges"}
+{"Time":"2026-10-22T20:03:59.947945+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestOwnershipAndScheduleChanges","Output":"=== RUN   TestOwnershipAndScheduleChanges\n"}
+{"Time":"2026-10-22T20:03:59.948154+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestOwnershipAndScheduleChanges","Output":"--- PASS: TestOwnershipAndScheduleChanges (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.948166+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestOwnershipAndScheduleChanges","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.948173+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestLatestWellbeingAndBounds"}
+{"Time":"2026-10-22T20:03:59.948179+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestLatestWellbeingAndBounds","Output":"=== RUN   TestLatestWellbeingAndBounds\n"}
+{"Time":"2026-10-22T20:03:59.948347+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestLatestWellbeingAndBounds","Output":"--- PASS: TestLatestWellbeingAndBounds (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.94836+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestLatestWellbeingAndBounds","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.948396+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestFuturePreviewOnlyAndDuplicateFacts"}
+{"Time":"2026-10-22T20:03:59.948402+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestFuturePreviewOnlyAndDuplicateFacts","Output":"=== RUN   TestFuturePreviewOnlyAndDuplicateFacts\n"}
+{"Time":"2026-10-22T20:03:59.948564+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestFuturePreviewOnlyAndDuplicateFacts","Output":"--- PASS: TestFuturePreviewOnlyAndDuplicateFacts (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.948593+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestFuturePreviewOnlyAndDuplicateFacts","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.948607+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWeekStartAcrossYearAndTimezone"}
+{"Time":"2026-10-22T20:03:59.948617+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWeekStartAcrossYearAndTimezone","Output":"=== RUN   TestWeekStartAcrossYearAndTimezone\n"}
+{"Time":"2026-10-22T20:03:59.948677+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWeekStartAcrossYearAndTimezone","Output":"--- PASS: TestWeekStartAcrossYearAndTimezone (0.00s)\n"}
+{"Time":"2026-10-22T20:03:59.948691+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWeekStartAcrossYearAndTimezone","Elapsed":0}
+{"Time":"2026-10-22T20:03:59.948699+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestHistoryBoundedAndWellbeingCorrections"}
+{"Time":"2026-10-22T20:03:59.948708+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestHistoryBoundedAndWellbeingCorrections","Output":"=== RUN   TestHistoryBoundedAndWellbeingCorrections\n"}
+{"Time":"2026-10-22T20:04:00.107638+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestHistoryBoundedAndWellbeingCorrections","Output":"--- PASS: TestHistoryBoundedAndWellbeingCorrections (0.16s)\n"}
+{"Time":"2026-10-22T20:04:00.107748+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestHistoryBoundedAndWellbeingCorrections","Elapsed":0.16}
+{"Time":"2026-10-22T20:04:00.107769+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery"}
+{"Time":"2026-10-22T20:04:00.107782+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery","Output":"=== RUN   TestIndependentSignalsCannotMaskRecovery\n"}
+{"Time":"2026-10-22T20:04:00.107793+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/same_day_partial_session"}
+{"Time":"2026-10-22T20:04:00.107801+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/same_day_partial_session","Output":"=== RUN   TestIndependentSignalsCannotMaskRecovery/same_day_partial_session\n"}
+{"Time":"2026-10-22T20:04:00.107812+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/same_day_partial_session","Output":"--- PASS: TestIndependentSignalsCannotMaskRecovery/same_day_partial_session (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.108671+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/same_day_partial_session","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.108745+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/later_day_partial_metric"}
+{"Time":"2026-10-22T20:04:00.108767+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/later_day_partial_metric","Output":"=== RUN   TestIndependentSignalsCannotMaskRecovery/later_day_partial_metric\n"}
+{"Time":"2026-10-22T20:04:00.108781+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/later_day_partial_metric","Output":"--- PASS: TestIndependentSignalsCannotMaskRecovery/later_day_partial_metric (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.108866+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/later_day_partial_metric","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.108882+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/backfill_cannot_replace_newer_sleep"}
+{"Time":"2026-10-22T20:04:00.108889+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/backfill_cannot_replace_newer_sleep","Output":"=== RUN   TestIndependentSignalsCannotMaskRecovery/backfill_cannot_replace_newer_sleep\n"}
+{"Time":"2026-10-22T20:04:00.108898+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/backfill_cannot_replace_newer_sleep","Output":"--- PASS: TestIndependentSignalsCannotMaskRecovery/backfill_cannot_replace_newer_sleep (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.11105+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/backfill_cannot_replace_newer_sleep","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.111073+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/same_fact_partial_correction"}
+{"Time":"2026-10-22T20:04:00.111084+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/same_fact_partial_correction","Output":"=== RUN   TestIndependentSignalsCannotMaskRecovery/same_fact_partial_correction\n"}
+{"Time":"2026-10-22T20:04:00.111283+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/same_fact_partial_correction","Output":"--- PASS: TestIndependentSignalsCannotMaskRecovery/same_fact_partial_correction (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.111357+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery/same_fact_partial_correction","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.111402+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery","Output":"--- PASS: TestIndependentSignalsCannotMaskRecovery (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.111427+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestIndependentSignalsCannotMaskRecovery","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.111439+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestPartialCorrectionRemainsIdempotent"}
+{"Time":"2026-10-22T20:04:00.111466+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestPartialCorrectionRemainsIdempotent","Output":"=== RUN   TestPartialCorrectionRemainsIdempotent\n"}
+{"Time":"2026-10-22T20:04:00.111477+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestPartialCorrectionRemainsIdempotent","Output":"--- PASS: TestPartialCorrectionRemainsIdempotent (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.111485+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestPartialCorrectionRemainsIdempotent","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.111494+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantPreviewAndApplyPreserveOriginal"}
+{"Time":"2026-10-22T20:04:00.111501+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantPreviewAndApplyPreserveOriginal","Output":"=== RUN   TestSessionVariantPreviewAndApplyPreserveOriginal\n"}
+{"Time":"2026-10-22T20:04:00.111713+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantPreviewAndApplyPreserveOriginal","Output":"--- PASS: TestSessionVariantPreviewAndApplyPreserveOriginal (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.112164+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantPreviewAndApplyPreserveOriginal","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.112229+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantsAreContextualAndNeverLonger"}
+{"Time":"2026-10-22T20:04:00.112244+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantsAreContextualAndNeverLonger","Output":"=== RUN   TestSessionVariantsAreContextualAndNeverLonger\n"}
+{"Time":"2026-10-22T20:04:00.11434+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantsAreContextualAndNeverLonger","Output":"--- PASS: TestSessionVariantsAreContextualAndNeverLonger (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.114463+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantsAreContextualAndNeverLonger","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.114496+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantCASRetryAndExplicitRevert"}
+{"Time":"2026-10-22T20:04:00.114509+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantCASRetryAndExplicitRevert","Output":"=== RUN   TestSessionVariantCASRetryAndExplicitRevert\n"}
+{"Time":"2026-10-22T20:04:00.118365+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantCASRetryAndExplicitRevert","Output":"--- PASS: TestSessionVariantCASRetryAndExplicitRevert (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.118595+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantCASRetryAndExplicitRevert","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.118647+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantsRespectRecoveryAndDoNotCompound"}
+{"Time":"2026-10-22T20:04:00.118661+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantsRespectRecoveryAndDoNotCompound","Output":"=== RUN   TestSessionVariantsRespectRecoveryAndDoNotCompound\n"}
+{"Time":"2026-10-22T20:04:00.119736+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantsRespectRecoveryAndDoNotCompound","Output":"--- PASS: TestSessionVariantsRespectRecoveryAndDoNotCompound (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.120215+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantsRespectRecoveryAndDoNotCompound","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.120235+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantEligibilityAndHistoricImmutability"}
+{"Time":"2026-10-22T20:04:00.120244+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantEligibilityAndHistoricImmutability","Output":"=== RUN   TestSessionVariantEligibilityAndHistoricImmutability\n"}
+{"Time":"2026-10-22T20:04:00.120256+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantEligibilityAndHistoricImmutability","Output":"--- PASS: TestSessionVariantEligibilityAndHistoricImmutability (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.120268+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionVariantEligibilityAndHistoricImmutability","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.120276+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestAcceptedSessionVariantRolloverCancellationAndNoGhost"}
+{"Time":"2026-10-22T20:04:00.120283+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAcceptedSessionVariantRolloverCancellationAndNoGhost","Output":"=== RUN   TestAcceptedSessionVariantRolloverCancellationAndNoGhost\n"}
+{"Time":"2026-10-22T20:04:00.120875+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAcceptedSessionVariantRolloverCancellationAndNoGhost","Output":"--- PASS: TestAcceptedSessionVariantRolloverCancellationAndNoGhost (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.12089+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestAcceptedSessionVariantRolloverCancellationAndNoGhost","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.120897+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestAdjustedCompletionsDoNotUnlockProgress"}
+{"Time":"2026-10-22T20:04:00.120914+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAdjustedCompletionsDoNotUnlockProgress","Output":"=== RUN   TestAdjustedCompletionsDoNotUnlockProgress\n"}
+{"Time":"2026-10-22T20:04:00.122063+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestAdjustedCompletionsDoNotUnlockProgress","Output":"--- PASS: TestAdjustedCompletionsDoNotUnlockProgress (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.122146+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestAdjustedCompletionsDoNotUnlockProgress","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.122168+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility"}
+{"Time":"2026-10-22T20:04:00.122179+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility\n"}
+{"Time":"2026-10-22T20:04:00.12221+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/noncanonical"}
+{"Time":"2026-10-22T20:04:00.122224+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/noncanonical","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/noncanonical\n"}
+{"Time":"2026-10-22T20:04:00.122237+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/noncanonical","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/noncanonical (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.122248+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/noncanonical","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.122257+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_overlay"}
+{"Time":"2026-10-22T20:04:00.122266+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_overlay","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_overlay\n"}
+{"Time":"2026-10-22T20:04:00.122276+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_overlay","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_overlay (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.122305+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_overlay","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.122315+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/low_impact"}
+{"Time":"2026-10-22T20:04:00.122324+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/low_impact","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/low_impact\n"}
+{"Time":"2026-10-22T20:04:00.122338+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/low_impact","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/low_impact (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.122348+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/low_impact","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.122358+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_long"}
+{"Time":"2026-10-22T20:04:00.122366+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_long","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_long\n"}
+{"Time":"2026-10-22T20:04:00.122428+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_long","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_long (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.122449+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_long","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.122459+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/duplicate"}
+{"Time":"2026-10-22T20:04:00.122468+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/duplicate","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/duplicate\n"}
+{"Time":"2026-10-22T20:04:00.126637+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/duplicate","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/duplicate (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.126789+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/duplicate","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.126816+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/after_day"}
+{"Time":"2026-10-22T20:04:00.127778+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/after_day","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/after_day\n"}
+{"Time":"2026-10-22T20:04:00.12781+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/after_day","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/after_day (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.127822+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/after_day","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.127834+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/invalid_time"}
+{"Time":"2026-10-22T20:04:00.127843+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/invalid_time","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/invalid_time\n"}
+{"Time":"2026-10-22T20:04:00.127854+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/invalid_time","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/invalid_time (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.127862+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/invalid_time","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.127978+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/unknown_id"}
+{"Time":"2026-10-22T20:04:00.128052+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/unknown_id","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/unknown_id\n"}
+{"Time":"2026-10-22T20:04:00.128099+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/unknown_id","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/unknown_id (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.128192+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/unknown_id","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.128208+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_short"}
+{"Time":"2026-10-22T20:04:00.128219+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_short","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_short\n"}
+{"Time":"2026-10-22T20:04:00.137147+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_short","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_short (0.01s)\n"}
+{"Time":"2026-10-22T20:04:00.137204+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/too_short","Elapsed":0.01}
+{"Time":"2026-10-22T20:04:00.137219+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/different_date"}
+{"Time":"2026-10-22T20:04:00.137229+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/different_date","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/different_date\n"}
+{"Time":"2026-10-22T20:04:00.137409+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/different_date","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/different_date (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.137427+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/different_date","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.137456+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_session"}
+{"Time":"2026-10-22T20:04:00.137465+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_session","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_session\n"}
+{"Time":"2026-10-22T20:04:00.137649+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_session","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_session (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.137669+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_session","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.137893+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_week"}
+{"Time":"2026-10-22T20:04:00.137954+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_week","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_week\n"}
+{"Time":"2026-10-22T20:04:00.137978+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_week","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_week (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.13799+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/missing_week","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.138056+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/future_update"}
+{"Time":"2026-10-22T20:04:00.138067+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/future_update","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/future_update\n"}
+{"Time":"2026-10-22T20:04:00.138089+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/future_update","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/future_update (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.138101+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/future_update","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.138111+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_title"}
+{"Time":"2026-10-22T20:04:00.138119+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_title","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_title\n"}
+{"Time":"2026-10-22T20:04:00.138132+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_title","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_title (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.138145+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/snapshot_title","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.138163+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/environment"}
+{"Time":"2026-10-22T20:04:00.138457+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/environment","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/environment\n"}
+{"Time":"2026-10-22T20:04:00.138493+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/environment","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/environment (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.138507+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/environment","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.138517+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/early_update"}
+{"Time":"2026-10-22T20:04:00.138527+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/early_update","Output":"=== RUN   TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/early_update\n"}
+{"Time":"2026-10-22T20:04:00.138539+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/early_update","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/early_update (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.13855+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility/early_update","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.139974+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility","Output":"--- PASS: TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility (0.02s)\n"}
+{"Time":"2026-10-22T20:04:00.140039+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestSessionAdjustmentBackupValidationOwnershipAndNullCompatibility","Elapsed":0.02}
+{"Time":"2026-10-22T20:04:00.140051+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestHRVCorrectionReceiptsAndHomogeneousSeries"}
+{"Time":"2026-10-22T20:04:00.140059+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestHRVCorrectionReceiptsAndHomogeneousSeries","Output":"=== RUN   TestHRVCorrectionReceiptsAndHomogeneousSeries\n"}
+{"Time":"2026-10-22T20:04:00.140068+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestHRVCorrectionReceiptsAndHomogeneousSeries","Output":"--- PASS: TestHRVCorrectionReceiptsAndHomogeneousSeries (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.140075+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestHRVCorrectionReceiptsAndHomogeneousSeries","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.140082+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestBodyNullableReplacementAndDeepOwnership"}
+{"Time":"2026-10-22T20:04:00.140088+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBodyNullableReplacementAndDeepOwnership","Output":"=== RUN   TestBodyNullableReplacementAndDeepOwnership\n"}
+{"Time":"2026-10-22T20:04:00.141329+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestBodyNullableReplacementAndDeepOwnership","Output":"--- PASS: TestBodyNullableReplacementAndDeepOwnership (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.141447+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestBodyNullableReplacementAndDeepOwnership","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.141461+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries"}
+{"Time":"2026-10-22T20:04:00.14147+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries","Output":"=== RUN   TestWellnessValidationAndDateBoundaries\n"}
+{"Time":"2026-10-22T20:04:00.141478+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_id"}
+{"Time":"2026-10-22T20:04:00.141485+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_id","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_id\n"}
+{"Time":"2026-10-22T20:04:00.141498+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_id","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_id (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.141506+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_id","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.141513+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_long_id"}
+{"Time":"2026-10-22T20:04:00.14152+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_long_id","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_long_id\n"}
+{"Time":"2026-10-22T20:04:00.143334+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_long_id","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_long_id (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.143384+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_long_id","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.143419+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_invalid_date"}
+{"Time":"2026-10-22T20:04:00.143443+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_invalid_date","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_invalid_date\n"}
+{"Time":"2026-10-22T20:04:00.143554+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_invalid_date","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_invalid_date (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.143568+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_invalid_date","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.143578+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_future"}
+{"Time":"2026-10-22T20:04:00.143586+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_future","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_future\n"}
+{"Time":"2026-10-22T20:04:00.143595+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_future","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_future (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.143603+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_future","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.143611+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_too_old"}
+{"Time":"2026-10-22T20:04:00.143617+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_too_old","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_too_old\n"}
+{"Time":"2026-10-22T20:04:00.143625+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_too_old","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_too_old (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.143631+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_too_old","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.143638+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_epoch"}
+{"Time":"2026-10-22T20:04:00.143645+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_epoch","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_epoch\n"}
+{"Time":"2026-10-22T20:04:00.143653+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_epoch","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_epoch (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.14366+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_epoch","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.143672+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_zero"}
+{"Time":"2026-10-22T20:04:00.143679+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_zero","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_zero\n"}
+{"Time":"2026-10-22T20:04:00.143686+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_zero","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_zero (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.143693+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_zero","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.144418+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_negative"}
+{"Time":"2026-10-22T20:04:00.144441+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_negative","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_negative\n"}
+{"Time":"2026-10-22T20:04:00.144452+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_negative","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_negative (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.144491+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_negative","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.1445+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_above_limit"}
+{"Time":"2026-10-22T20:04:00.144507+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_above_limit","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_above_limit\n"}
+{"Time":"2026-10-22T20:04:00.144518+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_above_limit","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_above_limit (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.144526+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_above_limit","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.144533+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_nan"}
+{"Time":"2026-10-22T20:04:00.14454+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_nan","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_nan\n"}
+{"Time":"2026-10-22T20:04:00.144548+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_nan","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_nan (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.144561+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_nan","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.14457+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_infinite"}
+{"Time":"2026-10-22T20:04:00.144577+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_infinite","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_infinite\n"}
+{"Time":"2026-10-22T20:04:00.144584+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_infinite","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_infinite (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.14459+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_infinite","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.144596+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_metric"}
+{"Time":"2026-10-22T20:04:00.144602+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_metric","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_metric\n"}
+{"Time":"2026-10-22T20:04:00.144609+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_metric","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_metric (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.144616+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_metric","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.144622+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_window"}
+{"Time":"2026-10-22T20:04:00.144628+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_window","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_window\n"}
+{"Time":"2026-10-22T20:04:00.144634+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_window","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_window (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.144663+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_window","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.14467+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_empty_source"}
+{"Time":"2026-10-22T20:04:00.144676+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_empty_source","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_empty_source\n"}
+{"Time":"2026-10-22T20:04:00.144686+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_empty_source","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_empty_source (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.144692+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_empty_source","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.144698+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_long_source"}
+{"Time":"2026-10-22T20:04:00.144704+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_long_source","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_long_source\n"}
+{"Time":"2026-10-22T20:04:00.155102+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_long_source","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_long_source (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.155163+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_long_source","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.155174+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_control_source"}
+{"Time":"2026-10-22T20:04:00.155183+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_control_source","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_control_source\n"}
+{"Time":"2026-10-22T20:04:00.155192+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_control_source","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_control_source (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.155199+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_control_source","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.155234+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_invalid_utf8"}
+{"Time":"2026-10-22T20:04:00.155262+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_invalid_utf8","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/hrv_invalid_utf8\n"}
+{"Time":"2026-10-22T20:04:00.155271+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_invalid_utf8","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/hrv_invalid_utf8 (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.155278+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/hrv_invalid_utf8","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.155285+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_missing_both"}
+{"Time":"2026-10-22T20:04:00.155292+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_missing_both","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_missing_both\n"}
+{"Time":"2026-10-22T20:04:00.155299+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_missing_both","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_missing_both (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.155358+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_missing_both","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.155366+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_zero_weight"}
+{"Time":"2026-10-22T20:04:00.155372+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_zero_weight","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_zero_weight\n"}
+{"Time":"2026-10-22T20:04:00.15538+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_zero_weight","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_zero_weight (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.155386+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_zero_weight","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.155392+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_low_weight"}
+{"Time":"2026-10-22T20:04:00.155398+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_low_weight","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_low_weight\n"}
+{"Time":"2026-10-22T20:04:00.155405+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_low_weight","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_low_weight (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.155411+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_low_weight","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.155418+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_high_weight"}
+{"Time":"2026-10-22T20:04:00.155424+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_high_weight","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_high_weight\n"}
+{"Time":"2026-10-22T20:04:00.15543+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_high_weight","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_high_weight (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.155455+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_high_weight","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.155462+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_nan_weight"}
+{"Time":"2026-10-22T20:04:00.155468+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_nan_weight","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_nan_weight\n"}
+{"Time":"2026-10-22T20:04:00.155476+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_nan_weight","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_nan_weight (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.155482+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_nan_weight","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.155488+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_inf_weight"}
+{"Time":"2026-10-22T20:04:00.155494+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_inf_weight","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_inf_weight\n"}
+{"Time":"2026-10-22T20:04:00.155502+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_inf_weight","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_inf_weight (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.155987+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_inf_weight","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.156002+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_zero_fat"}
+{"Time":"2026-10-22T20:04:00.15601+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_zero_fat","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_zero_fat\n"}
+{"Time":"2026-10-22T20:04:00.156019+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_zero_fat","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_zero_fat (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.156025+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_zero_fat","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.156033+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_high_fat"}
+{"Time":"2026-10-22T20:04:00.156043+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_high_fat","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_high_fat\n"}
+{"Time":"2026-10-22T20:04:00.156063+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_high_fat","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_high_fat (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.156075+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_high_fat","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.156089+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_nan_fat"}
+{"Time":"2026-10-22T20:04:00.156096+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_nan_fat","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_nan_fat\n"}
+{"Time":"2026-10-22T20:04:00.156103+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_nan_fat","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_nan_fat (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.15611+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_nan_fat","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.156117+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_inf_fat"}
+{"Time":"2026-10-22T20:04:00.156123+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_inf_fat","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_inf_fat\n"}
+{"Time":"2026-10-22T20:04:00.156131+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_inf_fat","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_inf_fat (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.15614+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_inf_fat","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.156929+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_unknown_method"}
+{"Time":"2026-10-22T20:04:00.156949+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_unknown_method","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_unknown_method\n"}
+{"Time":"2026-10-22T20:04:00.156996+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_unknown_method","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_unknown_method (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.157089+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_unknown_method","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.157109+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_future"}
+{"Time":"2026-10-22T20:04:00.157119+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_future","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_future\n"}
+{"Time":"2026-10-22T20:04:00.157131+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_future","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_future (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.157142+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_future","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.157151+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_too_old"}
+{"Time":"2026-10-22T20:04:00.15716+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_too_old","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_too_old\n"}
+{"Time":"2026-10-22T20:04:00.15717+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_too_old","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_too_old (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.15718+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_too_old","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.157189+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_source"}
+{"Time":"2026-10-22T20:04:00.157197+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_source","Output":"=== RUN   TestWellnessValidationAndDateBoundaries/body_source\n"}
+{"Time":"2026-10-22T20:04:00.157251+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_source","Output":"--- PASS: TestWellnessValidationAndDateBoundaries/body_source (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.157268+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries/body_source","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.157352+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries","Output":"--- PASS: TestWellnessValidationAndDateBoundaries (0.02s)\n"}
+{"Time":"2026-10-22T20:04:00.157556+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessValidationAndDateBoundaries","Elapsed":0.02}
+{"Time":"2026-10-22T20:04:00.157583+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessCapacityRetainsFactsAndBoundsReceipts"}
+{"Time":"2026-10-22T20:04:00.157594+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessCapacityRetainsFactsAndBoundsReceipts","Output":"=== RUN   TestWellnessCapacityRetainsFactsAndBoundsReceipts\n"}
+{"Time":"2026-10-22T20:04:00.187976+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessCapacityRetainsFactsAndBoundsReceipts","Output":"--- PASS: TestWellnessCapacityRetainsFactsAndBoundsReceipts (0.03s)\n"}
+{"Time":"2026-10-22T20:04:00.188028+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessCapacityRetainsFactsAndBoundsReceipts","Elapsed":0.03}
+{"Time":"2026-10-22T20:04:00.188042+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering"}
+{"Time":"2026-10-22T20:04:00.188052+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering","Output":"=== RUN   TestWellnessRestoreOldHistoryAndRejectTampering\n"}
+{"Time":"2026-10-22T20:04:00.188117+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_id"}
+{"Time":"2026-10-22T20:04:00.188128+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_id","Output":"=== RUN   TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_id\n"}
+{"Time":"2026-10-22T20:04:00.188388+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_id","Output":"--- PASS: TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_id (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.188406+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_id","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.188417+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_fact"}
+{"Time":"2026-10-22T20:04:00.188426+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_fact","Output":"=== RUN   TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_fact\n"}
+{"Time":"2026-10-22T20:04:00.188437+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_fact","Output":"--- PASS: TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_fact (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.188446+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_hrv_fact","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.188493+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/invalid_hrv"}
+{"Time":"2026-10-22T20:04:00.188503+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/invalid_hrv","Output":"=== RUN   TestWellnessRestoreOldHistoryAndRejectTampering/invalid_hrv\n"}
+{"Time":"2026-10-22T20:04:00.188605+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/invalid_hrv","Output":"--- PASS: TestWellnessRestoreOldHistoryAndRejectTampering/invalid_hrv (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.188628+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/invalid_hrv","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.188641+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_id"}
+{"Time":"2026-10-22T20:04:00.188651+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_id","Output":"=== RUN   TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_id\n"}
+{"Time":"2026-10-22T20:04:00.188705+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_id","Output":"--- PASS: TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_id (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.188718+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_id","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.189035+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_fact"}
+{"Time":"2026-10-22T20:04:00.189055+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_fact","Output":"=== RUN   TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_fact\n"}
+{"Time":"2026-10-22T20:04:00.189066+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_fact","Output":"--- PASS: TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_fact (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.189108+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/duplicate_body_fact","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.18912+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/invalid_body"}
+{"Time":"2026-10-22T20:04:00.189129+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/invalid_body","Output":"=== RUN   TestWellnessRestoreOldHistoryAndRejectTampering/invalid_body\n"}
+{"Time":"2026-10-22T20:04:00.189139+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/invalid_body","Output":"--- PASS: TestWellnessRestoreOldHistoryAndRejectTampering/invalid_body (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.18915+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/invalid_body","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.18916+03:00","Action":"run","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/future"}
+{"Time":"2026-10-22T20:04:00.189168+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/future","Output":"=== RUN   TestWellnessRestoreOldHistoryAndRejectTampering/future\n"}
+{"Time":"2026-10-22T20:04:00.189995+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation"}
+{"Time":"2026-10-22T20:04:00.190057+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation","Output":"=== RUN   TestCredentialValidation\n"}
+{"Time":"2026-10-22T20:04:00.190085+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/future","Output":"--- PASS: TestWellnessRestoreOldHistoryAndRejectTampering/future (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.190097+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering/future","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.190645+03:00","Action":"output","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering","Output":"--- PASS: TestWellnessRestoreOldHistoryAndRejectTampering (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.190712+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Test":"TestWellnessRestoreOldHistoryAndRejectTampering","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.190727+03:00","Action":"output","Package":"rhythm/internal/rhythm","Output":"PASS\n"}
+{"Time":"2026-10-22T20:04:00.190745+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/__Anna.Ritm__"}
+{"Time":"2026-10-22T20:04:00.190756+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/__Anna.Ritm__","Output":"=== RUN   TestCredentialValidation/__Anna.Ritm__\n"}
+{"Time":"2026-10-22T20:04:00.191294+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/__Anna.Ritm__","Output":"--- PASS: TestCredentialValidation/__Anna.Ritm__ (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.191367+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/__Anna.Ritm__","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.191385+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a_b-1"}
+{"Time":"2026-10-22T20:04:00.191409+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a_b-1","Output":"=== RUN   TestCredentialValidation/a_b-1\n"}
+{"Time":"2026-10-22T20:04:00.191438+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a_b-1","Output":"--- PASS: TestCredentialValidation/a_b-1 (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.191489+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a_b-1","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.191499+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/ab"}
+{"Time":"2026-10-22T20:04:00.191509+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/ab","Output":"=== RUN   TestCredentialValidation/ab\n"}
+{"Time":"2026-10-22T20:04:00.191519+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/ab","Output":"--- PASS: TestCredentialValidation/ab (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.191528+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/ab","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.191537+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a_b"}
+{"Time":"2026-10-22T20:04:00.191545+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a_b","Output":"=== RUN   TestCredentialValidation/a_b\n"}
+{"Time":"2026-10-22T20:04:00.191554+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a_b","Output":"--- PASS: TestCredentialValidation/a_b (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.191563+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a_b","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.191586+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/анна"}
+{"Time":"2026-10-22T20:04:00.191596+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/анна","Output":"=== RUN   TestCredentialValidation/анна\n"}
+{"Time":"2026-10-22T20:04:00.191605+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/анна","Output":"--- PASS: TestCredentialValidation/анна (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.191614+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/анна","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.191623+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a@b.ru"}
+{"Time":"2026-10-22T20:04:00.191631+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a@b.ru","Output":"=== RUN   TestCredentialValidation/a@b.ru\n"}
+{"Time":"2026-10-22T20:04:00.191655+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a@b.ru","Output":"--- PASS: TestCredentialValidation/a@b.ru (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.191665+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/a@b.ru","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.191678+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+{"Time":"2026-10-22T20:04:00.191693+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","Output":"=== RUN   TestCredentialValidation/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n"}
+{"Time":"2026-10-22T20:04:00.192509+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","Output":"--- PASS: TestCredentialValidation/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.192542+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.192556+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation","Output":"--- PASS: TestCredentialValidation (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.192571+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestCredentialValidation","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.192583+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestSessionLimitExpiryAndLegacyRevocation"}
+{"Time":"2026-10-22T20:04:00.192624+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestSessionLimitExpiryAndLegacyRevocation","Output":"=== RUN   TestSessionLimitExpiryAndLegacyRevocation\n"}
+{"Time":"2026-10-22T20:04:00.192636+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestSessionLimitExpiryAndLegacyRevocation","Output":"--- PASS: TestSessionLimitExpiryAndLegacyRevocation (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.192645+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestSessionLimitExpiryAndLegacyRevocation","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.192653+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestPasswordSaltAndRecoveryDigest"}
+{"Time":"2026-10-22T20:04:00.192661+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestPasswordSaltAndRecoveryDigest","Output":"=== RUN   TestPasswordSaltAndRecoveryDigest\n"}
+{"Time":"2026-10-22T20:04:00.776107+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestCanceledLedgerCommitKeepsSessionsAndRevocations"}
+{"Time":"2026-10-22T20:04:00.776272+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestCanceledLedgerCommitKeepsSessionsAndRevocations","Output":"=== RUN   TestCanceledLedgerCommitKeepsSessionsAndRevocations\n"}
+{"Time":"2026-10-22T20:04:00.804145+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestCanceledLedgerCommitKeepsSessionsAndRevocations","Output":"--- PASS: TestCanceledLedgerCommitKeepsSessionsAndRevocations (0.03s)\n"}
+{"Time":"2026-10-22T20:04:00.80423+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestCanceledLedgerCommitKeepsSessionsAndRevocations","Elapsed":0.03}
+{"Time":"2026-10-22T20:04:00.80425+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestLedgerSnapshotsDoNotShareMutableMaps"}
+{"Time":"2026-10-22T20:04:00.804262+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestLedgerSnapshotsDoNotShareMutableMaps","Output":"=== RUN   TestLedgerSnapshotsDoNotShareMutableMaps\n"}
+{"Time":"2026-10-22T20:04:00.830022+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestLedgerSnapshotsDoNotShareMutableMaps","Output":"--- PASS: TestLedgerSnapshotsDoNotShareMutableMaps (0.03s)\n"}
+{"Time":"2026-10-22T20:04:00.830155+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestLedgerSnapshotsDoNotShareMutableMaps","Elapsed":0.03}
+{"Time":"2026-10-22T20:04:00.830183+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestSnapshotLockCancellationAndCutover"}
+{"Time":"2026-10-22T20:04:00.830213+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestSnapshotLockCancellationAndCutover","Output":"=== RUN   TestSnapshotLockCancellationAndCutover\n"}
+{"Time":"2026-10-22T20:04:00.901713+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestSnapshotLockCancellationAndCutover","Output":"--- PASS: TestSnapshotLockCancellationAndCutover (0.07s)\n"}
+{"Time":"2026-10-22T20:04:00.901786+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestSnapshotLockCancellationAndCutover","Elapsed":0.07}
+{"Time":"2026-10-22T20:04:00.901818+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestSnapshotRequiresOriginalKey"}
+{"Time":"2026-10-22T20:04:00.901831+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestSnapshotRequiresOriginalKey","Output":"=== RUN   TestSnapshotRequiresOriginalKey\n"}
+{"Time":"2026-10-22T20:04:00.90634+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestSnapshotRequiresOriginalKey","Output":"--- PASS: TestSnapshotRequiresOriginalKey (0.00s)\n"}
+{"Time":"2026-10-22T20:04:00.908126+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestSnapshotRequiresOriginalKey","Elapsed":0}
+{"Time":"2026-10-22T20:04:00.908171+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestPersistRestartAndIsolation"}
+{"Time":"2026-10-22T20:04:00.908395+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestPersistRestartAndIsolation","Output":"=== RUN   TestPersistRestartAndIsolation\n"}
+{"Time":"2026-10-22T20:04:00.926119+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestPersistRestartAndIsolation","Output":"--- PASS: TestPersistRestartAndIsolation (0.02s)\n"}
+{"Time":"2026-10-22T20:04:00.927256+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestPersistRestartAndIsolation","Elapsed":0.02}
+{"Time":"2026-10-22T20:04:00.927299+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestConcurrentRevisionOneWinner"}
+{"Time":"2026-10-22T20:04:00.927312+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestConcurrentRevisionOneWinner","Output":"=== RUN   TestConcurrentRevisionOneWinner\n"}
+{"Time":"2026-10-22T20:04:00.957784+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestConcurrentRevisionOneWinner","Output":"--- PASS: TestConcurrentRevisionOneWinner (0.04s)\n"}
+{"Time":"2026-10-22T20:04:00.957856+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestConcurrentRevisionOneWinner","Elapsed":0.04}
+{"Time":"2026-10-22T20:04:00.957873+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestCancellationWhileWaitingDoesNotReleaseOwner"}
+{"Time":"2026-10-22T20:04:00.957882+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestCancellationWhileWaitingDoesNotReleaseOwner","Output":"=== RUN   TestCancellationWhileWaitingDoesNotReleaseOwner\n"}
+{"Time":"2026-10-22T20:04:00.986672+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestCancellationWhileWaitingDoesNotReleaseOwner","Output":"--- PASS: TestCancellationWhileWaitingDoesNotReleaseOwner (0.03s)\n"}
+{"Time":"2026-10-22T20:04:00.986751+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestCancellationWhileWaitingDoesNotReleaseOwner","Elapsed":0.03}
+{"Time":"2026-10-22T20:04:00.986772+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestFailedCommitDoesNotAcknowledgeOrCache"}
+{"Time":"2026-10-22T20:04:00.986783+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestFailedCommitDoesNotAcknowledgeOrCache","Output":"=== RUN   TestFailedCommitDoesNotAcknowledgeOrCache\n"}
+{"Time":"2026-10-22T20:04:00.994799+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestFailedCommitDoesNotAcknowledgeOrCache","Output":"--- PASS: TestFailedCommitDoesNotAcknowledgeOrCache (0.01s)\n"}
+{"Time":"2026-10-22T20:04:00.995216+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestFailedCommitDoesNotAcknowledgeOrCache","Elapsed":0.01}
+{"Time":"2026-10-22T20:04:00.995253+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestCorruptionUnavailableAndTraversal"}
+{"Time":"2026-10-22T20:04:00.995265+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestCorruptionUnavailableAndTraversal","Output":"=== RUN   TestCorruptionUnavailableAndTraversal\n"}
+{"Time":"2026-10-22T20:04:01.001216+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestCorruptionUnavailableAndTraversal","Output":"--- PASS: TestCorruptionUnavailableAndTraversal (0.01s)\n"}
+{"Time":"2026-10-22T20:04:01.001365+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestCorruptionUnavailableAndTraversal","Elapsed":0.01}
+{"Time":"2026-10-22T20:04:01.001408+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestSecretSurvivesRestart"}
+{"Time":"2026-10-22T20:04:01.001423+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestSecretSurvivesRestart","Output":"=== RUN   TestSecretSurvivesRestart\n"}
+{"Time":"2026-10-22T20:04:01.029795+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestSecretSurvivesRestart","Output":"--- PASS: TestSecretSurvivesRestart (0.03s)\n"}
+{"Time":"2026-10-22T20:04:01.030023+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestSecretSurvivesRestart","Elapsed":0.03}
+{"Time":"2026-10-22T20:04:01.030074+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestOversizedWriteCannotPoisonReadableRecord"}
+{"Time":"2026-10-22T20:04:01.030098+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestOversizedWriteCannotPoisonReadableRecord","Output":"=== RUN   TestOversizedWriteCannotPoisonReadableRecord\n"}
+{"Time":"2026-10-22T20:04:01.1976+03:00","Action":"output","Package":"rhythm/internal/rhythm","Output":"ok  \trhythm/internal/rhythm\t4.723s\n"}
+{"Time":"2026-10-22T20:04:01.197746+03:00","Action":"pass","Package":"rhythm/internal/rhythm","Elapsed":4.725}
+{"Time":"2026-10-22T20:04:01.211471+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestOversizedWriteCannotPoisonReadableRecord","Output":"--- PASS: TestOversizedWriteCannotPoisonReadableRecord (0.18s)\n"}
+{"Time":"2026-10-22T20:04:01.211529+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestOversizedWriteCannotPoisonReadableRecord","Elapsed":0.18}
+{"Time":"2026-10-22T20:04:01.21155+03:00","Action":"run","Package":"rhythm/internal/filestore","Test":"TestLegacyMigrationAndRolloverPersistOnce"}
+{"Time":"2026-10-22T20:04:01.211578+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestLegacyMigrationAndRolloverPersistOnce","Output":"=== RUN   TestLegacyMigrationAndRolloverPersistOnce\n"}
+{"Time":"2026-10-22T20:04:01.278986+03:00","Action":"output","Package":"rhythm/internal/filestore","Test":"TestLegacyMigrationAndRolloverPersistOnce","Output":"--- PASS: TestLegacyMigrationAndRolloverPersistOnce (0.06s)\n"}
+{"Time":"2026-10-22T20:04:01.279044+03:00","Action":"pass","Package":"rhythm/internal/filestore","Test":"TestLegacyMigrationAndRolloverPersistOnce","Elapsed":0.06}
+{"Time":"2026-10-22T20:04:01.27906+03:00","Action":"output","Package":"rhythm/internal/filestore","Output":"PASS\n"}
+{"Time":"2026-10-22T20:04:01.432862+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestCanceledLedgerCommitKeepsSessionsAndRevocations"}
+{"Time":"2026-10-22T20:04:01.432936+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestCanceledLedgerCommitKeepsSessionsAndRevocations","Output":"=== RUN   TestCanceledLedgerCommitKeepsSessionsAndRevocations\n"}
+{"Time":"2026-10-22T20:04:01.709019+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestCanceledLedgerCommitKeepsSessionsAndRevocations","Output":"--- PASS: TestCanceledLedgerCommitKeepsSessionsAndRevocations (0.27s)\n"}
+{"Time":"2026-10-22T20:04:01.709668+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestCanceledLedgerCommitKeepsSessionsAndRevocations","Elapsed":0.27}
+{"Time":"2026-10-22T20:04:01.715187+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestScopedLedgerReadsExcludeOtherAccountsAndSessions"}
+{"Time":"2026-10-22T20:04:01.716578+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestScopedLedgerReadsExcludeOtherAccountsAndSessions","Output":"=== RUN   TestScopedLedgerReadsExcludeOtherAccountsAndSessions\n"}
+{"Time":"2026-10-22T20:04:02.28019+03:00","Action":"output","Package":"rhythm/internal/filestore","Output":"ok  \trhythm/internal/filestore\t5.803s\n"}
+{"Time":"2026-10-22T20:04:02.280231+03:00","Action":"pass","Package":"rhythm/internal/filestore","Elapsed":5.806}
+{"Time":"2026-10-22T20:04:07.090716+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestScopedLedgerReadsExcludeOtherAccountsAndSessions","Output":"--- PASS: TestScopedLedgerReadsExcludeOtherAccountsAndSessions (5.38s)\n"}
+{"Time":"2026-10-22T20:04:07.091012+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestScopedLedgerReadsExcludeOtherAccountsAndSessions","Elapsed":5.38}
+{"Time":"2026-10-22T20:04:07.091035+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestOfflineImportPreservesTelegramSessionAndGuestRevocation"}
+{"Time":"2026-10-22T20:04:07.091134+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestOfflineImportPreservesTelegramSessionAndGuestRevocation","Output":"=== RUN   TestOfflineImportPreservesTelegramSessionAndGuestRevocation\n"}
+{"Time":"2026-10-22T20:04:07.244129+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestOfflineImportPreservesTelegramSessionAndGuestRevocation","Output":"--- PASS: TestOfflineImportPreservesTelegramSessionAndGuestRevocation (0.15s)\n"}
+{"Time":"2026-10-22T20:04:07.244238+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestOfflineImportPreservesTelegramSessionAndGuestRevocation","Elapsed":0.15}
+{"Time":"2026-10-22T20:04:07.244258+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestHTTPBootstrapDoesNotPersistEmptyDiaries"}
+{"Time":"2026-10-22T20:04:07.244268+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestHTTPBootstrapDoesNotPersistEmptyDiaries","Output":"=== RUN   TestHTTPBootstrapDoesNotPersistEmptyDiaries\n"}
+{"Time":"2026-10-22T20:04:07.293445+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestHTTPBootstrapDoesNotPersistEmptyDiaries","Output":"--- PASS: TestHTTPBootstrapDoesNotPersistEmptyDiaries (0.05s)\n"}
+{"Time":"2026-10-22T20:04:07.293513+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestHTTPBootstrapDoesNotPersistEmptyDiaries","Elapsed":0.05}
+{"Time":"2026-10-22T20:04:07.293531+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestMigrationsConcurrentAndDrift"}
+{"Time":"2026-10-22T20:04:07.293541+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestMigrationsConcurrentAndDrift","Output":"=== RUN   TestMigrationsConcurrentAndDrift\n"}
+{"Time":"2026-10-22T20:04:07.388092+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestMigrationsConcurrentAndDrift","Output":"--- PASS: TestMigrationsConcurrentAndDrift (0.09s)\n"}
+{"Time":"2026-10-22T20:04:07.38819+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestMigrationsConcurrentAndDrift","Elapsed":0.09}
+{"Time":"2026-10-22T20:04:07.388277+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestMigrationDDLFailureRollsBack"}
+{"Time":"2026-10-22T20:04:07.388292+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestMigrationDDLFailureRollsBack","Output":"=== RUN   TestMigrationDDLFailureRollsBack\n"}
+{"Time":"2026-10-22T20:04:07.422437+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestMigrationDDLFailureRollsBack","Output":"--- PASS: TestMigrationDDLFailureRollsBack (0.03s)\n"}
+{"Time":"2026-10-22T20:04:07.422621+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestMigrationDDLFailureRollsBack","Elapsed":0.03}
+{"Time":"2026-10-22T20:04:07.422636+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestPersistenceIsolationConcurrentRevisionAndRollback"}
+{"Time":"2026-10-22T20:04:07.422643+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestPersistenceIsolationConcurrentRevisionAndRollback","Output":"=== RUN   TestPersistenceIsolationConcurrentRevisionAndRollback\n"}
+{"Time":"2026-10-22T20:04:07.528493+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestPersistenceIsolationConcurrentRevisionAndRollback","Output":"--- PASS: TestPersistenceIsolationConcurrentRevisionAndRollback (0.11s)\n"}
+{"Time":"2026-10-22T20:04:07.529135+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestPersistenceIsolationConcurrentRevisionAndRollback","Elapsed":0.11}
+{"Time":"2026-10-22T20:04:07.529187+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestCancellationFreesTransaction"}
+{"Time":"2026-10-22T20:04:07.529199+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestCancellationFreesTransaction","Output":"=== RUN   TestCancellationFreesTransaction\n"}
+{"Time":"2026-10-22T20:04:07.692816+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestCancellationFreesTransaction","Output":"--- PASS: TestCancellationFreesTransaction (0.16s)\n"}
+{"Time":"2026-10-22T20:04:07.692872+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestCancellationFreesTransaction","Elapsed":0.16}
+{"Time":"2026-10-22T20:04:07.692889+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestAccountClaimRecoveryAndScopedReads"}
+{"Time":"2026-10-22T20:04:07.692896+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestAccountClaimRecoveryAndScopedReads","Output":"=== RUN   TestAccountClaimRecoveryAndScopedReads\n"}
+{"Time":"2026-10-22T20:04:10.637632+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestPasswordSaltAndRecoveryDigest","Output":"--- PASS: TestPasswordSaltAndRecoveryDigest (10.45s)\n"}
+{"Time":"2026-10-22T20:04:10.637722+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestPasswordSaltAndRecoveryDigest","Elapsed":10.45}
+{"Time":"2026-10-22T20:04:10.63774+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestPrincipalAndLedgerValidation"}
+{"Time":"2026-10-22T20:04:10.637749+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestPrincipalAndLedgerValidation","Output":"=== RUN   TestPrincipalAndLedgerValidation\n"}
+{"Time":"2026-10-22T20:04:10.637871+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestPrincipalAndLedgerValidation","Output":"--- PASS: TestPrincipalAndLedgerValidation (0.00s)\n"}
+{"Time":"2026-10-22T20:04:10.637889+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestPrincipalAndLedgerValidation","Elapsed":0}
+{"Time":"2026-10-22T20:04:10.637908+03:00","Action":"run","Package":"rhythm/internal/accounts","Test":"TestInFlightLoginCannotRestoreSessionAfterPasswordChange"}
+{"Time":"2026-10-22T20:04:10.637918+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestInFlightLoginCannotRestoreSessionAfterPasswordChange","Output":"=== RUN   TestInFlightLoginCannotRestoreSessionAfterPasswordChange\n"}
+{"Time":"2026-10-22T20:04:16.253282+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestAccountClaimRecoveryAndScopedReads","Output":"--- PASS: TestAccountClaimRecoveryAndScopedReads (8.56s)\n"}
+{"Time":"2026-10-22T20:04:16.253548+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestAccountClaimRecoveryAndScopedReads","Elapsed":8.56}
+{"Time":"2026-10-22T20:04:16.253572+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestAccountFailureRollsBackClaim"}
+{"Time":"2026-10-22T20:04:16.253583+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestAccountFailureRollsBackClaim","Output":"=== RUN   TestAccountFailureRollsBackClaim\n"}
+{"Time":"2026-10-22T20:04:17.980266+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestAccountFailureRollsBackClaim","Output":"--- PASS: TestAccountFailureRollsBackClaim (1.73s)\n"}
+{"Time":"2026-10-22T20:04:17.980302+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestAccountFailureRollsBackClaim","Elapsed":1.73}
+{"Time":"2026-10-22T20:04:17.980318+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestClaimAndDiaryWriteOrder"}
+{"Time":"2026-10-22T20:04:17.980325+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestClaimAndDiaryWriteOrder","Output":"=== RUN   TestClaimAndDiaryWriteOrder\n"}
+{"Time":"2026-10-22T20:04:18.70729+03:00","Action":"output","Package":"rhythm/internal/accounts","Test":"TestInFlightLoginCannotRestoreSessionAfterPasswordChange","Output":"--- PASS: TestInFlightLoginCannotRestoreSessionAfterPasswordChange (8.07s)\n"}
+{"Time":"2026-10-22T20:04:18.70735+03:00","Action":"pass","Package":"rhythm/internal/accounts","Test":"TestInFlightLoginCannotRestoreSessionAfterPasswordChange","Elapsed":8.07}
+{"Time":"2026-10-22T20:04:18.707432+03:00","Action":"output","Package":"rhythm/internal/accounts","Output":"PASS\n"}
+{"Time":"2026-10-22T20:04:19.712227+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestClaimAndDiaryWriteOrder","Output":"--- PASS: TestClaimAndDiaryWriteOrder (1.73s)\n"}
+{"Time":"2026-10-22T20:04:19.71227+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestClaimAndDiaryWriteOrder","Elapsed":1.73}
+{"Time":"2026-10-22T20:04:19.712286+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestSessionKeyInitializationAndMissingKey"}
+{"Time":"2026-10-22T20:04:19.712293+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestSessionKeyInitializationAndMissingKey","Output":"=== RUN   TestSessionKeyInitializationAndMissingKey\n"}
+{"Time":"2026-10-22T20:04:19.713849+03:00","Action":"output","Package":"rhythm/internal/accounts","Output":"ok  \trhythm/internal/accounts\t23.237s\n"}
+{"Time":"2026-10-22T20:04:19.713903+03:00","Action":"pass","Package":"rhythm/internal/accounts","Elapsed":23.24}
+{"Time":"2026-10-22T20:04:19.75095+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestSessionKeyInitializationAndMissingKey","Output":"--- PASS: TestSessionKeyInitializationAndMissingKey (0.04s)\n"}
+{"Time":"2026-10-22T20:04:19.75099+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestSessionKeyInitializationAndMissingKey","Elapsed":0.04}
+{"Time":"2026-10-22T20:04:19.751001+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestOfflineImportPreservesAccountAndKey"}
+{"Time":"2026-10-22T20:04:19.751008+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestOfflineImportPreservesAccountAndKey","Output":"=== RUN   TestOfflineImportPreservesAccountAndKey\n"}
+{"Time":"2026-10-22T20:04:23.430172+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestOfflineImportPreservesAccountAndKey","Output":"--- PASS: TestOfflineImportPreservesAccountAndKey (3.68s)\n"}
+{"Time":"2026-10-22T20:04:23.430394+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestOfflineImportPreservesAccountAndKey","Elapsed":3.68}
+{"Time":"2026-10-22T20:04:23.43042+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestDatabaseErrorsRedactSecrets"}
+{"Time":"2026-10-22T20:04:23.430428+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestDatabaseErrorsRedactSecrets","Output":"=== RUN   TestDatabaseErrorsRedactSecrets\n"}
+{"Time":"2026-10-22T20:04:23.430717+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestDatabaseErrorsRedactSecrets","Output":"--- PASS: TestDatabaseErrorsRedactSecrets (0.00s)\n"}
+{"Time":"2026-10-22T20:04:23.430747+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestDatabaseErrorsRedactSecrets","Elapsed":0}
+{"Time":"2026-10-22T20:04:23.430765+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestImportPendingFailureAndCommittedRetry"}
+{"Time":"2026-10-22T20:04:23.430773+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestImportPendingFailureAndCommittedRetry","Output":"=== RUN   TestImportPendingFailureAndCommittedRetry\n"}
+{"Time":"2026-10-22T20:04:23.547566+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestImportPendingFailureAndCommittedRetry","Output":"--- PASS: TestImportPendingFailureAndCommittedRetry (0.12s)\n"}
+{"Time":"2026-10-22T20:04:23.54762+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestImportPendingFailureAndCommittedRetry","Elapsed":0.12}
+{"Time":"2026-10-22T20:04:23.547645+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestImportPreflightRejectsInvalidHistoryAndOversizeBeforeMarker"}
+{"Time":"2026-10-22T20:04:23.54766+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestImportPreflightRejectsInvalidHistoryAndOversizeBeforeMarker","Output":"=== RUN   TestImportPreflightRejectsInvalidHistoryAndOversizeBeforeMarker\n"}
+{"Time":"2026-10-22T20:04:24.034677+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestImportPreflightRejectsInvalidHistoryAndOversizeBeforeMarker","Output":"--- PASS: TestImportPreflightRejectsInvalidHistoryAndOversizeBeforeMarker (0.49s)\n"}
+{"Time":"2026-10-22T20:04:24.03474+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestImportPreflightRejectsInvalidHistoryAndOversizeBeforeMarker","Elapsed":0.49}
+{"Time":"2026-10-22T20:04:24.034776+03:00","Action":"run","Package":"rhythm/internal/postgresstore","Test":"TestUnexpectedPanicReleasesTransaction"}
+{"Time":"2026-10-22T20:04:24.034786+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestUnexpectedPanicReleasesTransaction","Output":"=== RUN   TestUnexpectedPanicReleasesTransaction\n"}
+{"Time":"2026-10-22T20:04:24.07472+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Test":"TestUnexpectedPanicReleasesTransaction","Output":"--- PASS: TestUnexpectedPanicReleasesTransaction (0.04s)\n"}
+{"Time":"2026-10-22T20:04:24.074774+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Test":"TestUnexpectedPanicReleasesTransaction","Elapsed":0.04}
+{"Time":"2026-10-22T20:04:24.074793+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Output":"PASS\n"}
+{"Time":"2026-10-22T20:04:25.087936+03:00","Action":"output","Package":"rhythm/internal/postgresstore","Output":"ok  \trhythm/internal/postgresstore\t28.069s\n"}
+{"Time":"2026-10-22T20:04:25.088008+03:00","Action":"pass","Package":"rhythm/internal/postgresstore","Elapsed":28.069}

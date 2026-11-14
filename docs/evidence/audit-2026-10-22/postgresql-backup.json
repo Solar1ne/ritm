@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-22T17:04:11.749045+00:00",
+  "scope": "Disposable local PostgreSQL 16 cluster, synthetic browser fixtures only; source writes stopped before backup.",
+  "backupScript": "scripts/backup.py",
+  "sourceDatabase": "rhythm_browser_test",
+  "restoredDatabase": "rhythm_restore_test",
+  "customFormatReadable": true,
+  "backupMode0600": true,
+  "backupBytes": 17956,
+  "existingBackupOverwriteRefused": true,
+  "failedBackupPartialFileRemoved": true,
+  "restoredMigrationChecksumMatchesSource": true,
+  "restoredSessionKeyPresent": true,
+  "metadataIncludingSessionKeyEqual": true,
+  "tables": {
+    "rhythm_accounts": {
+      "sourceRows": 2,
+      "restoredRows": 2,
+      "contentsEqual": true
+    },
+    "rhythm_diaries": {
+      "sourceRows": 16,
+      "restoredRows": 16,
+      "contentsEqual": true
+    },
+    "rhythm_identities": {
+      "sourceRows": 18,
+      "restoredRows": 18,
+      "contentsEqual": true
+    },
+    "rhythm_imports": {
+      "sourceRows": 0,
+      "restoredRows": 0,
+      "contentsEqual": true
+    },
+    "rhythm_legacy_revocations": {
+      "sourceRows": 0,
+      "restoredRows": 0,
+      "contentsEqual": true
+    },
+    "rhythm_metadata": {
+      "sourceRows": 1,
+      "restoredRows": 1,
+      "contentsEqual": true
+    },
+    "rhythm_schema_migrations": {
+      "sourceRows": 1,
+      "restoredRows": 1,
+      "contentsEqual": true
+    },
+    "rhythm_sessions": {
+      "sourceRows": 2,
+      "restoredRows": 2,
+      "contentsEqual": true
+    }
+  },
+  "allTablesEqual": true,
+  "secretsExported": false,
+  "privateDumpPath": "/tmp/ritm-audit-backup.dump",
+  "passed": true
+}

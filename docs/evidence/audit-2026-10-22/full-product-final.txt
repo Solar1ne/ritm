@@ -1,0 +1,13 @@
+PASS Native profile submit saves without query-string navigation; dialog focuses its heading
+PASS Explicit next-week acceptance persists across reload
+PASS Profile changes preserve current and accepted snapshots; explicit cancel exposes the new proposal
+PASS Stale plan confirmation is rejected and requires reviewing the current proposal
+PASS Journal supports editing and confirmed deletion of individual facts
+PASS CSV preview, explicit plan linking and repeated-file idempotency work through the UI
+PASS Conflicting import is atomic; TCX import and independent activity deletion work
+PASS Reminder preferences persist and produce a real ICS with local-time conversion and alarm
+PASS Assistant explains personal data, all four presets work, and unsupported questions are scoped
+PASS Backup restores into a different identity; historical snapshots can be viewed and backfilled
+PASS All new screens fit 320, 390, 768 and 1440px with real content
+PASS Visibility/focus refresh preserves an open diary form
+PASS No uncaught JavaScript errors in the full-product flow

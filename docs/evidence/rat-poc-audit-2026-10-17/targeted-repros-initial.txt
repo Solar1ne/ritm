@@ -1,0 +1,11 @@
+=== RUN   TestAuditProxyClientsShareQuota
+    audit_proxy_test.go:26: request 1: got 401, want 400
+--- FAIL: TestAuditProxyClientsShareQuota (0.00s)
+FAIL
+FAIL	rhythm/internal/httpapi	2.636s
+=== RUN   TestAuditAnonymousBootstrapPersistsEmptyRows
+    audit_guest_test.go:35: Observed: 3 anonymous GETs without cookies persist 3 diaries and 3 identities before any user data entry.
+--- PASS: TestAuditAnonymousBootstrapPersistsEmptyRows (0.04s)
+PASS
+ok  	rhythm/internal/postgresstore	3.038s
+FAIL

@@ -1,0 +1,72 @@
+{
+  "startedFromCurrentSource": true,
+  "checkedAt": "2026-10-17T11:35:59.670358+00:00",
+  "sqlIntegration": "Enabled: isolated random schemas in rhythm_test; main rhythm database not used",
+  "checks": [
+    {
+      "name": "go-race",
+      "command": [
+        "go",
+        "test",
+        "-race",
+        "-count=1",
+        "./..."
+      ],
+      "exitCode": 0,
+      "durationSeconds": 66.915,
+      "evidence": "go-race.txt"
+    },
+    {
+      "name": "go-vet",
+      "command": [
+        "go",
+        "vet",
+        "./..."
+      ],
+      "exitCode": 0,
+      "durationSeconds": 1.931,
+      "evidence": "go-vet.txt"
+    },
+    {
+      "name": "staticcheck",
+      "command": [
+        "/Users/alexlepekhov/go/bin/staticcheck",
+        "./..."
+      ],
+      "exitCode": 0,
+      "durationSeconds": 1.794,
+      "evidence": "staticcheck.txt"
+    },
+    {
+      "name": "frontend-tests",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "durationSeconds": 2.521,
+      "evidence": "frontend-tests.txt"
+    },
+    {
+      "name": "frontend-check",
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exitCode": 0,
+      "durationSeconds": 1.965,
+      "evidence": "frontend-check.txt"
+    },
+    {
+      "name": "native-config-tests",
+      "command": [
+        "python3",
+        "scripts/test_dev.py"
+      ],
+      "exitCode": 0,
+      "durationSeconds": 0.539,
+      "evidence": "native-config-tests.txt"
+    }
+  ]
+}

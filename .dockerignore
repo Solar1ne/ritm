@@ -1,0 +1,15 @@
+plugins
+.agents
+.codex
+.git
+.env
+.data
+.local
+docs
+gan-harness
+scripts
+node_modules
+test-results
+dist
+output
+mobile

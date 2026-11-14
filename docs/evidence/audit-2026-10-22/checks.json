@@ -1,0 +1,154 @@
+{
+  "executedAt": "2026-10-22T17:06:48.801338+00:00",
+  "scope": "Local source verification only; separate synthetic PostgreSQL databases and browser contexts; no VPS deployment",
+  "passed": true,
+  "productDefectsFixed": 5,
+  "go": {
+    "file": "go-test-final.jsonl",
+    "topLevelTests": 215,
+    "includingSubtests": 780,
+    "failed": 0,
+    "skipped": 0,
+    "passed": true
+  },
+  "race": {
+    "fullRun": {
+      "file": "go-test-race.jsonl",
+      "topLevelTests": 209,
+      "includingSubtests": 774,
+      "failed": 0,
+      "skipped": 0,
+      "passed": true
+    },
+    "finalChangedPackages": {
+      "file": "go-test-race-final-changed.jsonl",
+      "topLevelTests": 78,
+      "includingSubtests": 233,
+      "failed": 0,
+      "skipped": 0,
+      "passed": true
+    },
+    "finalTestSetCoveredByCombinedRaceRuns": true
+  },
+  "frontend": {
+    "passed": 67,
+    "failed": 0,
+    "syntaxCheckedModules": 16
+  },
+  "python": {
+    "passed": 3
+  },
+  "browser": {
+    "passedChecks": 73,
+    "additionalServerDayFixturePassed": true,
+    "runtimeErrors": 0
+  },
+  "rat": {
+    "passed": 16,
+    "criticalPassed": 5,
+    "iterations": 5000
+  },
+  "http": {
+    "succeeded": 300,
+    "planned": 300,
+    "errors": 0,
+    "responseP95Ms": 6.311542
+  },
+  "restartPassed": true,
+  "postgresBackupRestorePassed": true,
+  "analysis": {
+    "vetPassed": true,
+    "staticcheckPassed": true,
+    "gofmtPassed": true
+  },
+  "sourceChanges": [
+    {
+      "path": "README.md",
+      "status": "modified"
+    },
+    {
+      "path": "internal/accounts/service_test.go",
+      "status": "added"
+    },
+    {
+      "path": "internal/filestore/accounts_test.go",
+      "status": "added"
+    },
+    {
+      "path": "internal/httpapi/recovery_regression_test.go",
+      "status": "added"
+    },
+    {
+      "path": "internal/postgresstore/accounts_test.go",
+      "status": "added"
+    },
+    {
+      "path": "internal/rhythm/backup.go",
+      "status": "modified"
+    },
+    {
+      "path": "internal/rhythm/recovery_test.go",
+      "status": "added"
+    },
+    {
+      "path": "internal/rhythm/rhythm.go",
+      "status": "modified"
+    },
+    {
+      "path": "internal/rhythm/variants_test.go",
+      "status": "modified"
+    },
+    {
+      "path": "package.json",
+      "status": "modified"
+    },
+    {
+      "path": "scripts/full-product-check.mjs",
+      "status": "modified"
+    },
+    {
+      "path": "scripts/server-day-check.mjs",
+      "status": "added"
+    },
+    {
+      "path": "web/static/app.js",
+      "status": "modified"
+    },
+    {
+      "path": "web/static/features.js",
+      "status": "modified"
+    },
+    {
+      "path": "web/static/format.js",
+      "status": "modified"
+    },
+    {
+      "path": "web/static/views.js",
+      "status": "modified"
+    },
+    {
+      "path": "web/tests/features.test.js",
+      "status": "modified"
+    },
+    {
+      "path": "web/tests/server-date.test.js",
+      "status": "added"
+    }
+  ],
+  "docs": [
+    "docs/features.md",
+    "docs/quality-audit-2026-10-22.md",
+    "docs/adr/002-deterministic-adaptation.md",
+    "docs/architecture.md",
+    "docs/api.md",
+    "README.md"
+  ],
+  "limitations": [
+    "No live AI call",
+    "Telegram SDK/auth fixtures; no real bot launch",
+    "OS notification delivery not exercised",
+    "External VPS/network conditions not exercised",
+    "No product effectiveness/user pilot"
+  ],
+  "temporaryProcessesStopped": true
+}

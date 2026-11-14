@@ -1,0 +1,54 @@
+{
+  "scope": "Synthetic local PostgreSQL and Chrome; AI/Telegram fixtures, no live external calls",
+  "passed": true,
+  "totalChecks": 73,
+  "suites": [
+    {
+      "suite": "browser-check",
+      "evidence": "browser-check/browser.json",
+      "passedChecks": 20,
+      "runtimeErrors": [],
+      "passed": true
+    },
+    {
+      "suite": "full-product-check-final",
+      "evidence": "full-product-check-final/full-product-browser.json",
+      "passedChecks": 13,
+      "runtimeErrors": [],
+      "passed": true
+    },
+    {
+      "suite": "ai-product-check",
+      "evidence": "ai-product-check/browser.json",
+      "passedChecks": 10,
+      "runtimeErrors": [],
+      "passed": true
+    },
+    {
+      "suite": "wellness-nutrition-check",
+      "evidence": "wellness-nutrition-check/browser.json",
+      "passedChecks": 10,
+      "runtimeErrors": [],
+      "passed": true
+    },
+    {
+      "suite": "accounts-check",
+      "evidence": "accounts-check/browser.json",
+      "passedChecks": 12,
+      "runtimeErrors": [],
+      "passed": true
+    },
+    {
+      "suite": "first-run-check",
+      "evidence": "first-run-check/browser.json",
+      "passedChecks": 8,
+      "runtimeErrors": [],
+      "passed": true
+    }
+  ],
+  "additionalServerDayFixture": {
+    "passed": true,
+    "log": "server-day-browser.txt"
+  },
+  "initialLifecycleFailure": "full-product-check/run.txt; old recovery expectation updated; final rerun evidence above"
+}

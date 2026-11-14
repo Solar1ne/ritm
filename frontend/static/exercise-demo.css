@@ -1,0 +1,25 @@
+.exercise-demo { --demo-ink: #245449; --demo-far: #94b4a8; --demo-surface: #edf5ef; color: var(--ink, #243d34); }
+.exercise-demo-stage { background: var(--demo-surface); border: 1px solid #d6e5d9; border-radius: 18px; overflow: hidden; }
+.exercise-demo-svg { display: block; width: 100%; max-height: 320px; color: #245449; }
+.exercise-demo-svg .demo-limb, .exercise-demo-svg .demo-neck, .exercise-demo-svg .demo-torso { fill: none; stroke: #245449; stroke-linecap: round; stroke-linejoin: round; }
+.exercise-demo-svg .demo-limb { stroke-width: 8; }
+.exercise-demo-svg .demo-far { stroke: #94b4a8; stroke-width: 7; }
+.exercise-demo-svg .demo-torso { stroke-width: 15; }
+.exercise-demo-svg .demo-neck { stroke-width: 7; }
+.exercise-demo-svg .demo-head { fill: #f4d7b7; stroke: #245449; stroke-width: 3; }
+.exercise-demo-svg .demo-joint { fill: #edf5ef; stroke: #245449; stroke-width: 1.5; }
+.exercise-demo-svg .demo-ground { stroke: #bacfc0; stroke-width: 1.5; }
+.exercise-demo-svg .demo-mat { fill: #b6d0bf; }
+.exercise-demo-svg .demo-wall { stroke: #718d80; stroke-width: 7; }
+.exercise-demo-svg .demo-wall-hatch { fill: none; stroke: #b1c5b7; stroke-width: 2; }
+.exercise-demo-svg .demo-weight { fill: none; stroke: #485868; stroke-width: 6; stroke-linecap: round; }
+.exercise-demo-svg .demo-view-label { fill: #536b5d; font: 11px system-ui, sans-serif; }
+.exercise-demo-phase { font-weight: 700; margin: 12px 0 4px; }
+.exercise-demo-note, .exercise-demo-motion-note, .exercise-demo-static { font-size: 0.85rem; line-height: 1.5; margin: 4px 0 12px; color: var(--muted, #536658); }
+.exercise-demo-controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.exercise-demo-controls button { min-width: 44px; min-height: 44px; padding: 8px 12px; border: 1px solid #c1d4c5; border-radius: 10px; background: #fff; color: #245449; font: inherit; cursor: pointer; }
+.exercise-demo-controls button[data-demo-action="play"] { flex: 1; }
+.exercise-demo-controls button:disabled { cursor: default; opacity: 0.55; }
+.exercise-demo-controls button:focus-visible, .exercise-demo-range input:focus-visible { outline: 3px solid #bb781b; outline-offset: 3px; }
+.exercise-demo-range { display: block; font-size: 0.85rem; margin-top: 12px; }
+.exercise-demo-range input { display: block; width: 100%; min-height: 44px; margin: 0; accent-color: #245449; }

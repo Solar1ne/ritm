@@ -1,0 +1,9 @@
+{
+  "username": "gymbro_ai",
+  "mini_url": "https://176.119.147.97/mini",
+  "configured": true,
+  "webhook_present": false,
+  "checkedAt": "2026-10-22T18:06:21.449466+00:00",
+  "scope": "Live Bot API public metadata only; no polling, user messages or Telegram client login verified",
+  "runtimeDeployed": false
+}

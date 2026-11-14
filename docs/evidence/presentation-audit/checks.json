@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-10-17T08:41:26.396898+00:00",
+  "commands": [
+    {
+      "argv": [
+        "go",
+        "test",
+        "-count=1",
+        "-v",
+        "./internal/httpapi",
+        "-run",
+        "^(TestAbsentAndTamperedSessions|TestTelegramAuthStableIsolatedAndNoGuestMerge|TestTelegramRejectsInvalidSignaturesAndDates|TestSessionBindingBlocksCrossTabIdentityChanges|TestAmbiguousSessionCookiesAreRejected|TestAIDisabledDoesNotBlockDiaryOrRules|TestAIHTTPBreakerUsesOnlyAuthorizedRecoveryProbes)$"
+      ],
+      "environmentOverrides": {
+        "GOCACHE": "/tmp/rhythm-go-cache"
+      },
+      "exitCode": 0,
+      "output": "auth-ai-tests.txt"
+    }
+  ],
+  "sourceVerification": [
+    {
+      "stage": "ai-product",
+      "scope": "Go files and go.mod; premium-design also web/static files recorded by its manifest",
+      "checked": 58,
+      "mismatches": []
+    },
+    {
+      "stage": "premium-design",
+      "scope": "Go files and go.mod; premium-design also web/static files recorded by its manifest",
+      "checked": 82,
+      "mismatches": []
+    }
+  ],
+  "limits": [
+    "Targeted local handler tests with synthetic Telegram signatures and AI fakes, not real Telegram or provider calls.",
+    "Existing full-suite, RAT and load evidence was compared to current source hashes; no new full-suite or load measurement is claimed."
+  ]
+}

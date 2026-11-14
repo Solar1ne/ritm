@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-10-17T09:38:19.324Z",
+  "scope": "Isolated local Go server; synthetic credentials and diary; no external identity provider",
+  "checks": [
+    {
+      "name": "Password mismatch remains in the form; guest history is unchanged",
+      "passed": true
+    },
+    {
+      "name": "Registration at 320/390/1440px: no overflow, labelled inputs and 44px password controls",
+      "passed": true
+    },
+    {
+      "name": "Registration claims the real guest diary and provides a downloadable recovery code",
+      "passed": true
+    },
+    {
+      "name": "The previous guest cookie cannot access the claimed diary",
+      "passed": true
+    },
+    {
+      "name": "A separate browser signs in to the same saved diary; wrong password is rejected",
+      "passed": true
+    },
+    {
+      "name": "Ending other sessions revokes server access and clears stale private UI on reload",
+      "passed": true
+    },
+    {
+      "name": "Recovery rotates the code, revokes old sessions and preserves the diary",
+      "passed": true
+    },
+    {
+      "name": "A consumed recovery code cannot be reused",
+      "passed": true
+    },
+    {
+      "name": "Changing the password rotates the current session and revokes every old session",
+      "passed": true
+    },
+    {
+      "name": "Logout revokes the saved bearer token and opens an empty guest space",
+      "passed": true
+    },
+    {
+      "name": "Signing back in after logout restores the complete diary",
+      "passed": true
+    },
+    {
+      "name": "Nutrition reloads after logout and login without leaving the current screen",
+      "passed": true
+    }
+  ],
+  "pageErrors": []
+}

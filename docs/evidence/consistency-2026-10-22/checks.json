@@ -1,0 +1,132 @@
+{
+  "executedAt": "2026-10-22T17:39:42.473831+00:00",
+  "scope": "Local Go/PostgreSQL + Chrome synthetic users; no external deployment/AI/Telegram requests",
+  "passed": true,
+  "implementedFeatures": [
+    "30/90-day activity calendar with read-only day details",
+    "Previous closed-week recap from saved schedules and diary"
+  ],
+  "frontendTests": {
+    "passed": 92,
+    "new": 25,
+    "failed": 0
+  },
+  "syntaxModules": 18,
+  "goTests": {
+    "passedTopLevel": 215,
+    "failed": 0,
+    "skipped": 0
+  },
+  "goRace": "N/A for this change: frontend-only; prior audit race verified Go contracts",
+  "analysis": {
+    "vet": true,
+    "staticcheck": true,
+    "gofmt": true
+  },
+  "browser": {
+    "suites": [
+      {
+        "suite": "final-browser/consistency-check",
+        "checks": 7,
+        "runtimeErrors": 0,
+        "passed": true
+      },
+      {
+        "suite": "final-browser/browser-check",
+        "checks": 20,
+        "runtimeErrors": 0,
+        "passed": true
+      },
+      {
+        "suite": "regression/full-product-check",
+        "checks": 13,
+        "runtimeErrors": 0,
+        "passed": true
+      }
+    ],
+    "passedChecks": 40,
+    "additionalServerDayFixturePassed": true,
+    "newFeatureWrites": 0
+  },
+  "sources": [
+    {
+      "product": "Habitify",
+      "url": "https://feedback.habitify.me/changelog?c=Web+Update"
+    },
+    {
+      "product": "Streaks",
+      "url": "https://streaks.app/"
+    },
+    {
+      "product": "Gentler Streak",
+      "url": "https://docs.gentler.app/understanding-your-activity-path/interpret-the-activity-path"
+    },
+    {
+      "product": "Fitbod",
+      "url": "https://fitbod.me/blog/your-gym-profile/"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "web/static/consistency.js",
+      "status": "added"
+    },
+    {
+      "path": "web/static/consistency-ui.js",
+      "status": "added"
+    },
+    {
+      "path": "web/static/consistency.css",
+      "status": "added"
+    },
+    {
+      "path": "web/static/app.js",
+      "status": "modified"
+    },
+    {
+      "path": "web/static/views.js",
+      "status": "modified"
+    },
+    {
+      "path": "web/static/index.html",
+      "status": "modified"
+    },
+    {
+      "path": "web/tests/consistency.test.js",
+      "status": "added"
+    },
+    {
+      "path": "web/tests/consistency-ui.test.js",
+      "status": "added"
+    },
+    {
+      "path": "web/tests/consistency-integration.test.js",
+      "status": "added"
+    },
+    {
+      "path": "scripts/consistency-check.mjs",
+      "status": "added"
+    },
+    {
+      "path": "scripts/browser-check.mjs",
+      "status": "modified"
+    },
+    {
+      "path": "package.json",
+      "status": "modified"
+    },
+    {
+      "path": "README.md",
+      "status": "modified"
+    },
+    {
+      "path": "docs/features.md",
+      "status": "modified"
+    },
+    {
+      "path": "docs/product-research-2026-10-22.md",
+      "status": "added"
+    }
+  ],
+  "temporaryProcessesStopped": true
+}

@@ -1,0 +1,199 @@
+{
+  "generatedAt": "2026-10-17T05:52:29Z",
+  "scope": "Synthetic deterministic rule engine + input validation, in process; excludes HTTP, storage, network and user outcomes.",
+  "goVersion": "go1.25.2",
+  "platform": "darwin/arm64",
+  "iterations": 5000,
+  "cases": [
+    {
+      "name": "01_no_history",
+      "critical": false,
+      "expected": "start",
+      "actual": "start",
+      "expectedSessions": 3,
+      "actualSessions": 3,
+      "expectedMinutes": 135,
+      "actualMinutes": 135,
+      "passed": true
+    },
+    {
+      "name": "02_one_completion",
+      "critical": false,
+      "expected": "maintain",
+      "actual": "maintain",
+      "expectedSessions": 3,
+      "actualSessions": 3,
+      "expectedMinutes": 135,
+      "actualMinutes": 135,
+      "passed": true
+    },
+    {
+      "name": "03_fatigue_at_threshold",
+      "critical": false,
+      "expected": "recover",
+      "actual": "recover",
+      "expectedSessions": 2,
+      "actualSessions": 2,
+      "expectedMinutes": 72,
+      "actualMinutes": 72,
+      "passed": true
+    },
+    {
+      "name": "04_sleep_below_threshold",
+      "critical": false,
+      "expected": "recover",
+      "actual": "recover",
+      "expectedSessions": 2,
+      "actualSessions": 2,
+      "expectedMinutes": 72,
+      "actualMinutes": 72,
+      "passed": true
+    },
+    {
+      "name": "05_sleep_at_threshold",
+      "critical": false,
+      "expected": "maintain",
+      "actual": "maintain",
+      "expectedSessions": 3,
+      "actualSessions": 3,
+      "expectedMinutes": 135,
+      "actualMinutes": 135,
+      "passed": true
+    },
+    {
+      "name": "06_two_missed",
+      "critical": false,
+      "expected": "simplify",
+      "actual": "simplify",
+      "expectedSessions": 2,
+      "actualSessions": 2,
+      "expectedMinutes": 90,
+      "actualMinutes": 90,
+      "passed": true
+    },
+    {
+      "name": "07_one_missed",
+      "critical": false,
+      "expected": "maintain",
+      "actual": "maintain",
+      "expectedSessions": 3,
+      "actualSessions": 3,
+      "expectedMinutes": 135,
+      "actualMinutes": 135,
+      "passed": true
+    },
+    {
+      "name": "08_complete_and_recovered",
+      "critical": false,
+      "expected": "progress",
+      "actual": "progress",
+      "expectedSessions": 3,
+      "actualSessions": 3,
+      "expectedMinutes": 141,
+      "actualMinutes": 141,
+      "passed": true
+    },
+    {
+      "name": "09_complete_missing_wellbeing",
+      "critical": false,
+      "expected": "maintain",
+      "actual": "maintain",
+      "expectedSessions": 3,
+      "actualSessions": 3,
+      "expectedMinutes": 135,
+      "actualMinutes": 135,
+      "passed": true
+    },
+    {
+      "name": "10_complete_sleep_unknown",
+      "critical": false,
+      "expected": "maintain",
+      "actual": "maintain",
+      "expectedSessions": 3,
+      "actualSessions": 3,
+      "expectedMinutes": 135,
+      "actualMinutes": 135,
+      "passed": true
+    },
+    {
+      "name": "11_complete_fatigue_unknown",
+      "critical": false,
+      "expected": "maintain",
+      "actual": "maintain",
+      "expectedSessions": 3,
+      "actualSessions": 3,
+      "expectedMinutes": 135,
+      "actualMinutes": 135,
+      "passed": true
+    },
+    {
+      "name": "12_recovery_over_completion",
+      "critical": true,
+      "expected": "recover",
+      "actual": "recover",
+      "expectedSessions": 2,
+      "actualSessions": 2,
+      "expectedMinutes": 72,
+      "actualMinutes": 72,
+      "passed": true
+    },
+    {
+      "name": "13_sleep_over_completion",
+      "critical": true,
+      "expected": "recover",
+      "actual": "recover",
+      "expectedSessions": 2,
+      "actualSessions": 2,
+      "expectedMinutes": 72,
+      "actualMinutes": 72,
+      "passed": true
+    },
+    {
+      "name": "14_recovery_over_missed",
+      "critical": true,
+      "expected": "recover",
+      "actual": "recover",
+      "expectedSessions": 2,
+      "actualSessions": 2,
+      "expectedMinutes": 72,
+      "actualMinutes": 72,
+      "passed": true
+    },
+    {
+      "name": "15_sleep_over_missed",
+      "critical": true,
+      "expected": "recover",
+      "actual": "recover",
+      "expectedSessions": 2,
+      "actualSessions": 2,
+      "expectedMinutes": 72,
+      "actualMinutes": 72,
+      "passed": true
+    },
+    {
+      "name": "16_both_risks_over_completion",
+      "critical": true,
+      "expected": "recover",
+      "actual": "recover",
+      "expectedSessions": 2,
+      "actualSessions": 2,
+      "expectedMinutes": 72,
+      "actualMinutes": 72,
+      "passed": true
+    }
+  ],
+  "passedCases": 16,
+  "totalCases": 16,
+  "criticalPassed": 5,
+  "criticalTotal": 5,
+  "errorCalls": 0,
+  "p50Ms": 0.003542,
+  "p95Ms": 0.006042,
+  "maxMs": 0.293,
+  "thresholds": {
+    "successRatio": 0.9,
+    "criticalRatio": 1,
+    "p95Ms": 50
+  },
+  "passed": true
+}

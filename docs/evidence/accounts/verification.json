@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-10-17T09:37:44.016292+00:00",
+  "environmentOverrides": {
+    "GOCACHE": "/tmp/rhythm-go-cache",
+    "STATICCHECK_CACHE": "/tmp/rhythm-staticcheck-cache"
+  },
+  "commands": [
+    {
+      "argv": [
+        "go",
+        "test",
+        "-race",
+        "-coverprofile=docs/evidence/accounts/coverage.out",
+        "./..."
+      ],
+      "exitCode": 0,
+      "output": "go-test.txt"
+    },
+    {
+      "argv": [
+        "go",
+        "vet",
+        "./..."
+      ],
+      "exitCode": 0,
+      "output": "go-vet.txt"
+    },
+    {
+      "argv": [
+        "staticcheck",
+        "./..."
+      ],
+      "exitCode": 0,
+      "output": "staticcheck.txt"
+    },
+    {
+      "argv": [
+        "gofmt",
+        "-l",
+        "cmd",
+        "internal",
+        "web"
+      ],
+      "exitCode": 0,
+      "output": "gofmt.txt"
+    },
+    {
+      "argv": [
+        "go",
+        "build",
+        "-o",
+        "/tmp/rhythm-accounts-server",
+        "./cmd/server"
+      ],
+      "exitCode": 0,
+      "output": "build.txt"
+    },
+    {
+      "argv": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exitCode": 0,
+      "output": "frontend-check.txt"
+    },
+    {
+      "argv": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "output": "frontend-tests.txt"
+    }
+  ]
+}

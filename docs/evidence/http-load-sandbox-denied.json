@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-17T04:16:34.650777Z",
+  "target_url": "http://127.0.0.1:8080",
+  "loopback_target": true,
+  "scope": "HTTP write smoke for Rhythm Go + atomic JSON PoC; setup/cleanup excluded; no SQL, browser rendering, mobile-network or public-capacity claim. Request latency includes response validation; scheduled latency includes generator/queue lag. Errors include queue drops. Fractional windows schedule ceil(duration*rps) requests.",
+  "target_rps": 10,
+  "duration_seconds": 30,
+  "elapsed_seconds": 0,
+  "workers": 4,
+  "queue_capacity": 4,
+  "planned_requests": 300,
+  "scheduled_requests": 0,
+  "requests": 0,
+  "succeeded": 0,
+  "errors": 0,
+  "dropped": 0,
+  "setup_errors": 1,
+  "cleanup_errors": 0,
+  "interrupted": false,
+  "achieved_rps": 0,
+  "successful_rps": 0,
+  "request_latency": {
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "max_ms": 0
+  },
+  "scheduled_latency": {
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "max_ms": 0
+  },
+  "dispatch_lag": {
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "max_ms": 0
+  },
+  "failure_counts": {
+    "setup_transport": 1
+  },
+  "environment": {
+    "go_version": "go1.25.2",
+    "os": "darwin",
+    "arch": "arm64",
+    "cpus": 10,
+    "gomaxprocs": 10,
+    "time_zone": "Europe/Moscow"
+  },
+  "criteria": {
+    "maximum_p95_ms": 450,
+    "minimum_achieved_rps": 9.5,
+    "request_latency_passed": false,
+    "scheduled_latency_passed": false,
+    "no_errors": false,
+    "all_requests_accounted": true,
+    "all_planned_succeeded": false,
+    "target_rate_achieved": false
+  },
+  "passed": false
+}

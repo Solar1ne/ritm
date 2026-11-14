@@ -1,0 +1,34 @@
+{
+  "feature": "Exercise demonstrations and technique catalog",
+  "date": "2026-10-22",
+  "sourceSHA256": "8b49a20446844ace52a1e6027ffe7ba53e8782fffa363dd1bb03ad01d4888cf5",
+  "sourceFiles": 205,
+  "qa": {
+    "passed": true,
+    "sourceUnchanged": true,
+    "evidence": "docs/evidence/exercises-2026-10-22/release-qa",
+    "nodeTests": 136,
+    "newTargetedNodeTests": 27,
+    "pythonTests": 26,
+    "browserSuites": 10,
+    "goRaceWithRealPostgreSQL": true,
+    "goVet": true,
+    "staticcheck": true,
+    "gofmt": true
+  },
+  "artifact": {
+    "path": "dist/ritm-20261022-exercises-linux-amd64.tar.gz",
+    "bytes": 10588468,
+    "sha256": "250e146ca400d7044949f84566da60db02c68a69f52244d0561070b4afa6af0b",
+    "format": "linux-amd64 native release, 14 allowlisted files"
+  },
+  "previousReleasePreserved": true,
+  "deployed": false,
+  "nativeIOSChanged": false,
+  "limitations": [
+    "Original schematic SVG demonstrations, not trainer videos or motion capture",
+    "No automatic exercise recognition, prescriptions or additions to the plan",
+    "Chrome viewport testing does not prove real Telegram or iPhone behavior",
+    "Public deployment deferred until SSH access is provided"
+  ]
+}

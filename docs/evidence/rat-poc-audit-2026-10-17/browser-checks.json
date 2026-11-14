@@ -1,0 +1,42 @@
+{
+  "executedAt": "2026-10-17T11:39:23.212776+00:00",
+  "scope": "Fresh QA build + isolated temporary PostgreSQL schema; browser fixtures where labelled; no live AI calls; no user data touched",
+  "checks": [
+    {
+      "name": "first-run-check",
+      "exitCode": 0,
+      "seconds": 6.68
+    },
+    {
+      "name": "browser-check",
+      "exitCode": 0,
+      "seconds": 19.86
+    },
+    {
+      "name": "full-product-check",
+      "exitCode": 0,
+      "seconds": 14.91
+    },
+    {
+      "name": "wellness-nutrition-check",
+      "exitCode": 0,
+      "seconds": 7.52
+    },
+    {
+      "name": "ai-product-check",
+      "exitCode": 0,
+      "seconds": 5.26
+    },
+    {
+      "name": "accounts-check",
+      "exitCode": 0,
+      "seconds": 7.58
+    },
+    {
+      "name": "http-load",
+      "exitCode": 0
+    }
+  ],
+  "qaStopped": true,
+  "schemaCleanupExitCode": 0
+}

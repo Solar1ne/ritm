@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-10-17T09:43:56.408547+00:00",
+  "passed": true,
+  "verification": "verification.json",
+  "browserRegression": "browser-regression.json",
+  "commands": [
+    {
+      "argv": [
+        "go",
+        "test",
+        "-race",
+        "-coverprofile=docs/evidence/accounts/coverage.out",
+        "./..."
+      ],
+      "exitCode": 0,
+      "output": "go-test.txt"
+    },
+    {
+      "argv": [
+        "go",
+        "vet",
+        "./..."
+      ],
+      "exitCode": 0,
+      "output": "go-vet.txt"
+    },
+    {
+      "argv": [
+        "staticcheck",
+        "./..."
+      ],
+      "exitCode": 0,
+      "output": "staticcheck.txt"
+    },
+    {
+      "argv": [
+        "gofmt",
+        "-l",
+        "cmd",
+        "internal",
+        "web"
+      ],
+      "exitCode": 0,
+      "output": "gofmt.txt"
+    },
+    {
+      "argv": [
+        "go",
+        "build",
+        "-o",
+        "/tmp/rhythm-accounts-server",
+        "./cmd/server"
+      ],
+      "exitCode": 0,
+      "output": "build.txt"
+    },
+    {
+      "argv": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exitCode": 0,
+      "output": "frontend-check.txt"
+    },
+    {
+      "argv": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "output": "frontend-tests.txt"
+    }
+  ],
+  "summary": {
+    "javascriptTests": 57,
+    "browserChecksByReport": {
+      "browser.json": 12,
+      "regression/browser.json": 20,
+      "regression/full-product-browser.json": 13,
+      "ai/browser.json": 10,
+      "wellness/browser.json": 10
+    },
+    "browserChecks": 65,
+    "ratCases": 16,
+    "criticalRATCases": 5,
+    "ratIterations": 5000,
+    "ratP95Ms": 0.005917,
+    "httpSuccessfulRequests": 300,
+    "httpErrors": 0,
+    "httpRequestP95Ms": 11.666083,
+    "httpDurationSeconds": 30,
+    "httpTargetRPS": 10
+  },
+  "runtime": "restart.json",
+  "scope": "Final local binary; synthetic accounts and diaries. AI bodies and Telegram SDK are explicit browser fixtures. Go provider tests use local servers. No live AI, real Telegram launch, third-party data transmission or public deployment.",
+  "finalVersion": "Full Go race/vet/staticcheck, 57 JS tests and all five browser suites passed on final production sources, including managed-cookie HMAC, cancelled ledger reads, and nutrition reload after account changes. Later changes are documentation/evidence only.",
+  "priorAttempts": {
+    "browser-failure.json": "Earlier harness ambiguity between a dialog title and password input; corrected to scope the form. Replaced by passing browser.json.",
+    "failure.png": "Screenshot from that earlier harness failure, not current acceptance evidence."
+  },
+  "externalChecksPending": [
+    "Owner-configured OpenAI key and live synthetic smoke",
+    "Public HTTPS, ingress rate limits and actual Telegram bot launch",
+    "Backup restore rehearsal and deployment-specific capacity",
+    "Comparative UX study and expert validation; no guarantee of score or health outcome"
+  ],
+  "sourceManifest": "source-manifest.json"
+}
